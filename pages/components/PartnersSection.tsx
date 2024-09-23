@@ -1,11 +1,11 @@
 export default function PartnersSection() {
     const partners = [
-      { name: "AVI Solutions", logo: "/images/avi.png" },
-      { name: "GSP Foundation", logo: "/images/gsp.png" },
-      { name: "Sumridhi Aluminium Pvt. Ltd.", logo: "/images/sumridhi.png" },
-      { name: "Anzen Projects Pvt. Ltd.", logo: "/images/anzen.png" },
-      { name: "Swastik Technology Pvt. Ltd.", logo: "/images/swastik.png" },
-      { name: "To The New", logo: "/images/tothenew.png" },
+      { name: "AVI Solutions", logo: "/images/nipm.jpg" },
+      { name: "GSP Foundation", logo: "/images/german_varsity.jpeg" },
+      { name: "Sumridhi Aluminium Pvt. Ltd.", logo: "/images/french_diplomacy.jpg" },
+      { name: "Anzen Projects Pvt. Ltd.", logo: "/images/India_Meteorological_Department.png" },
+      { name: "Swastik Technology Pvt. Ltd.", logo: "/images/swachh-bharat.png" },
+      { name: "To The New", logo: "/images/trident.png" },
     ];
   
     return (

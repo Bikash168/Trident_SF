@@ -3,17 +3,17 @@ import React from 'react';
 const projects = [
   {
     title: "Shikshalaya",
-    imageUrl: "/path/to/shikshalaya.jpg", // replace with your image path
+    imageUrl: "/images/shikshalaya.jpg", // replace with your image path
     description: "Empowering children through education.",
   },
   {
     title: "Chuppi Todo– Sharam Nahi Samman",
-    imageUrl: "/path/to/chuppi-todo.jpg", // replace with your image path
+    imageUrl: "/images/chuppi-todo.jpg", // replace with your image path
     description: "Breaking the silence, promoting dignity.",
   },
   {
     title: "Khushiyon Ki Potli",
-    imageUrl: "/path/to/khushiyon-ki-potli.jpg", // replace with your image path
+    imageUrl: "/images/khushiyon-ki-potli.jpg", // replace with your image path
     description: "Spreading joy through essential supplies.",
   },
 ];

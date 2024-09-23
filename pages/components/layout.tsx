@@ -89,7 +89,7 @@ export default function Layout({ children }: LayoutProps) {
               </button>
               <ul className="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-[#CCFFCC] text-black p-2 shadow-lg z-10 whitespace-nowrap">
                 <li>
-                  <Link href="/about" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-200">
                     About Us
                   </Link>
                 </li>
@@ -217,8 +217,9 @@ export default function Layout({ children }: LayoutProps) {
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Trident Group Websites</h3>
             <ul>
               <li><Link href="https://tat.ac.in/" className="text-black block hover:text-blue-400">Trident academy of technology</Link></li>
-              <li> <Link href="https://trident.ac.in/" className="text-black block hover:text-blue-400">Trident group of institutions</Link></li>
+              <li><Link href="https://tact.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Creative Technology</Link></li>
               <li><a href="https://taps.ac.in/" className="text-black block hover:text-blue-400">Trident academy of professional studies</a></li>
+              <li> <Link href="https://trident.ac.in/" className="text-black block hover:text-blue-400">Trident group of institutions</Link></li>
               <li><a href="https://dfgroup.in/" className="text-black block hover:text-blue-400">The DF group</a></li>
             </ul>
           </div>

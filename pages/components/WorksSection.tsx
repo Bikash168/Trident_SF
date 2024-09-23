@@ -6,7 +6,7 @@ const worksData = [
     title: "Education",
     description:
       "Shikshalaya, our free learning center, has been operational for four successful years. Almost 750 students have passed out from our centers and are doing exceptionally well.",
-    imageUrl: "/images/education.jpg", // Update with your actual image path
+    imageUrl: "/images/education.png", // Update with your actual image path
   },
   {
     id: 2,
