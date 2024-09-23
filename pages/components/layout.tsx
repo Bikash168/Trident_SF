@@ -79,32 +79,36 @@ export default function Layout({ children }: LayoutProps) {
       </header>
 
       {/* Navbar - Make it sticky */}
-      <nav className={`bg-[#CCFFCC] border-gray-200 dark:bg-gray-900 text-black p-4 sticky top-[104px] z-30 transition-all ${menuOpen ? 'block' : 'hidden'} md:block`}>
-        <div className="container mx-auto flex justify-start items-center">
-          <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:space-x-6">
-            {/* Dropdown: Who We Are */}
-            <li className="relative group">
-              <button className="flex items-center hover:text-gray-300">
-                Who We Are <FaAngleDown className="ml-1" />
-              </button>
-              <ul className="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-[#CCFFCC] text-black p-2 shadow-lg z-10 whitespace-nowrap">
-                <li>
-                  <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-200">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/vision-mission" className="block px-4 py-2 hover:bg-gray-200">
-                    Vision/Mission
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/team" className="block px-4 py-2 hover:bg-gray-200">
-                    Our Team
-                  </Link>
-                </li>
-              </ul>
-            </li>
+      <nav className={`bg-[#CCFFCC] border-gray-200 text-black p-4 sticky top-[104px] z-30 transition-all ${menuOpen ? 'block' : 'hidden'} md:block`}>
+  <div className="container mx-auto flex justify-start items-center">
+    <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:space-x-6">
+      
+      {/* Dropdown: Who We Are */}
+      <li className="relative group">
+        <button className="flex items-center hover:text-gray-300">
+          Who We Are <FaAngleDown className="ml-1" />
+        </button>
+        <ul className="absolute left-0 mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 w-full">
+          <li className="w-full">
+            <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-200 text-center">
+              About Us
+            </Link>
+          </li>
+          <li className="w-full">
+            <Link href="/vision-mission" className="block px-4 py-2 hover:bg-gray-200 text-center">
+              Vision/Mission
+            </Link>
+          </li>
+          <li className="w-full">
+            <Link href="/team" className="block px-4 py-2 hover:bg-gray-200 text-center">
+              Our Team
+            </Link>
+          </li>
+        </ul>
+      </li>
+
+      {/* Repeat for other dropdowns */}
+    
 
             {/* Dropdown: What We Do */}
             <li className="relative group">
