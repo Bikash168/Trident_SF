@@ -1,4 +1,4 @@
-import { useState } from 'react';  // Import useState to manage state
+import { useState } from 'react';
 import Link from 'next/link';
 import { ReactNode } from 'react';
 import { FaAngleDown, FaBars, FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaTimes, FaYoutube } from 'react-icons/fa';
@@ -9,7 +9,7 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
-  const [menuOpen, setMenuOpen] = useState(false); // State to track if the menu is open
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -55,20 +55,20 @@ export default function Layout({ children }: LayoutProps) {
       {/* Header with Logo - Make it sticky */}
       <header className="sticky top-[36px] z-40 bg-[#CCFFCC] p-4 md:p-6 flex flex-wrap items-center justify-between">
         {/* Logo and Title */}
-        <div className="flex items-center w-full md:w-auto">
+        <Link href="/" className="flex items-center w-full md:w-auto">
           <img src="/Logo.png" alt="Logo" className="w-12 md:w-16 lg:w-20" />
           <div className="ml-4">
-            <h1 className="text-lg md:text-x1 lg:text-3xl tracking-wide font-bold text-[#316b9e]">
+            <h1 className="text-lg md:text-xl lg:text-3xl tracking-wide font-bold text-[#316b9e]">
               SACRED FOUNDATION
             </h1>
             <p className="text-xs md:text-base font-semibold text-[#316b9e]">
               Sustainable Action for Climate Resilient Envirosocial Development Foundation
             </p>
-            <p className="text-xs md:text-base font-style: italic text-black-900">
+            <p className="text-xs md:text-base italic text-black-900">
               … building resilience, inspiring change
             </p>
           </div>
-        </div>
+        </Link>
 
         {/* Hamburger Menu Button */}
         <div className="md:hidden">
@@ -205,9 +205,9 @@ export default function Layout({ children }: LayoutProps) {
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
             <ul>
               <li><Link href="/" className="text-black block hover:text-blue-400">Home</Link></li>
-              <li> <Link href="/about" className="text-black block hover:text-blue-400">About Us</Link></li>
-              <li> <Link href="/our-work" className="text-black block hover:text-blue-400">Our Work</Link></li>
-              <li> <Link href="/get-involved" className="text-black block hover:text-blue-400">Get Involved</Link></li>
+              <li><Link href="/about" className="text-black block hover:text-blue-400">About Us</Link></li>
+              <li><Link href="/our-work" className="text-black block hover:text-blue-400">Our Work</Link></li>
+              <li><Link href="/get-involved" className="text-black block hover:text-blue-400">Get Involved</Link></li>
               <li><Link href="/contact" className="text-black block hover:text-blue-400">Contact</Link></li>
             </ul>
           </div>
@@ -216,11 +216,11 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Trident Group Websites</h3>
             <ul>
-              <li><Link href="https://tat.ac.in/" className="text-black block hover:text-blue-400">Trident academy of technology</Link></li>
+              <li><Link href="https://tat.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Technology</Link></li>
               <li><Link href="https://tact.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Creative Technology</Link></li>
-              <li><a href="https://taps.ac.in/" className="text-black block hover:text-blue-400">Trident academy of professional studies</a></li>
-              <li> <Link href="https://trident.ac.in/" className="text-black block hover:text-blue-400">Trident group of institutions</Link></li>
-              <li><a href="https://dfgroup.in/" className="text-black block hover:text-blue-400">The DF group</a></li>
+              <li><a href="https://taps.ac.in/" className="text-black block hover:text-blue-400">Trident Academy of Professional Studies</a></li>
+              <li><Link href="https://trident.ac.in/" className="text-black block hover:text-blue-400">Trident Group of Institutions</Link></li>
+              <li><a href="https://dfgroup.in/" className="text-black block hover:text-blue-400">The DF Group</a></li>
             </ul>
           </div>
 
