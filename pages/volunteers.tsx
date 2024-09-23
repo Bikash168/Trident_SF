@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Layout from './components/layout';
 import { useState } from 'react';
 
@@ -30,6 +31,9 @@ const InternshipForm = () => {
   };
 
   return (
+    <><Head>
+      <title>VOLUNTEERS | SACRED FOUNDATION</title>
+    </Head>
     <Layout>
       {/* Sacred Foundation Internship Program Description */}
       <section className="bg-white py-12 mb-10">
@@ -165,7 +169,7 @@ const InternshipForm = () => {
           animation: bounce 2s infinite;
         }
       `}</style>
-    </Layout>
+    </Layout></>
   );
 };
 

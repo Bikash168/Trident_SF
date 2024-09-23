@@ -1,8 +1,12 @@
 // pages/media.js
+import Head from 'next/head';
 import Layout from '../pages/components/layout';
 
 const Media = () => {
   return (
+    <><Head>
+      <title>PICTURE GALLERY | SACRED FOUNDATION</title>
+    </Head>
     <Layout>
       <section className="container mx-auto py-12 px-6">
         <h2 className="text-4xl font-bold text-green-800 mb-6">Media</h2>
@@ -29,7 +33,7 @@ const Media = () => {
           <p>Check out our latest blog articles...</p>
         </div>
       </section>
-    </Layout>
+    </Layout></>
   );
 };
 

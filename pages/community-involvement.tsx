@@ -1,8 +1,12 @@
+import Head from 'next/head';
 import Layout from './components/layout';
 import Image from 'next/image';
 
 const CommunityInvolvement = () => {
   return (
+    <><Head>
+      <title>Community Involvement | SACRED Foundation</title>
+    </Head>
     <Layout>
       {/* Community Involvement Section */}
       <section className="bg-white py-12">
@@ -94,7 +98,7 @@ const CommunityInvolvement = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </Layout></>
   );
 };
 

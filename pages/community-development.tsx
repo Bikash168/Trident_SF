@@ -1,8 +1,12 @@
 // pages/community-development.js
+import Head from 'next/head';
 import Layout from './components/layout';
 
 const CommunityDevelopment = () => {
   return (
+    <><Head>
+      <title>Community Development | SACRED Foundation</title>
+    </Head>
     <Layout>
       <section className="bg-white py-12 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,7 +89,7 @@ const CommunityDevelopment = () => {
           animation: fadeIn 1s ease-in-out forwards;
         }
       `}</style>
-    </Layout>
+    </Layout></>
   );
 };
 

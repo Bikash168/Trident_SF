@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Layout from './components/layout';
 
 const blogPosts = [
@@ -34,6 +35,9 @@ const blogPosts = [
 
 const Blog = () => {
   return (
+    <><Head>
+      <title>Blog | SACRED Foundation</title>
+    </Head>
     <Layout>
       <section className="bg-gradient-to-r from-purple-400 to-blue-500 py-12 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
@@ -63,7 +67,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </Layout></>
   );
 };
 

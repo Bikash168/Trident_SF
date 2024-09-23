@@ -1,9 +1,13 @@
+import Head from 'next/head';
 import Layout from './components/layout';
 import Image from 'next/image';
 import { useState } from 'react';
 
 const CorporatePartnership = () => {
   return (
+    <><Head>
+      <title>Corporates Partnership | SACRED Foundation</title>
+    </Head>
     <Layout>
       {/* Corporate Partnership Section */}
       <section className="bg-white py-12">
@@ -99,7 +103,7 @@ const CorporatePartnership = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </Layout></>
   );
 };
 

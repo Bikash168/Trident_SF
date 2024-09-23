@@ -18,8 +18,12 @@ const Contact = () => {
   }, []);
 
   return (
-    <Layout>
-      <section className="py-16 bg-white text-gray-800">
+    <><>
+      <Head>
+        <title>Contact Us | SACRED Foundation</title>
+      </Head>
+    </><Layout>
+        <section className="py-16 bg-white text-gray-800">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-pink-900 mb-12 text-center">Get In Touch</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -91,7 +95,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
-    </Layout>
+      </Layout></>
   );
 };
 

@@ -25,3 +25,13 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Add this CSS to your global stylesheet or custom CSS */
+.swiper-pagination-bullet {
+  background: #f9a825; /* Yellow color for the pagination bullets */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* White color for navigation arrows */
+}

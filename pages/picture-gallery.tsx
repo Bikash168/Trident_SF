@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Layout from './components/layout';
 import { useState } from 'react';
 
@@ -23,6 +24,9 @@ const PictureGallery = () => {
   };
 
   return (
+    <><Head>
+      <title>PICTURE GALLERY | SACRED FOUNDATION</title>
+    </Head>
     <Layout>
       <section className="bg-gradient-to-r from-purple-400 to-pink-500 py-12 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
@@ -56,7 +60,7 @@ const PictureGallery = () => {
           </div>
         )}
       </section>
-    </Layout>
+    </Layout></>
   );
 };
 

@@ -1,4 +1,5 @@
 // pages/our-team.js
+import Head from 'next/head';
 import Layout from './components/layout';
 
 const teamMembers = [
@@ -30,6 +31,9 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
+    <><Head>
+      <title>TEAM | SACRED FOUNDATION</title>
+    </Head>
     <Layout>
       <section className="bg-white py-12 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +56,7 @@ const OurTeam = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </Layout></>
   );
 };
 

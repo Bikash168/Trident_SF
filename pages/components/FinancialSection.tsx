@@ -1,57 +1,81 @@
-import React from 'react';
 
-const FinancialSection = () => {
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
+
+// No need to call SwiperCore.use again, as you already imported the modules directly
+
+
+
+const FinancialDetails = () => {
   return (
-    <section className="bg-gray-100 py-12 px-6">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-start">
+    <section className="bg-gray-900 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl font-bold text-center mb-8 text-purple-400">
+          Financial <span className="text-white">Details</span>
+        </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Financial Details */}
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-            <h2 className="text-purple-600 text-3xl font-bold mb-4">Financial Details</h2>
-            <div className="bg-white shadow-lg p-6 rounded-md">
-              <table className="w-full text-left text-sm">
-                <tbody>
-                  <tr className="border-b">
-                    <td className="py-2 font-semibold">Registration No</td>
-                    <td className="py-2">274409</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-2 font-semibold">PAN No</td>
-                    <td className="py-2">AAHCR1346N</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-2 font-semibold">License Number</td>
-                    <td className="py-2">104625</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-2 font-semibold">80G Registration Number</td>
-                    <td className="py-2">DEL-RE28502-27042018/9939</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-2 font-semibold">12A Registration Number</td>
-                    <td className="py-2">DEL-RR27075-27042018/8245</td>
-                  </tr>
-                  <tr>
-                    <td className="py-2 font-semibold">NITI Aayog Reg.</td>
-                    <td className="py-2">ID U85100DL2014NPL274409</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">Financial Details</h2>
+            <div className="text-sm">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="font-bold">Registration No:</div>
+                <div>274409</div>
+                <div className="font-bold">PAN No:</div>
+                <div>AAHCR1346N</div>
+                <div className="font-bold">License Number:</div>
+                <div>104625</div>
+                <div className="font-bold">80G Registration Number:</div>
+                <div>DEL-RE28502-27042018/9939</div>
+                <div className="font-bold">12A Registration Number:</div>
+                <div>DEL-RR27075-27042018/8245</div>
+                <div className="font-bold">NITI Aayog Reg:</div>
+                <div>ID U85100DL2014NPL274409</div>
+              </div>
             </div>
           </div>
 
-          {/* Testimonial Section */}
-          <div className="w-full lg:w-1/2">
-            <h2 className="text-yellow-600 text-3xl font-bold mb-4">Donor's Testimonial</h2>
-            <div className="bg-white shadow-lg p-6 rounded-md">
-              <p className="text-gray-700 text-lg mb-4">
-                "I am privileged to be part of Raise India Foundation and really happy to see outstanding work done by them.
-                It is a best way to stay connected with the noble cause and have the feeling of doing something for society.
-                The best part is, you don't need huge money to contribute for such noble causes, even a small amount can
-                make a massive difference."
-              </p>
-              <p className="font-semibold text-gray-900">Mr. Sachin Sharma</p>
-            </div>
+          {/* Testimonials Section */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4 text-yellow-400">Donor's Testimonial</h2>
+
+            {/* Swiper Carousel for Testimonials */}
+            <Swiper
+              spaceBetween={30}
+              pagination={{ clickable: true }}
+              navigation={true}
+              className="testimonial-slider"
+              modules={[Navigation, Pagination]}
+ 
+            >
+              <SwiperSlide>
+                <div className="testimonial-slide text-white">
+                  <p className="italic mb-4">
+                    "I have spent a lifetime with charities and over the years got polarized from the many organizations that existed as tax shelters or for profiteering."
+                  </p>
+                  <p className="font-bold">Mr. Ajay Agarwal</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="testimonial-slide text-white">
+                  <p className="italic mb-4">
+                    "Roughly two years ago, a young lady from Raise India Foundation (RIF), called me out of the cold seeking donations."
+                  </p>
+                  <p className="font-bold">Mr. Ajay Agarwal</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="testimonial-slide text-white">
+                  <p className="italic mb-4">
+                    "After 8 months of her trying, I agreed to help and by sheer luck, I also got to know the organization and their mission."
+                  </p>
+                  <p className="font-bold">Mr. Ajay Agarwal</p>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
@@ -59,4 +83,4 @@ const FinancialSection = () => {
   );
 };
 
-export default FinancialSection;
+export default FinancialDetails;

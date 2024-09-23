@@ -1,8 +1,12 @@
 // pages/advocacy.js
+import Head from 'next/head';
 import Layout from './components/layout';
 
 const Advocacy = () => {
   return (
+    <><Head>
+      <title>Advocacy | SACRED Foundation</title>
+    </Head>
     <Layout>
       <section className="bg-white py-12 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,7 +84,7 @@ const Advocacy = () => {
         .delay-900 { animation-delay: 0.9s; }
         .delay-1000 { animation-delay: 1.0s; }
       `}</style>
-    </Layout>
+    </Layout></>
   );
 };
 

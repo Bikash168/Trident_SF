@@ -1,8 +1,12 @@
 // pages/vision-mission.js
+import Head from 'next/head';
 import Layout from './components/layout';
 
 const VisionMission = () => {
   return (
+    <><Head>
+      <title>Vision/Mission | SACRED FOUNDATION</title>
+    </Head>
     <Layout>
       <section className="bg-white py-12 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,7 +85,7 @@ const VisionMission = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </Layout></>
   );
 };
 

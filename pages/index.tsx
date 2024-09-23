@@ -1,4 +1,5 @@
 // pages/index.js
+
 import Layout from '../pages/components/layout';
 import Carousel from '../pages/components/Carousel';
 import Head from 'next/head';
@@ -65,7 +66,7 @@ export default function Home() {
             </div>
           </div>
           <WorksSection />
-          
+
           {/* Card Section */}
           <section className="bg-white py-16">
             <div className="container mx-auto text-center">

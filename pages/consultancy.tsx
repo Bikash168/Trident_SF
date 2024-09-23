@@ -1,8 +1,12 @@
 // pages/consultancy.js
+import Head from 'next/head';
 import Layout from './components/layout';
 
 const Consultancy = () => {
   return (
+    <><Head>
+      <title>Consultancy | SACRED Foundation</title>
+    </Head>
     <Layout>
       <section className="bg-white py-12 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -97,7 +101,7 @@ const Consultancy = () => {
         .delay-1200 { animation-delay: 1.2s; }
         .delay-1300 { animation-delay: 1.3s; }
       `}</style>
-    </Layout>
+    </Layout></>
   );
 };
 
