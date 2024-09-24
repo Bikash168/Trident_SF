@@ -85,22 +85,22 @@ export default function Layout({ children }: LayoutProps) {
       
       {/* Dropdown: Who We Are */}
       <li className="relative group">
-        <button className="flex items-center hover:text-gray-300">
+        <button className="flex items-center hover:text-gray-300 padbou">
           Who We Are <FaAngleDown className="ml-1" />
         </button>
-        <ul className="absolute left-0 mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 w-full">
-          <li className="w-full">
-            <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-200 text-center">
+        <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 rowclimn ">
+          <li className="w-full text-center">
+            <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-200">
               About Us
             </Link>
           </li>
-          <li className="w-full">
-            <Link href="/vision-mission" className="block px-4 py-2 hover:bg-gray-200 text-center">
+          <li className="w-full text-center">
+            <Link href="/vision-mission" className="block px-4 py-2 hover:bg-gray-200">
               Vision/Mission
             </Link>
           </li>
-          <li className="w-full">
-            <Link href="/team" className="block px-4 py-2 hover:bg-gray-200 text-center">
+          <li className="w-full text-center">
+            <Link href="/team" className="block px-4 py-2 hover:bg-gray-200">
               Our Team
             </Link>
           </li>
@@ -108,89 +108,88 @@ export default function Layout({ children }: LayoutProps) {
       </li>
 
       {/* Repeat for other dropdowns */}
-    
 
-            {/* Dropdown: What We Do */}
-            <li className="relative group">
-              <button className="flex items-center hover:text-gray-300">
-                What We Do <FaAngleDown className="ml-1" />
-              </button>
-              <ul className="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-[#CCFFCC] text-black p-2 shadow-lg z-10 whitespace-nowrap">
-                <li>
-                  <Link href="/advocacy" className="block px-4 py-2 hover:bg-gray-200">
-                    Advocacy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/consultancy" className="block px-4 py-2 hover:bg-gray-200">
-                    Consultancy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/community-development" className="block px-4 py-2 hover:bg-gray-200">
-                    Community Development
-                  </Link>
-                </li>
-              </ul>
-            </li>
+      {/* Dropdown: What We Do */}
+      <li className="relative group">
+        <button className="flex items-center hover:text-gray-300 padbou">
+          What We Do <FaAngleDown className="ml-1" />
+        </button>
+        <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 rowclimn">
+          <li className="w-full text-center">
+            <Link href="/advocacy" className="block px-4 py-2 hover:bg-gray-200">
+              Advocacy
+            </Link>
+          </li>
+          <li className="w-full text-center">
+            <Link href="/consultancy" className="block px-4 py-2 hover:bg-gray-200">
+              Consultancy
+            </Link>
+          </li>
+          <li className="w-full text-center">
+            <Link href="/community-development" className="block px-4 py-2 hover:bg-gray-200">
+              Community Development
+            </Link>
+          </li>
+        </ul>
+      </li>
 
-            {/* Dropdown: Get Involved */}
-            <li className="relative group">
-              <button className="flex items-center hover:text-gray-300">
-                Get Involved <FaAngleDown className="ml-1" />
-              </button>
-              <ul className="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-[#CCFFCC] text-black p-2 shadow-lg z-10 whitespace-nowrap">
-                <li>
-                  <Link href="/volunteers" className="block px-4 py-2 hover:bg-gray-200">
-                    Volunteers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/corporates" className="block px-4 py-2 hover:bg-gray-200">
-                    Corporates
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/community-involvement" className="block px-4 py-2 hover:bg-gray-200">
-                    Community Involvement
-                  </Link>
-                </li>
-              </ul>
-            </li>
+      {/* Dropdown: Get Involved */}
+      <li className="relative group">
+        <button className="flex items-center hover:text-gray-300 padbou">
+          Get Involved <FaAngleDown className="ml-1" />
+        </button>
+        <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 rowclimn">
+          <li className="w-full text-center">
+            <Link href="/volunteers" className="block px-4 py-2 hover:bg-gray-200">
+              Volunteers
+            </Link>
+          </li>
+          <li className="w-full text-center">
+            <Link href="/corporates" className="block px-4 py-2 hover:bg-gray-200">
+              Corporates
+            </Link>
+          </li>
+          <li className="w-full text-center">
+            <Link href="/community-involvement" className="block px-4 py-2 hover:bg-gray-200">
+              Community Involvement
+            </Link>
+          </li>
+        </ul>
+      </li>
 
-            {/* Dropdown: Media */}
-            <li className="relative group">
-              <button className="flex items-center hover:text-gray-300">
-                Media <FaAngleDown className="ml-1" />
-              </button>
-              <ul className="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-[#CCFFCC] text-black p-2 shadow-lg z-10 whitespace-nowrap">
-                <li>
-                  <Link href="/picture-gallery" className="block px-4 py-2 hover:bg-gray-200">
-                    Picture Gallery
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/video-gallery" className="block px-4 py-2 hover:bg-gray-200">
-                    Video Gallery
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog" className="block px-4 py-2 hover:bg-gray-200">
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </li>
+      {/* Dropdown: Media */}
+      <li className="relative group">
+        <button className="flex items-center hover:text-gray-300 padbou">
+          Media <FaAngleDown className="ml-1" />
+        </button>
+        <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 rowclimn">
+          <li className="w-full text-center">
+            <Link href="/picture-gallery" className="block px-4 py-2 hover:bg-gray-200">
+              Picture Gallery
+            </Link>
+          </li>
+          <li className="w-full text-center">
+            <Link href="/video-gallery" className="block px-4 py-2 hover:bg-gray-200">
+              Video Gallery
+            </Link>
+          </li>
+          <li className="w-full text-center">
+            <Link href="/blog" className="block px-4 py-2 hover:bg-gray-200">
+              Blog
+            </Link>
+          </li>
+        </ul>
+      </li>
 
-            {/* Contact Us */}
-            <li>
-              <Link href="/contact" className="hover:text-gray-300">
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      {/* Contact Us */}
+      <li>
+        <Link href="/contact" className="hover:text-gray-300">
+          Contact Us
+        </Link>
+      </li>
+    </ul>
+  </div>
+</nav>
 
       {/* Main Content */}
       <main className="flex-grow p-4 md:p-6 lg:p-8">{children}</main>

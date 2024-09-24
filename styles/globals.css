@@ -35,3 +35,6 @@ body {
 .swiper-button-prev {
   color: #fff; /* White color for navigation arrows */
 }
+.padbou{padding-bottom: 25px;}
+.rowclimn{flex-direction:column;}
+.rowclimn.top-full{top:20px;}

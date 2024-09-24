@@ -12,7 +12,7 @@ export default function PartnersSection() {
       <div className="container mx-auto py-12">
         {/* Title */}
         <h2 className="text-4xl font-bold text-center mb-8">
-          SOME OF OUR <span className="text-red-600">Esteemed</span> CORPORATE PARTNERS
+          SOME OF OUR <span className="text-red-600">Esteemed</span> PARTNERS
         </h2>
   
         {/* Partners Logos */}
