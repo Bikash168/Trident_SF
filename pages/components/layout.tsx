@@ -141,17 +141,17 @@ export default function Layout({ children }: LayoutProps) {
         <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 rowclimn">
           <li className="w-full text-center">
             <Link href="/volunteers" className="block px-4 py-2 hover:bg-gray-200">
-              Volunteers
+              Volunteers / Internship
             </Link>
           </li>
           <li className="w-full text-center">
             <Link href="/corporates" className="block px-4 py-2 hover:bg-gray-200">
-              Corporates
+              Corporates Partnership
             </Link>
           </li>
           <li className="w-full text-center">
             <Link href="/community-involvement" className="block px-4 py-2 hover:bg-gray-200">
-              Community Involvement
+              Institutional Partnership
             </Link>
           </li>
         </ul>
