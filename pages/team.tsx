@@ -6,25 +6,61 @@ const teamMembers = [
   {
     name: 'John Doe',
     role: 'Founder & Director',
-    image: '/images/john-doe.jpg', // Replace with actual image path
+    image: '/images/Team1.jpg', // Replace with actual image path
     description: 'John is passionate about sustainable development and has over 15 years of experience in the field.',
   },
   {
     name: 'Jane Smith',
     role: 'Project Manager',
-    image: '/images/jane-smith.jpg', // Replace with actual image path
+    image: '/images/Team2.jpg', // Replace with actual image path
     description: 'Jane oversees project implementation and ensures we meet our goals effectively.',
   },
   {
     name: 'Michael Brown',
     role: 'Research Analyst',
-    image: '/images/michael-brown.jpg', // Replace with actual image path
+    image: '/images/Team3.jpg', // Replace with actual image path
     description: 'Michael conducts research on environmental policies and their impact on communities.',
   },
   {
     name: 'Emily Davis',
     role: 'Community Outreach Coordinator',
-    image: '/images/emily-davis.jpg', // Replace with actual image path
+    image: '/images/Team4.jpg', // Replace with actual image path
+    description: 'Emily works closely with communities to empower them through education and resources.',
+  },
+  {
+    name: 'Emily Davis',
+    role: 'Community Outreach Coordinator',
+    image: '/images/Team5.jpg', // Replace with actual image path
+    description: 'Emily works closely with communities to empower them through education and resources.',
+  },
+  {
+    name: 'Emily Davis',
+    role: 'Community Outreach Coordinator',
+    image: '/images/Team6.jpg', // Replace with actual image path
+    description: 'Emily works closely with communities to empower them through education and resources.',
+  },
+  {
+    name: 'Emily Davis',
+    role: 'Community Outreach Coordinator',
+    image: '/images/Team7.jpg', // Replace with actual image path
+    description: 'Emily works closely with communities to empower them through education and resources.',
+  },
+  {
+    name: 'Emily Davis',
+    role: 'Community Outreach Coordinator',
+    image: '/images/Team8.jpg', // Replace with actual image path
+    description: 'Emily works closely with communities to empower them through education and resources.',
+  },
+  {
+    name: 'Emily Davis',
+    role: 'Community Outreach Coordinator',
+    image: '/images/Team9.jpg', // Replace with actual image path
+    description: 'Emily works closely with communities to empower them through education and resources.',
+  },
+  {
+    name: 'Emily Davis',
+    role: 'Community Outreach Coordinator',
+    image: '/images/Team10.jpg', // Replace with actual image path
     description: 'Emily works closely with communities to empower them through education and resources.',
   },
 ];

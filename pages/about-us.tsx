@@ -55,7 +55,7 @@ const AboutUs = () => {
           {/* Founder Image */}
           <div className="flex-shrink-0">
             <img
-              src="/founder.jpg" // Replace with actual image URL
+              src="images/founder.jpg" // Replace with actual image URL
               alt="Founder"
               className="rounded-full w-48 h-48 object-cover" />
           </div>
