@@ -24,12 +24,10 @@ const CorporatePartnership = () => {
 
           {/* Image Section */}
           <div className="flex justify-center mb-8">
-            <Image 
-              src="/mnt/data/image.png" 
-              alt="Sacred Foundation Corporate Partnership" 
+          <img 
+              src="images/image1.jpg" 
+              alt="Sacred Foundation Internship" 
               className="rounded-lg shadow-lg w-full md:w-1/2"
-              width={500}
-              height={500}
             />
           </div>
         </div>
@@ -48,13 +46,11 @@ const CorporatePartnership = () => {
               There are many ways to get involved: from volunteering your time and expertise to raising awareness among your network. Every act of contribution, big or small, makes a difference. Spread the word, engage your community, and take part in our efforts to build a more equitable world.
             </p>
             <div className="rounded-lg shadow-lg">
-              <Image 
-                src="/mnt/data/image.png" 
-                alt="Individual Partnership with Sacred Foundation" 
-                className="rounded-lg"
-                width={500}
-                height={500}
-              />
+            <img 
+              src="images/image1.jpg" 
+              alt="Sacred Foundation Internship" 
+              className="rounded-lg shadow-lg w-full md:w-1/2"
+            />
             </div>
           </div>
         </div>
@@ -76,12 +72,10 @@ const CorporatePartnership = () => {
 
           {/* Image Section */}
           <div className="flex justify-center mb-8">
-            <Image 
-              src="/mnt/data/image.png" 
-              alt="Corporate Partnership with Sacred Foundation" 
+          <img 
+              src="images/image1.jpg" 
+              alt="Sacred Foundation Internship" 
               className="rounded-lg shadow-lg w-full md:w-1/2"
-              width={500}
-              height={500}
             />
           </div>
         </div>

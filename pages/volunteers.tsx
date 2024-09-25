@@ -60,7 +60,7 @@ const InternshipForm = () => {
           {/* Image Section */}
           <div className="flex justify-center">
             <img 
-              src="/mnt/data/image.png" 
+              src="images/image.jpg" 
               alt="Sacred Foundation Internship" 
               className="rounded-lg shadow-lg w-full md:w-1/2"
             />
