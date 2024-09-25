@@ -79,7 +79,7 @@ export default function Layout({ children }: LayoutProps) {
       </header>
 
       {/* Navbar - Make it sticky */}
-      <nav className={`bg-[#CCFFCC] border-gray-200 text-black p-4 sticky top-[104px] z-30 transition-all ${menuOpen ? 'block' : 'hidden'} md:block`}>
+      <nav className={`bg-[#CCFFCC] sticky top-[36px] topmar nopad z-40 border-gray-200 text-black p-4 sticky top-[104px] z-30 transition-all ${menuOpen ? 'block' : 'hidden'} md:block`}>
   <div className="container mx-auto flex justify-start items-center">
     <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:space-x-6">
       
@@ -200,17 +200,17 @@ export default function Layout({ children }: LayoutProps) {
           {/* About Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">About Us</h3>
-            <p>An organization focused on sustainable actions for climate-resilient socio-environmental development implements strategies that promote environmental sustainability, foster social progress, and enhance resilience to the impacts of climate change.</p>
+            <p className='textalin'>An organization focused on sustainable actions for climate-resilient socio-environmental development implements strategies that promote environmental sustainability, foster social progress, and enhance resilience to the impacts of climate change.</p>
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className='padleft'>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
             <ul>
               <li><Link href="/" className="text-black block hover:text-blue-400">Home</Link></li>
               <li><Link href="/about" className="text-black block hover:text-blue-400">About Us</Link></li>
-              <li><Link href="/our-work" className="text-black block hover:text-blue-400">Our Work</Link></li>
-              <li><Link href="/get-involved" className="text-black block hover:text-blue-400">Get Involved</Link></li>
+              <li><Link href="/vision-mission" className="text-black block hover:text-blue-400">Vision/Mission</Link></li>
+              <li><Link href="/team" className="text-black block hover:text-blue-400">Our Team</Link></li>
               <li><Link href="/contact" className="text-black block hover:text-blue-400">Contact</Link></li>
             </ul>
           </div>

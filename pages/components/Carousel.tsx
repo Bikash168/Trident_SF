@@ -14,6 +14,9 @@ const TestCarousel = () => (
     <SwiperSlide>
       <img src="/images/slide2.jpg" alt="Slide 2" />
     </SwiperSlide>
+    <SwiperSlide>
+      <img src="/images/slide3.png" alt="Slide 2" />
+    </SwiperSlide>
   </Swiper>
 );
 

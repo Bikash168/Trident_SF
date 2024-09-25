@@ -9,6 +9,8 @@ const images = [
   '/images/image4.jpg',
   '/images/image5.jpg',
   '/images/image6.jpg',
+  '/images/image7.png',
+  '/images/image8.png',
   // Add more images as needed
 ];
 

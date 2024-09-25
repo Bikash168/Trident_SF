@@ -38,3 +38,7 @@ body {
 .padbou{padding-bottom: 25px;}
 .rowclimn{flex-direction:column;}
 .rowclimn.top-full{top:20px;}
+.topmar{top:168px;}
+.nopad{padding-bottom: 0;}
+.textalin{text-align: justify;}
+.padleft{padding-left: 90px;}

@@ -43,9 +43,9 @@ const AboutUs = () => {
             <div className="lg:w-1/2 relative fade-in">
               <div className="relative w-full h-auto">
                 <img
-                  src="/images/orchard-development.jpg"
+                  src="/images/aboutus.jpg"
                   alt="Orchard Based Livelihood Development"
-                  className="w-full h-48 object-cover" />
+                  className="w-full h-80 object-cover" />
               </div>
             </div>
           </div>
@@ -65,7 +65,8 @@ const AboutUs = () => {
             <p className="text-gray-700 leading-relaxed">
               "At SACRED Foundation, our goal has always been to create a meaningful impact in the lives of those affected by environmental and social challenges. Our journey is rooted in the belief that through resilience, compassion, and innovation, we can empower communities to build a better future. Together, we are striving to create sustainable solutions that not only benefit our generation but future generations to come."
             </p>
-            <p className="mt-4 font-semibold text-lg">- Founder Name</p>
+            <p className="mt-4 font-semibold text-lg">- Dr. Biswabijoyee Panigrahi
+            </p>
           </div>
         </section>
 
