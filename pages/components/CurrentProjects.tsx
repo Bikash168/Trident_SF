@@ -2,19 +2,19 @@ import React from 'react';
 
 const projects = [
   {
-    title: "Shikshalaya",
+    title: "Waste to Wealth",
     imageUrl: "/images/shikshalaya.jpg", // replace with your image path
-    description: "Empowering children through education.",
+    description: "Waste to Wealth is a concept that emphasizes transforming waste materials into valuable resources or products, contributing to both environmental sustainability and economic growth.",
   },
   {
-    title: "Chuppi Todo– Sharam Nahi Samman",
+    title: "Capacity Building of Field Functionaries in Organic Farming",
     imageUrl: "/images/chuppi-todo.jpg", // replace with your image path
-    description: "Breaking the silence, promoting dignity.",
+    description: "Organic farming plays a critical role in achieving sustainable agricultural practices, promoting soil health, conserving water, reducing chemical inputs, and enhancing biodiversity.",
   },
   {
-    title: "Khushiyon Ki Potli",
+    title: "Green Hydrogen",
     imageUrl: "/images/khushiyon-ki-potli.jpg", // replace with your image path
-    description: "Spreading joy through essential supplies.",
+    description: "Green hydrogen is a form of hydrogen produced using renewable energy sources, such as wind, solar, or hydropower, to electrolyze water (H₂O) into hydrogen (H₂) and oxygen (O₂). This process emits no greenhouse gases, making green hydrogen a key solution for reducing carbon emissions in various sectors.",
   },
 ];
 
@@ -42,7 +42,7 @@ const CurrentProjects = () => {
               />
               <div className="p-4">
                 <h3 className="text-xl font-bold text-gray-900">{project.title}</h3>
-                <p className="mt-2 text-gray-600">{project.description}</p>
+                <p className="mt-2 text-gray-600 textalin">{project.description}</p>
               </div>
             </div>
           ))}

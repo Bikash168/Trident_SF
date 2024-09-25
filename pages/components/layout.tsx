@@ -230,8 +230,9 @@ export default function Layout({ children }: LayoutProps) {
           {/* Address */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
-            <p>Plot No. – F2, Chandaka Industrial Estate</p>
-            <p>Chandrasekharpur, Bhubaneswar – 24, Odisha, India - 751024</p>
+            <p className='textalin'>Plot No. – F2, Chandaka Industrial Estate,
+            Chandrasekharpur, Bhubaneswar – 24, Odisha, India - 751024.</p>
+           <br /> 
             <p>Email: info@sacred.foundation</p>
             <p>Phone: +91-9439173220</p>
           </div>

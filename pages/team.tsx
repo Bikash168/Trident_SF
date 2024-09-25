@@ -4,61 +4,62 @@ import Layout from './components/layout';
 
 const teamMembers = [
   {
-    name: 'John Doe',
-    role: 'Founder & Director',
+    name: 'Dr. Biswabijoyee Panigrahi',
+
+    role: 'Founder ',
     image: '/images/Team1.jpg', // Replace with actual image path
     description: 'John is passionate about sustainable development and has over 15 years of experience in the field.',
   },
   {
-    name: 'Jane Smith',
-    role: 'Project Manager',
+    name: 'Mr. Jagatjayee Panigrahi ',
+    role: 'Director',
     image: '/images/Team2.jpg', // Replace with actual image path
     description: 'Jane oversees project implementation and ensures we meet our goals effectively.',
   },
   {
-    name: 'Michael Brown',
-    role: 'Research Analyst',
+    name: 'Dr. Manas Ranjan Senapati',
+    role: 'Project Manager',
     image: '/images/Team3.jpg', // Replace with actual image path
     description: 'Michael conducts research on environmental policies and their impact on communities.',
   },
   {
-    name: 'Emily Davis',
-    role: 'Community Outreach Coordinator',
+    name: 'Mr. Bimal Prasad Mohapatra',
+    role: 'Research Analyst',
     image: '/images/Team4.jpg', // Replace with actual image path
     description: 'Emily works closely with communities to empower them through education and resources.',
   },
   {
-    name: 'Emily Davis',
-    role: 'Community Outreach Coordinator',
-    image: '/images/Team5.jpg', // Replace with actual image path
-    description: 'Emily works closely with communities to empower them through education and resources.',
-  },
-  {
-    name: 'Emily Davis',
+    name: 'Dr. Dipti Mayee Sahoo',
     role: 'Community Outreach Coordinator',
     image: '/images/Team6.jpg', // Replace with actual image path
     description: 'Emily works closely with communities to empower them through education and resources.',
   },
   {
-    name: 'Emily Davis',
+    name: 'Dr. Somanatha Jena',
+    role: 'Community Outreach Coordinator',
+    image: '/images/Team5.jpg', // Replace with actual image path
+    description: 'Emily works closely with communities to empower them through education and resources.',
+  },
+  {
+    name: 'Mr. Deepak Mohapatra',
     role: 'Community Outreach Coordinator',
     image: '/images/Team7.jpg', // Replace with actual image path
     description: 'Emily works closely with communities to empower them through education and resources.',
   },
   {
-    name: 'Emily Davis',
+    name: 'Mr. Satya Sundar Mishra',
     role: 'Community Outreach Coordinator',
     image: '/images/Team8.jpg', // Replace with actual image path
     description: 'Emily works closely with communities to empower them through education and resources.',
   },
   {
-    name: 'Emily Davis',
+    name: 'Mr. Mohammed Nadeem Iqbal',
     role: 'Community Outreach Coordinator',
     image: '/images/Team9.jpg', // Replace with actual image path
     description: 'Emily works closely with communities to empower them through education and resources.',
   },
   {
-    name: 'Emily Davis',
+    name: 'Mr. Bikash Jethy',
     role: 'Community Outreach Coordinator',
     image: '/images/Team10.jpg', // Replace with actual image path
     description: 'Emily works closely with communities to empower them through education and resources.',
