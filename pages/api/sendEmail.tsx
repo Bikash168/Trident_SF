@@ -1,8 +1,14 @@
-import EmailJS from 'emailjs-com';
+import { NextApiRequest, NextApiResponse } from 'next';
+import emailjs from 'emailjs-com';
 
-export default async function handler(req, res) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const { name, email, subject, message } = req.body;
+
+    // Ensure that all fields are provided
+    if (!name || !email || !subject || !message) {
+      return res.status(400).json({ message: 'All fields are required.' });
+    }
 
     const templateParams = {
       name,
@@ -12,14 +18,16 @@ export default async function handler(req, res) {
     };
 
     try {
-      await EmailJS.send(
-        'YOUR_SERVICE_ID', // Replace with your service ID
-        'YOUR_TEMPLATE_ID', // Replace with your template ID
+      await emailjs.send(
+        'service_zqutiaz',  // Replace with your EmailJS service ID
+        'template_iy84kl7',  // Replace with your EmailJS template ID
         templateParams,
-        'YOUR_USER_ID' // Replace with your user ID
+        'YOUR_USER_ID'       // Replace with your EmailJS user ID
       );
+
       return res.status(200).json({ message: 'Email sent successfully!' });
     } catch (error) {
+      console.error('Error sending email:', error);
       return res.status(500).json({ message: 'Error sending email', error });
     }
   } else {
