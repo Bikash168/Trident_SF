@@ -207,8 +207,8 @@ export default function Layout({ children }: LayoutProps) {
           <div className='padleft'>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
             <ul>
-              <li><Link href="/" className="text-black block hover:text-blue-400">Home</Link></li>
-              <li><Link href="/about" className="text-black block hover:text-blue-400">About Us</Link></li>
+              <li><Link href="/index" className="text-black block hover:text-blue-400">Home</Link></li>
+              <li><Link href="/about-us" className="text-black block hover:text-blue-400">About Us</Link></li>
               <li><Link href="/vision-mission" className="text-black block hover:text-blue-400">Vision/Mission</Link></li>
               <li><Link href="/team" className="text-black block hover:text-blue-400">Our Team</Link></li>
               <li><Link href="/contact" className="text-black block hover:text-blue-400">Contact</Link></li>
