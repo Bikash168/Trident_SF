@@ -16,11 +16,11 @@ const AboutUs = () => {
   }, []);
 
   return (
-    
-      <><Head>
-      <title>About Us | SACRED Foundation</title>
-    </Head>
-    <Layout>
+    <>
+      <Head>
+        <title>About Us | SACRED Foundation</title>
+      </Head>
+      <Layout>
         <section className="bg-white py-12 mb-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
             {/* Text Section */}
@@ -63,10 +63,9 @@ const AboutUs = () => {
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-bold mb-4">A Message from Our Founder</h2>
             <p className="text-gray-700 leading-relaxed">
-              "At SACRED Foundation, our goal has always been to create a meaningful impact in the lives of those affected by environmental and social challenges. Our journey is rooted in the belief that through resilience, compassion, and innovation, we can empower communities to build a better future. Together, we are striving to create sustainable solutions that not only benefit our generation but future generations to come."
+              &quot;At SACRED Foundation, our goal has always been to create a meaningful impact in the lives of those affected by environmental and social challenges. Our journey is rooted in the belief that through resilience, compassion, and innovation, we can empower communities to build a better future. Together, we are striving to create sustainable solutions that not only benefit our generation but future generations to come.&quot;
             </p>
-            <p className="mt-4 font-semibold text-lg">- Dr. Biswabijoyee Panigrahi
-            </p>
+            <p className="mt-4 font-semibold text-lg">- Dr. Biswabijoyee Panigrahi</p>
           </div>
         </section>
 
@@ -115,7 +114,8 @@ const AboutUs = () => {
           transform: translateY(0);
         }
       `}</style>
-      </Layout></>
+      </Layout>
+    </>
   );
 };
 
