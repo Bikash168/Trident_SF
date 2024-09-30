@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from './components/layout';
-import Image from 'next/image';
+import Image from 'next/image'; // Import Image from next/image
+import Link from 'next/link'; // Import Link for navigation
 
 const CommunityInvolvement = () => {
   return (
@@ -16,85 +17,40 @@ const CommunityInvolvement = () => {
               Community <span className="text-blue-600">Involvement</span>
             </h1>
             <p className="text-lg text-gray-600 mb-6 text-center">
-              Sacred Foundation is dedicated to building resilient communities by reaching the "last mile." Through partnerships with NGOs, INGOs, institutional donors, and educational institutions, we are creating lasting, sustainable solutions for the most marginalized populations. Our approach focuses on collaboration and innovation to empower communities and drive long-term development.
+              At SACRED Foundation, we believe that community involvement is crucial for sustainable development. Our programs engage local communities, empowering them to take charge of their own growth and development. As part of our initiatives, we actively promote volunteerism and encourage individuals to participate in our various projects. 
             </p>
-          </div>
-        </section>
-
-        {/* Partnership Opportunities Section */}
-        <section className="bg-gray-50 py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center text-blue-600 mb-8">
-              Partnership Opportunities
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-              <p className="text-lg text-gray-600">
-                At Sacred Foundation, we believe in the power of collective action to bring about positive change. By partnering with national and international organizations, donors, and educational institutions, we aim to:
-                <ul className="list-disc pl-5 mt-3">
-                  <li>Empower vulnerable populations with access to education, healthcare, and livelihoods.</li>
-                  <li>Ensure sustainable development that promotes environmental conservation and local capacity building.</li>
-                  <li>Foster inclusive growth that targets marginalized communities to "reach the last mile."</li>
-                  <li>Provide disaster relief and preparedness to build resilient, self-reliant communities.</li>
-                </ul>
-                Join us in making a lasting difference through strategic partnerships designed to uplift and empower those in need.
-              </p>
-              <div className="rounded-lg shadow-lg">
-                <Image
-                  src="/images/community-partnership.jpg"
-                  alt="Community Partnership"
-                  width={600}
-                  height={400}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Impact Section */}
-        <section className="bg-white py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
-              Our Impact
-            </h2>
             <p className="text-lg text-gray-600 mb-6 text-center">
-              Over the years, our partnerships have helped us:
+              We recognize that “together we can achieve more,” and we invite everyone to join hands with us to make a difference in the lives of those in need. By fostering a culture of collaboration, we can create lasting change in our communities.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 p-6 rounded-lg shadow-lg text-center">
-                <h3 className="text-xl font-bold text-blue-600 mb-4">100+ NGOs</h3>
-                <p className="text-gray-600">
-                  We collaborate with over 100 local and international NGOs to extend our reach to communities in need.
-                </p>
-              </div>
-              <div className="bg-blue-50 p-6 rounded-lg shadow-lg text-center">
-                <h3 className="text-xl font-bold text-blue-600 mb-4">10,000+ Beneficiaries</h3>
-                <p className="text-gray-600">
-                  Our efforts have impacted over 10,000 individuals across various regions, providing education, healthcare, and disaster relief.
-                </p>
-              </div>
-              <div className="bg-blue-50 p-6 rounded-lg shadow-lg text-center">
-                <h3 className="text-xl font-bold text-blue-600 mb-4">Global Collaboration</h3>
-                <p className="text-gray-600">
-                  By working with global institutional donors and INGOs, we ensure sustainable development across borders.
-                </p>
-              </div>
+            
+            {/* Image Section */}
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/images/image1.jpg" // Adjust the path according to your project structure
+                alt="Community Involvement Initiative"
+                width={500} // Set appropriate width
+                height={300} // Set appropriate height
+                className="rounded-lg shadow-lg w-full md:w-1/2"
+              />
             </div>
           </div>
         </section>
 
         {/* Call to Action Section */}
-        <section className="bg-blue-600 py-12">
+        <section className="bg-orange-600 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center text-white mb-6">
-              Partner with Sacred Foundation
+              Get Involved!
             </h2>
             <p className="text-lg text-center text-white mb-6">
-              We invite NGOs, INGOs, institutional donors, and educational institutions to join hands with us in creating a sustainable future for marginalized communities. Together, we can reach the last mile and build resilient societies that thrive.
+              We encourage you to join us in our efforts to uplift communities. Whether you want to volunteer, donate, or simply spread the word, every action counts. Let&apos;s come together to create a better future for all!
             </p>
             <div className="flex justify-center">
-              <a href="/contact" className="bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
-                Become a Partner
-              </a>
+              <Link href="/contact"> {/* Use Link for internal navigation */}
+                <a className="bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                  Contact Us
+                </a>
+              </Link>
             </div>
           </div>
         </section>

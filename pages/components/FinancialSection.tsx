@@ -1,12 +1,6 @@
-
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
-
-// No need to call SwiperCore.use again, as you already imported the modules directly
-
-
 
 const FinancialDetails = () => {
   return (
@@ -17,7 +11,7 @@ const FinancialDetails = () => {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Financial Details */}
+          {/* Financial Details Section */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <h2 className="text-xl font-semibold mb-4">Financial Details</h2>
             <div className="text-sm">
@@ -40,21 +34,20 @@ const FinancialDetails = () => {
 
           {/* Testimonials Section */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold mb-4 text-yellow-400">Donor's Testimonial</h2>
+            <h2 className="text-xl font-semibold mb-4 text-yellow-400">Donor&apos;s Testimonial</h2>
 
             {/* Swiper Carousel for Testimonials */}
             <Swiper
               spaceBetween={30}
               pagination={{ clickable: true }}
               navigation={true}
-              className="testimonial-slider"
               modules={[Navigation, Pagination]}
- 
+              className="testimonial-slider"
             >
               <SwiperSlide>
                 <div className="testimonial-slide text-white">
                   <p className="italic mb-4">
-                    "I have spent a lifetime with charities and over the years got polarized from the many organizations that existed as tax shelters or for profiteering."
+                    &quot;I have spent a lifetime with charities and over the years got polarized from the many organizations that existed as tax shelters or for profiteering.&quot;
                   </p>
                   <p className="font-bold">Mr. Ajay Agarwal</p>
                 </div>
@@ -62,7 +55,7 @@ const FinancialDetails = () => {
               <SwiperSlide>
                 <div className="testimonial-slide text-white">
                   <p className="italic mb-4">
-                    "Roughly two years ago, a young lady from Raise India Foundation (RIF), called me out of the cold seeking donations."
+                    &quot;Roughly two years ago, a young lady from Raise India Foundation (RIF), called me out of the cold seeking donations.&quot;
                   </p>
                   <p className="font-bold">Mr. Ajay Agarwal</p>
                 </div>
@@ -70,7 +63,7 @@ const FinancialDetails = () => {
               <SwiperSlide>
                 <div className="testimonial-slide text-white">
                   <p className="italic mb-4">
-                    "After 8 months of her trying, I agreed to help and by sheer luck, I also got to know the organization and their mission."
+                    &quot;After 8 months of her trying, I agreed to help and by sheer luck, I also got to know the organization and their mission.&quot;
                   </p>
                   <p className="font-bold">Mr. Ajay Agarwal</p>
                 </div>

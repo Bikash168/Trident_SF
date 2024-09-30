@@ -1,7 +1,7 @@
-// pages/about-us.js
 import Head from 'next/head';
 import Layout from './components/layout';
 import { useEffect } from 'react';
+import Image from 'next/image'; // Import Image component
 
 const AboutUs = () => {
   useEffect(() => {
@@ -42,10 +42,13 @@ const AboutUs = () => {
             {/* Image Section */}
             <div className="lg:w-1/2 relative fade-in">
               <div className="relative w-full h-auto">
-                <img
+                <Image
                   src="/images/aboutus.jpg"
                   alt="Orchard Based Livelihood Development"
-                  className="w-full h-80 object-cover" />
+                  width={800} // Replace with the actual width
+                  height={320} // Replace with the actual height
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -54,10 +57,13 @@ const AboutUs = () => {
         <section className="bg-gray-100 p-10 rounded-lg max-w-4xl mx-auto shadow-lg flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 mb-10 fade-in">
           {/* Founder Image */}
           <div className="flex-shrink-0">
-            <img
-              src="images/founder.jpg" // Replace with actual image URL
+            <Image
+              src="/images/founder.jpg" // Replace with actual image URL
               alt="Founder"
-              className="rounded-full w-48 h-48 object-cover" />
+              width={192} // Set appropriate width
+              height={192} // Set appropriate height
+              className="rounded-full object-cover"
+            />
           </div>
           {/* Message Content */}
           <div className="text-center md:text-left">
