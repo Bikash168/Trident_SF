@@ -9,14 +9,15 @@ import PartnersSection from './components/PartnersSection';
 import FinancialSection from './components/FinancialSection';
 import CurrentProjects from './components/CurrentProjects';
 import UpcomingEvents from './components/UpcomingEvents';
+import Link from 'next/link'; // Import Link from next/link
 
 export default function Home() {
   return (
-    <><>
+    <>
       <Head>
         <title>Home | SACRED FOUNDATION</title>
       </Head>
-    </><Layout>
+      <Layout>
         <div>
           <section className="hero-section bg-gray-50 py-12">
             <div className="container mx-auto">
@@ -59,9 +60,11 @@ export default function Home() {
 
                 {/* Read More Button */}
                 <div className="mt-6">
-                  <a href="/about-us" className="inline-block bg-green-500 hover:bg-blue-400 text-white font-bold py-3 px-6 rounded-full">
-                    READ MORE
-                  </a>
+                  <Link href="/about-us"> {/* Use Link instead of <a> */}
+                    <span className="inline-block bg-green-500 hover:bg-blue-400 text-white font-bold py-3 px-6 rounded-full">
+                      READ MORE
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -126,12 +129,9 @@ export default function Home() {
                 </div>
               </div>
 
-              <a
-                href="#"
-                className="mt-8 inline-block px-6 py-3 text-lg bg-green-500 text-white rounded-full hover:bg-blue-400 transition duration-300"
-              >
+              <Link href="#" className="mt-8 inline-block px-6 py-3 text-lg bg-green-500 text-white rounded-full hover:bg-blue-400 transition duration-300">
                 Know More
-              </a>
+              </Link>
             </div>
           </section>
           <CurrentProjects />
@@ -139,6 +139,7 @@ export default function Home() {
           <PartnersSection />
           <FinancialSection />
         </div>
-      </Layout></>
+      </Layout>
+    </>
   );
 }
