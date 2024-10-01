@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../pages/components/layout';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
 import Head from 'next/head';
 import Map from '../pages/components/map';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Contact = () => {
   const [showContent, setShowContent] = useState(false);
@@ -70,6 +71,16 @@ const Contact = () => {
         <title>Contact Us | SACRED Foundation</title>
       </Head>
       <Layout>
+        {/* Introduction Section */}
+        <section className="py-16 bg-gray-50 text-gray-800">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl font-bold text-pink-900 mb-4">We're Here to Help!</h2>
+            <p className="mb-8">
+              If you have any questions, concerns, or suggestions, feel free to reach out to us using the form below or through any of the contact details provided.
+            </p>
+          </div>
+        </section>
+
         {/* Contact Information Section */}
         <section className="py-16 bg-white text-gray-800">
           <div className="container mx-auto">
@@ -165,6 +176,52 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
+            </div>
+          </div>
+        </section>
+
+        {/* Social Media Section */}
+        <section className="py-16 bg-white text-gray-800">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl font-bold text-pink-900 mb-4">Connect with Us</h2>
+            <p className="mb-6">Follow us on our social media platforms for updates and news.</p>
+            <div className="flex justify-center space-x-6">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <FaFacebook className="text-3xl text-blue-600 hover:text-blue-500" />
+              </a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <FaXTwitter className="text-3xl text-blue-400 hover:text-blue-300" />
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="text-3xl text-blue-700 hover:text-blue-600" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-3xl text-pink-600 hover:text-pink-500" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <FaYoutube className="text-3xl text-pink-600 hover:text-pink-500" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQs Section */}
+        <section className="py-16 bg-gray-100 text-gray-800">
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-bold text-pink-900 mb-8 text-center">Frequently Asked Questions</h2>
+            <div className="space-y-4">
+              <div className="bg-white p-4 rounded-lg shadow-lg">
+                <h3 className="font-semibold text-pink-900">What kind of projects do you work on?</h3>
+                <p>We focus on sustainable development initiatives that empower communities and promote environmental resilience.</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg">
+                <h3 className="font-semibold text-pink-900">How can I get involved?</h3>
+                <p>You can volunteer with us, participate in our events, or support our initiatives through donations.</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg">
+                <h3 className="font-semibold text-pink-900">Where can I learn more about your programs?</h3>
+                <p>Visit our website or contact us for detailed information about our ongoing and upcoming programs.</p>
+              </div>
             </div>
           </div>
         </section>
