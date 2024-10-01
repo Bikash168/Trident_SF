@@ -8,6 +8,7 @@ import AwardsSection from './components/AwardsSection';
 import PartnersSection from './components/PartnersSection';
 import FinancialSection from './components/FinancialSection';
 import CurrentProjects from './components/CurrentProjects';
+import UpcomingEvents from './components/UpcomingEvents';
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
               <Carousel />
             </div>
           </section>
-
+          <UpcomingEvents />
           <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
 
@@ -58,7 +59,7 @@ export default function Home() {
 
                 {/* Read More Button */}
                 <div className="mt-6">
-                  <a href="/about" className="inline-block bg-green-500 hover:bg-blue-400 text-white font-bold py-3 px-6 rounded-full">
+                  <a href="/about-us" className="inline-block bg-green-500 hover:bg-blue-400 text-white font-bold py-3 px-6 rounded-full">
                     READ MORE
                   </a>
                 </div>

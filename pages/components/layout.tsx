@@ -13,7 +13,7 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Top Bar Section - Make it sticky */}
+      {/* Top Bar Section */}
       <div className="bg-[#CCFFCC] text-black text-xs md:text-sm py-2 sticky top-0 z-50">
         <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
           {/* Left: Contact Information */}
@@ -52,19 +52,16 @@ export default function Layout({ children }: LayoutProps) {
         </div>
       </div>
 
-      {/* Header with Logo - Make it sticky */}
-      <header className="sticky top-[36px] z-40 bg-[#CCFFCC] p-4 md:p-6 flex flex-wrap items-center justify-between">
+      {/* Header with Logo */}
+      <header className="sticky top-[36px] z-40 bg-white p-4 md:p-6 flex flex-wrap items-center justify-between borderline">
         {/* Logo and Title */}
-        <Link href="/" className="flex items-center w-full md:w-auto">
-          <img src="/Logo.png" alt="Logo" className="w-12 md:w-16 lg:w-20" />
+        <Link href="/" className="w-full md:w-auto">
+          <img src="/Logo.jpg" alt="Logo" className="h-16 logosi" /> {/* Adjust height as needed */}
           <div className="ml-4">
-            <h1 className="text-lg md:text-xl lg:text-3xl tracking-wide font-bold text-[#316b9e]">
-              SACRED FOUNDATION
-            </h1>
-            <p className="text-xs md:text-base font-semibold text-[#316b9e]">
-              Sustainable Action for Climate Resilient Envirosocial Development Foundation
+            <p className="text-sm md:text-base font-semibold text-gray-500">
+            SUSTAINABLE ACTION FOR CLIMATE RESILIENT ENVIROSOCIAL DEVELOPMENT FOUNDATION
             </p>
-            <p className="text-xs md:text-base italic text-black-900">
+            <p className="text-xs md:text-base italic text-black">
               … building resilience, inspiring change
             </p>
           </div>
@@ -76,123 +73,77 @@ export default function Layout({ children }: LayoutProps) {
             {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
+
+        {/* Navbar */}
+      <nav className={`bg-white sticky top-[104px] z-30 transition-all ${menuOpen ? 'block' : 'hidden'} md:block padtop`} >
+        <div className="container mx-auto flex justify-end items-center ulli">
+          <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:space-x-6">
+            {/** Navbar Items with Dropdowns */}
+            {[
+              {
+                title: 'Who We Are',
+                links: [
+                  { href: '/about-us', label: 'About Us' },
+                  { href: '/vision-mission', label: 'Vision/Mission' },
+                  { href: '/team', label: 'Our Team' },
+                ],
+              },
+              {
+                title: 'What We Do',
+                links: [
+                  { href: '/advocacy', label: 'Advocacy' },
+                  { href: '/consultancy', label: 'Consultancy' },
+                  { href: '/community-development', label: 'Community Development' },
+                ],
+              },
+              {
+                title: 'Get Involved',
+                links: [
+                  { href: '/volunteers', label: 'Volunteers / Internship' },
+                  { href: '/corporates', label: 'Corporates Partnership' },
+                  { href: '/community-involvement', label: 'Institutional Partnership' },
+                ],
+              },
+              {
+                title: 'Media',
+                links: [
+                  { href: '/picture-gallery', label: 'Picture Gallery' },
+                  { href: '/video-gallery', label: 'Video Gallery' },
+                  { href: '/blog', label: 'Blog' },
+                ],
+              },
+            ].map((item) => (
+              <li className="relative group" key={item.title}>
+                <button className="flex items-center hover:text-gray-300">
+                  {item.title} <FaAngleDown className="ml-1" />
+                </button>
+                <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-col bg-[#CCFFCC] text-black shadow-lg z-10">
+                  {item.links.map(link => (
+                    <li className="w-full text-center" key={link.label}>
+                      <Link href={link.href} className="block px-4 py-2 hover:bg-gray-200">
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+
+            {/* Contact Us */}
+            <li>
+              <Link href="/contact" className="hover:text-gray-300">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
       </header>
 
-      {/* Navbar - Make it sticky */}
-      <nav className={`bg-[#CCFFCC] sticky top-[36px] topmar nopad z-40 border-gray-200 text-black p-4 sticky top-[104px] z-30 transition-all ${menuOpen ? 'block' : 'hidden'} md:block`}>
-  <div className="container mx-auto flex justify-start items-center">
-    <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:space-x-6">
       
-      {/* Dropdown: Who We Are */}
-      <li className="relative group">
-        <button className="flex items-center hover:text-gray-300 padbou">
-          Who We Are <FaAngleDown className="ml-1" />
-        </button>
-        <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 rowclimn ">
-          <li className="w-full text-center">
-            <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-200">
-              About Us
-            </Link>
-          </li>
-          <li className="w-full text-center">
-            <Link href="/vision-mission" className="block px-4 py-2 hover:bg-gray-200">
-              Vision/Mission
-            </Link>
-          </li>
-          <li className="w-full text-center">
-            <Link href="/team" className="block px-4 py-2 hover:bg-gray-200">
-              Our Team
-            </Link>
-          </li>
-        </ul>
-      </li>
-
-      {/* Repeat for other dropdowns */}
-
-      {/* Dropdown: What We Do */}
-      <li className="relative group">
-        <button className="flex items-center hover:text-gray-300 padbou">
-          What We Do <FaAngleDown className="ml-1" />
-        </button>
-        <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 rowclimn">
-          <li className="w-full text-center">
-            <Link href="/advocacy" className="block px-4 py-2 hover:bg-gray-200">
-              Advocacy
-            </Link>
-          </li>
-          <li className="w-full text-center">
-            <Link href="/consultancy" className="block px-4 py-2 hover:bg-gray-200">
-              Consultancy
-            </Link>
-          </li>
-          <li className="w-full text-center">
-            <Link href="/community-development" className="block px-4 py-2 hover:bg-gray-200">
-              Community Development
-            </Link>
-          </li>
-        </ul>
-      </li>
-
-      {/* Dropdown: Get Involved */}
-      <li className="relative group">
-        <button className="flex items-center hover:text-gray-300 padbou">
-          Get Involved <FaAngleDown className="ml-1" />
-        </button>
-        <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 rowclimn">
-          <li className="w-full text-center">
-            <Link href="/volunteers" className="block px-4 py-2 hover:bg-gray-200">
-              Volunteers / Internship
-            </Link>
-          </li>
-          <li className="w-full text-center">
-            <Link href="/corporates" className="block px-4 py-2 hover:bg-gray-200">
-              Corporates Partnership
-            </Link>
-          </li>
-          <li className="w-full text-center">
-            <Link href="/community-involvement" className="block px-4 py-2 hover:bg-gray-200">
-              Institutional Partnership
-            </Link>
-          </li>
-        </ul>
-      </li>
-
-      {/* Dropdown: Media */}
-      <li className="relative group">
-        <button className="flex items-center hover:text-gray-300 padbou">
-          Media <FaAngleDown className="ml-1" />
-        </button>
-        <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-row bg-[#CCFFCC] text-black shadow-lg z-10 rowclimn">
-          <li className="w-full text-center">
-            <Link href="/picture-gallery" className="block px-4 py-2 hover:bg-gray-200">
-              Picture Gallery
-            </Link>
-          </li>
-          <li className="w-full text-center">
-            <Link href="/video-gallery" className="block px-4 py-2 hover:bg-gray-200">
-              Video Gallery
-            </Link>
-          </li>
-          <li className="w-full text-center">
-            <Link href="/blog" className="block px-4 py-2 hover:bg-gray-200">
-              Blog
-            </Link>
-          </li>
-        </ul>
-      </li>
-
-      {/* Contact Us */}
-      <li>
-        <Link href="/contact" className="hover:text-gray-300">
-          Contact Us
-        </Link>
-      </li>
-    </ul>
-  </div>
-</nav>
 
       {/* Main Content */}
-      <main className="flex-grow p-4 md:p-6 lg:p-8">{children}</main>
+      <main className="flex-grow ">{children}</main>
 
       {/* Footer */}
       <footer className="bg-[#CCFFCC] text-black p-8">

@@ -42,7 +42,7 @@ const FinancialDetails = () => {
               pagination={{ clickable: true }}
               navigation={true}
               modules={[Navigation, Pagination]}
-              className="testimonial-slider"
+              className="testimonial-slider swiperpad"
             >
               <SwiperSlide>
                 <div className="testimonial-slide text-white">

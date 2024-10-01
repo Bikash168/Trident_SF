@@ -42,3 +42,8 @@ body {
 .nopad{padding-bottom: 0;}
 .textalin{text-align: justify;}
 .padleft{padding-left: 90px;}
+.logosi{height:6rem;}
+.padtop{padding-top: 80px;}
+.ulli li{border: 1px solid #ccc;padding: 5px 15px;border-radius: 5px;margin-left: 5px !important;}
+.swiperpad{padding-bottom: 100px;}
+.borderline{border-bottom: 1px solid #ccc;}
