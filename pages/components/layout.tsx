@@ -87,7 +87,7 @@ export default function Layout({ children }: LayoutProps) {
           {/* Logo Section */}
           <Link href="/" className="flex items-center w-full md:w-auto">
             <div className="space-x-3">
-              <img src="/logo.jpg" alt="SACRED Logo" className="h-12 logosi" />
+              <img src="/Logo.png" alt="SACRED Logo" className="h-12 logosi" />
               <div>
                
                 <p className="text-sm text-gray-600">
