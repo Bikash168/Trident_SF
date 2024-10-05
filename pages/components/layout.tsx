@@ -89,7 +89,7 @@ export default function Layout({ children }: LayoutProps) {
             <div className="space-x-3">
               <img src="/Logo.png" alt="SACRED Logo" className="h-12 logosi" />
               <div>
-               
+
                 <p className="text-sm text-gray-600">
                   Sustainable Action for Climate Resilient Enviro-social Development Foundation
                 </p>
@@ -118,7 +118,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
             <div className="group relative">
               <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
-                What We Do <FaAngleDown className='mart'  />
+                What We Do <FaAngleDown className='mart' />
               </button>
               <div className="absolute hidden group-hover:block bg-white shadow-md popmenu">
                 <Link href="/advocacy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
@@ -268,9 +268,9 @@ export default function Layout({ children }: LayoutProps) {
           </nav>
         )}
       </header>
-     
+
       <main className="flex-grow rela">{children}</main>
-  
+
       {/* Footer */}
       <footer className="bg-[#CCFFCC] text-black p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -308,8 +308,8 @@ export default function Layout({ children }: LayoutProps) {
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
             <p className='textalin'>Plot No. – F2, Chandaka Industrial Estate,
-            Chandrasekharpur, Bhubaneswar – 24, Odisha, India - 751024.</p>
-           <br /> 
+              Chandrasekharpur, Bhubaneswar – 24, Odisha, India - 751024.</p>
+            <br />
             <p>Email: info@sacred.foundation</p>
             <p>Phone: +91-9439173220</p>
           </div>
