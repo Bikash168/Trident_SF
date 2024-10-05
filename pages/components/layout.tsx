@@ -104,7 +104,7 @@ export default function Layout({ children }: LayoutProps) {
               <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
                 Who We Are <FaAngleDown className='mart' />
               </button>
-              <div className="absolute hidden group-hover:block bg-white shadow-md popmenu">
+              <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md popmenu">
                 <Link href="/about-us" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
                   About Us
                 </Link>
@@ -120,7 +120,7 @@ export default function Layout({ children }: LayoutProps) {
               <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
                 What We Do <FaAngleDown className='mart' />
               </button>
-              <div className="absolute hidden group-hover:block bg-white shadow-md popmenu">
+              <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md popmenu">
                 <Link href="/advocacy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
                   Advocacy
                 </Link>
@@ -136,7 +136,7 @@ export default function Layout({ children }: LayoutProps) {
               <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
                 Get Involved <FaAngleDown className='mart' />
               </button>
-              <div className="absolute hidden group-hover:block bg-white shadow-md popmenu">
+              <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md popmenu">
                 <Link href="/volunteers" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
                   Volunteers / Internship
                 </Link>
@@ -152,7 +152,7 @@ export default function Layout({ children }: LayoutProps) {
               <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
                 Media <FaAngleDown className='mart' />
               </button>
-              <div className="absolute hidden group-hover:block bg-white shadow-md popmenu">
+              <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md popmenu">
                 <Link href="/picture-gallery" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
                   Picture Gallery
                 </Link>
