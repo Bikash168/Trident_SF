@@ -1,8 +1,20 @@
 import Head from 'next/head';
 import Layout from './components/layout';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const Advocacy = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true); // Set to true after the component mounts (on the client side)
+  }, []);
+
+  if (!mounted) {
+    // Return null on the first render (SSR) to prevent mismatch between SSR and client-side render
+    return null;
+  }
+
   return (
     <>
       <Head>
@@ -54,10 +66,8 @@ const Advocacy = () => {
               Want to make a difference? Join our advocacy efforts by volunteering, participating in campaigns, or donating to support our initiatives. Together, we can drive change!
             </p>
             <div className="text-center">
-              <Link href="/contact">
-                <a className="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition transform hover:scale-105">
-                  Contact Us
-                </a>
+              <Link href="/contact" className="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition transform hover:scale-105">
+                Contact Us
               </Link>
             </div>
           </div>

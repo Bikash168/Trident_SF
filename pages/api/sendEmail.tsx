@@ -1,11 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const { name, email, subject, message } = req.body;
 
-    // Ensure that all fields are provided
+    // Ensure all fields are provided
     if (!name || !email || !subject || !message) {
       return res.status(400).json({ message: 'All fields are required.' });
     }
@@ -19,10 +19,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     try {
       await emailjs.send(
-        'service_zqutiaz',  // Replace with your EmailJS service ID
-        'template_iy84kl7',  // Replace with your EmailJS template ID
+        process.env.EMAILJS_SERVICE_ID!,  // Non-null assertion
+        process.env.EMAILJS_TEMPLATE_ID!, // Non-null assertion
         templateParams,
-        'YOUR_USER_ID'       // Replace with your EmailJS user ID
+        process.env.EMAILJS_USER_ID!      // Non-null assertion
       );
 
       return res.status(200).json({ message: 'Email sent successfully!' });

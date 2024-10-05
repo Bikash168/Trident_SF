@@ -1,13 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../pages/components/layout';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
 import Head from 'next/head';
 import Map from '../pages/components/map';
 import { FaXTwitter } from 'react-icons/fa6';
 
-const Contact = () => {
+// Define an interface for the form data
+interface FormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
+const Contact: React.FC = () => {
   const [showContent, setShowContent] = useState(false);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     subject: '',
@@ -29,6 +37,23 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const sendEmail = async (data: FormData) => { // Specify the type for data
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+    if (response.ok) {
+      alert(result.message);
+    } else {
+      alert(result.message);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -38,31 +63,10 @@ const Contact = () => {
       return;
     }
 
-    try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+    await sendEmail(formData); // Call the sendEmail function with form data
 
-      if (!response.ok) {
-        throw new Error('Failed to send email');
-      }
-
-      alert('Email sent successfully!');
-      setFormData({ name: '', email: '', subject: '', message: '' }); // Reset form
-    } catch (error: unknown) {
-      console.error('Error sending email:', error);
-      let errorMessage: string = 'An unknown error occurred.';
-
-      if (error instanceof Error) {
-        errorMessage = error.message; // Access error message directly
-      }
-
-      alert('Error sending email: ' + errorMessage);
-    }
+    // Reset the form after sending
+    setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
   return (
@@ -74,7 +78,7 @@ const Contact = () => {
         {/* Introduction Section */}
         <section className="py-16 bg-gray-50 text-gray-800">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold text-pink-900 mb-4">We're Here to Help!</h2>
+            <h2 className="text-3xl font-bold text-pink-900 mb-4">We are Here to Help!</h2>
             <p className="mb-8">
               If you have any questions, concerns, or suggestions, feel free to reach out to us using the form below or through any of the contact details provided.
             </p>
@@ -189,39 +193,15 @@ const Contact = () => {
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="text-3xl text-blue-600 hover:text-blue-500" />
               </a>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                <FaXTwitter className="text-3xl text-blue-400 hover:text-blue-300" />
-              </a>
               <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-3xl text-blue-700 hover:text-blue-600" />
               </a>
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-3xl text-pink-600 hover:text-pink-500" />
+                <FaInstagram className="text-3xl text-pink-500 hover:text-pink-400" />
               </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <FaYoutube className="text-3xl text-pink-600 hover:text-pink-500" />
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <FaYoutube className="text-3xl text-red-600 hover:text-red-500" />
               </a>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQs Section */}
-        <section className="py-16 bg-gray-100 text-gray-800">
-          <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-pink-900 mb-8 text-center">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              <div className="bg-white p-4 rounded-lg shadow-lg">
-                <h3 className="font-semibold text-pink-900">What kind of projects do you work on?</h3>
-                <p>We focus on sustainable development initiatives that empower communities and promote environmental resilience.</p>
-              </div>
-              <div className="bg-white p-4 rounded-lg shadow-lg">
-                <h3 className="font-semibold text-pink-900">How can I get involved?</h3>
-                <p>You can volunteer with us, participate in our events, or support our initiatives through donations.</p>
-              </div>
-              <div className="bg-white p-4 rounded-lg shadow-lg">
-                <h3 className="font-semibold text-pink-900">Where can I learn more about your programs?</h3>
-                <p>Visit our website or contact us for detailed information about our ongoing and upcoming programs.</p>
-              </div>
             </div>
           </div>
         </section>

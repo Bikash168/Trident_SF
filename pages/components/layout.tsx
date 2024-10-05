@@ -1,150 +1,276 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { ReactNode } from 'react';
-import { FaAngleDown, FaBars, FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaTimes, FaYoutube } from 'react-icons/fa';
+import {
+  FaAngleDown,
+  FaBars,
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaTimes,
+  FaYoutube,
+} from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 interface LayoutProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState<{
+    whoWeAre: boolean;
+    whatWeDo: boolean;
+    getInvolved: boolean;
+    media: boolean;
+  }>({
+    whoWeAre: false,
+    whatWeDo: false,
+    getInvolved: false,
+    media: false,
+  });
+
+  // Change section type to a union of the object keys
+  const toggleDropdown = (section: 'whoWeAre' | 'whatWeDo' | 'getInvolved' | 'media') => {
+    setDropdownOpen((prev) => ({
+      ...prev,
+      [section]: !prev[section],
+    }));
+  };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Top Bar Section */}
-      <div className="bg-[#CCFFCC] text-black text-xs md:text-sm py-2 sticky top-0 z-50">
-        <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
-          {/* Left: Contact Information */}
-          <div className="flex items-center space-x-2 md:space-x-4">
-            <span className="flex items-center space-x-1">
-              <FaMapMarkerAlt />
-              <span>Bhubaneswar, India</span>
-            </span>
-            <span className="flex items-center space-x-1">
-              <FaPhoneAlt />
-              <span>+91-9439173220</span>
-            </span>
-            <span className="flex items-center space-x-1">
-              <FaEnvelope />
-              <span>info@sacred.foundation</span>
-            </span>
-          </div>
-          {/* Right: Social Media Links */}
-          <div className="flex items-center space-x-2 md:space-x-4 mt-2 md:mt-0">
-            <a href="https://www.facebook.com/people/Sacred-Foundation/61565399609076/" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-blue-400" />
-            </a>
-            <a href="https://x.com/sacred71444" target="_blank" rel="noopener noreferrer">
-              <FaXTwitter />
-            </a>
-            <a href="https://www.instagram.com/sacred.foundation/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-pink-400" />
-            </a>
-            <a href="https://www.linkedin.com/company/sacred-foundation/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-blue-400" />
-            </a>
-            <a href="https://www.youtube.com/channel/UCQqRznDd-fld_dI3QR4yLxQ" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="text-red-400" />
-            </a>
+    <div className="flex flex-col min-h-screen">
+      <header className="bg-white sticky top-[0px] z-40">
+        {/* Top Bar Section */}
+        <div className="bg-[#CCFFCC] text-black text-xs md:text-sm py-2 sticky top-0 z-50">
+          <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
+            {/* Left: Contact Information */}
+            <div className="flex items-center space-x-2 md:space-x-4">
+              <span className="flex items-center space-x-1">
+                <FaMapMarkerAlt />
+                <span>Bhubaneswar, India</span>
+              </span>
+              <span className="flex items-center space-x-1">
+                <FaPhoneAlt />
+                <span>+91-9439173220</span>
+              </span>
+              <span className="flex items-center space-x-1">
+                <FaEnvelope />
+                <span>info@sacred.foundation</span>
+              </span>
+            </div>
+            {/* Right: Social Media Links */}
+            <div className="flex items-center space-x-2 md:space-x-4 mt-2 md:mt-0">
+              <a href="https://www.facebook.com/people/Sacred-Foundation/61565399609076/" target="_blank" rel="noopener noreferrer">
+                <FaFacebook className="text-blue-400" />
+              </a>
+              <a href="https://x.com/sacred71444" target="_blank" rel="noopener noreferrer">
+                <FaXTwitter />
+              </a>
+              <a href="https://www.instagram.com/sacred.foundation/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-pink-400" />
+              </a>
+              <a href="https://www.linkedin.com/company/sacred-foundation/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="text-blue-400" />
+              </a>
+              <a href="https://www.youtube.com/channel/UCQqRznDd-fld_dI3QR4yLxQ" target="_blank" rel="noopener noreferrer">
+                <FaYoutube className="text-red-400" />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Header with Logo */}
-      <header className="sticky top-[36px] z-40 bg-white p-4 md:p-6 flex flex-wrap items-center justify-between borderline">
-        {/* Logo and Title */}
-        <Link href="/" className="w-full md:w-auto">
-          <img src="/Logo.jpg" alt="Logo" className="h-16 logosi" /> {/* Adjust height as needed */}
-          <div className="ml-4">
-            <p className="text-sm md:text-base font-semibold text-gray-500">
-            SUSTAINABLE ACTION FOR CLIMATE RESILIENT ENVIROSOCIAL DEVELOPMENT FOUNDATION
-            </p>
-            <p className="text-xs md:text-base italic text-black">
-              … building resilience, inspiring change
-            </p>
+        {/* Logo and Nav Menu */}
+        <div className="flex flex-wrap justify-between items-center px-4 paboth">
+          {/* Logo Section */}
+          <Link href="/" className="flex items-center w-full md:w-auto">
+            <div className="space-x-3">
+              <img src="/logo.jpg" alt="SACRED Logo" className="h-12 logosi" />
+              <div>
+               
+                <p className="text-sm text-gray-600">
+                  Sustainable Action for Climate Resilient Enviro-social Development Foundation
+                </p>
+                <p className="text-xs text-gray-500 italic">...building resilience, inspiring change</p>
+              </div>
+            </div>
+          </Link>
+
+          {/* Navigation Links */}
+          <nav className="hidden md:flex space-x-0.5 border-gray-200 sticky top-[150px]">
+            <div className="group relative">
+              <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
+                Who We Are <FaAngleDown className='mart' />
+              </button>
+              <div className="absolute hidden group-hover:block bg-white shadow-md popmenu">
+                <Link href="/about-us" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  About Us
+                </Link>
+                <Link href="/vision-mission" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Vision/Mission
+                </Link>
+                <Link href="/team" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Our Team
+                </Link>
+              </div>
+            </div>
+            <div className="group relative">
+              <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
+                What We Do <FaAngleDown className='mart'  />
+              </button>
+              <div className="absolute hidden group-hover:block bg-white shadow-md popmenu">
+                <Link href="/advocacy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Advocacy
+                </Link>
+                <Link href="/consultancy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Consultancy
+                </Link>
+                <Link href="/community-development" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Community Development
+                </Link>
+              </div>
+            </div>
+            <div className="group relative">
+              <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
+                Get Involved <FaAngleDown className='mart' />
+              </button>
+              <div className="absolute hidden group-hover:block bg-white shadow-md popmenu">
+                <Link href="/volunteers" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Volunteers / Internship
+                </Link>
+                <Link href="/corporates" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Corporates
+                </Link>
+                <Link href="/community-involvement" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Community Involvement
+                </Link>
+              </div>
+            </div>
+            <div className="group relative">
+              <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
+                Media <FaAngleDown className='mart' />
+              </button>
+              <div className="absolute hidden group-hover:block bg-white shadow-md popmenu">
+                <Link href="/picture-gallery" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Picture Gallery
+                </Link>
+                <Link href="/video-gallery" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Video Gallery
+                </Link>
+                <Link href="/blog" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
+                  Blog
+                </Link>
+              </div>
+            </div>
+            <Link href="/contact" className="px-6 py-2 text-gray-700 hover:bg-gray-100 flex leftmarcon">
+              Contact Us
+            </Link>
+          </nav>
+
+          {/* Hamburger Menu */}
+          <div className="md:hidden">
+            <button className="text-gray-700" onClick={() => setMenuOpen(!menuOpen)}>
+              {menuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
+            </button>
           </div>
-        </Link>
-
-        {/* Hamburger Menu Button */}
-        <div className="md:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
-            {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-          </button>
         </div>
 
-        {/* Navbar */}
-      <nav className={`bg-white sticky top-[104px] z-30 transition-all ${menuOpen ? 'block' : 'hidden'} md:block padtop`} >
-        <div className="container mx-auto flex justify-end items-center ulli">
-          <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:space-x-6">
-            {/** Navbar Items with Dropdowns */}
-            {[
-              {
-                title: 'Who We Are',
-                links: [
-                  { href: '/about-us', label: 'About Us' },
-                  { href: '/vision-mission', label: 'Vision/Mission' },
-                  { href: '/team', label: 'Our Team' },
-                ],
-              },
-              {
-                title: 'What We Do',
-                links: [
-                  { href: '/advocacy', label: 'Advocacy' },
-                  { href: '/consultancy', label: 'Consultancy' },
-                  { href: '/community-development', label: 'Community Development' },
-                ],
-              },
-              {
-                title: 'Get Involved',
-                links: [
-                  { href: '/volunteers', label: 'Volunteers / Internship' },
-                  { href: '/corporates', label: 'Corporates Partnership' },
-                  { href: '/community-involvement', label: 'Institutional Partnership' },
-                ],
-              },
-              {
-                title: 'Media',
-                links: [
-                  { href: '/picture-gallery', label: 'Picture Gallery' },
-                  { href: '/video-gallery', label: 'Video Gallery' },
-                  { href: '/blog', label: 'Blog' },
-                ],
-              },
-            ].map((item) => (
-              <li className="relative group" key={item.title}>
-                <button className="flex items-center hover:text-gray-300">
-                  {item.title} <FaAngleDown className="ml-1" />
-                </button>
-                <ul className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-col bg-[#CCFFCC] text-black shadow-lg z-10">
-                  {item.links.map(link => (
-                    <li className="w-full text-center" key={link.label}>
-                      <Link href={link.href} className="block px-4 py-2 hover:bg-gray-200">
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <nav className="flex flex-col md:hidden px-4 py-4 bg-white">
+            <div className="flex flex-col">
+              <button
+                onClick={() => toggleDropdown('whoWeAre')}
+                className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full"
+              >
+                Who We Are <FaAngleDown />
+              </button>
+              {dropdownOpen.whoWeAre && (
+                <div className="pl-4 flex flex-col">
+                  <Link href="/about-us" className="py-2 text-gray-600 hover:bg-gray-100">
+                    About Us
+                  </Link>
+                  <Link href="/vision-mission" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Vision/Mission
+                  </Link>
+                  <Link href="/team" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Our Team
+                  </Link>
+                </div>
+              )}
 
-            {/* Contact Us */}
-            <li>
-              <Link href="/contact" className="hover:text-gray-300">
+              <button
+                onClick={() => toggleDropdown('whatWeDo')}
+                className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full"
+              >
+                What We Do <FaAngleDown />
+              </button>
+              {dropdownOpen.whatWeDo && (
+                <div className="pl-4 flex flex-col">
+                  <Link href="/advocacy" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Advocacy
+                  </Link>
+                  <Link href="/consultancy" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Consultancy
+                  </Link>
+                  <Link href="/community-development" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Community Development
+                  </Link>
+                </div>
+              )}
+
+              <button
+                onClick={() => toggleDropdown('getInvolved')}
+                className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full"
+              >
+                Get Involved <FaAngleDown />
+              </button>
+              {dropdownOpen.getInvolved && (
+                <div className="pl-4 flex flex-col">
+                  <Link href="/volunteers" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Volunteers / Internship
+                  </Link>
+                  <Link href="/corporates" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Corporates
+                  </Link>
+                  <Link href="/community-involvement" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Community Involvement
+                  </Link>
+                </div>
+              )}
+
+              <button
+                onClick={() => toggleDropdown('media')}
+                className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full"
+              >
+                Media <FaAngleDown />
+              </button>
+              {dropdownOpen.media && (
+                <div className="pl-4 flex flex-col">
+                  <Link href="/picture-gallery" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Picture Gallery
+                  </Link>
+                  <Link href="/video-gallery" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Video Gallery
+                  </Link>
+                  <Link href="/blog" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Blog
+                  </Link>
+                </div>
+              )}
+
+              <Link href="/contact" className="py-2 text-gray-600 hover:bg-gray-100">
                 Contact Us
               </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            </div>
+          </nav>
+        )}
       </header>
-
-      
-
-      {/* Main Content */}
-      <main className="flex-grow ">{children}</main>
-
+     
+      <main className="flex-grow rela">{children}</main>
+  
       {/* Footer */}
       <footer className="bg-[#CCFFCC] text-black p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

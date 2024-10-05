@@ -1,7 +1,7 @@
 // pages/consultancy.js
 import Head from 'next/head';
 import Layout from './components/layout';
-import Link from 'next/link'; // Import Link from next/link
+import Link from 'next/link';
 
 const Consultancy = () => {
   return (
@@ -21,42 +21,40 @@ const Consultancy = () => {
 
             <h3 className="text-2xl font-semibold mb-4 animate-fade-in delay-300">Our Areas of Expertise</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-6">
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-400">
-                <h4 className="text-xl font-semibold mb-2">Sustainable Development</h4>
-                <p className="text-gray-700">
-                  We provide guidance on implementing sustainable practices that benefit both communities and the environment.
-                </p>
-              </div>
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-500">
-                <h4 className="text-xl font-semibold mb-2">Social Impact Assessment</h4>
-                <p className="text-gray-700">
-                  Our assessments help organizations understand the social implications of their projects and initiatives.
-                </p>
-              </div>
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-600">
-                <h4 className="text-xl font-semibold mb-2">Capacity Building</h4>
-                <p className="text-gray-700">
-                  We empower organizations through training and development programs to enhance their capabilities.
-                </p>
-              </div>
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-700">
-                <h4 className="text-xl font-semibold mb-2">Policy Development</h4>
-                <p className="text-gray-700">
-                  Our team assists in formulating policies that promote equity, sustainability, and social justice.
-                </p>
-              </div>
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-800">
-                <h4 className="text-xl font-semibold mb-2">Community Engagement</h4>
-                <p className="text-gray-700">
-                  We help organizations effectively engage with communities to ensure their voices are heard and valued.
-                </p>
-              </div>
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-900">
-                <h4 className="text-xl font-semibold mb-2">Research and Analysis</h4>
-                <p className="text-gray-700">
-                  Our research services provide data-driven insights to inform decision-making and strategy development.
-                </p>
-              </div>
+              {[
+                {
+                  title: 'Sustainable Development',
+                  description: 'We provide guidance on implementing sustainable practices that benefit both communities and the environment.',
+                },
+                {
+                  title: 'Social Impact Assessment',
+                  description: 'Our assessments help organizations understand the social implications of their projects and initiatives.',
+                },
+                {
+                  title: 'Capacity Building',
+                  description: 'We empower organizations through training and development programs to enhance their capabilities.',
+                },
+                {
+                  title: 'Policy Development',
+                  description: 'Our team assists in formulating policies that promote equity, sustainability, and social justice.',
+                },
+                {
+                  title: 'Community Engagement',
+                  description: 'We help organizations effectively engage with communities to ensure their voices are heard and valued.',
+                },
+                {
+                  title: 'Research and Analysis',
+                  description: 'Our research services provide data-driven insights to inform decision-making and strategy development.',
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className={`bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-${400 + index * 100}`}
+                >
+                  <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
+                  <p className="text-gray-700">{item.description}</p>
+                </div>
+              ))}
             </div>
 
             <h3 className="text-2xl font-semibold mb-4 animate-fade-in delay-1000">Why Choose Us?</h3>
@@ -69,10 +67,8 @@ const Consultancy = () => {
               Interested in learning more about our consultancy services? Contact us today to discuss how we can support your initiatives.
             </p>
             <div className="text-center">
-              <Link href="/contact"> {/* Use Link component here */}
-                <a className="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition transform hover:scale-105">
-                  Contact Us
-                </a>
+              <Link href="/contact" className="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition transform hover:scale-105">
+                Contact Us
               </Link>
             </div>
           </div>

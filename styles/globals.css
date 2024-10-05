@@ -42,8 +42,13 @@ body {
 .nopad{padding-bottom: 0;}
 .textalin{text-align: justify;}
 .padleft{padding-left: 90px;}
-.logosi{height:6rem;}
+.logosi{height:5.5rem;}
 .padtop{padding-top: 80px;}
-.ulli li{border: 1px solid #ccc;padding: 5px 15px;border-radius: 5px;margin-left: 5px !important;}
+.menuborder{border: 1px solid #ccc;padding: 5px 15px;border-radius: 5px;margin-left: 5px !important;}
 .swiperpad{padding-bottom: 100px;}
 .borderline{border-bottom: 1px solid #ccc;}
+.paboth{padding-top: 10px;padding-bottom: 10px;}
+.mart{margin-left: 5px;margin-top: 3px;}
+.rela{position: relative;z-index: -2;}
+.popmenu{left: 7px}
+.leftmarcon{border: 1px solid #ccc;padding: 5px 15px;border-radius: 5px;margin-left: 7px !important;}

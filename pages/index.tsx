@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Layout>
         <div>
-          <section className="hero-section bg-gray-50 py-12">
+          <section className="hero-section bg-gray-50">
             <div className="container mx-auto">
               <Carousel />
             </div>
@@ -35,7 +35,7 @@ export default function Home() {
 
                 {/* 10+ Years Badge */}
                 <div className="absolute top-6 left-6 bg-pink-500 text-white font-bold rounded-full px-4 py-2 text-center">
-                  <span>10+ <br /> YEARS</span>
+                  <span>2+ <br /> YEARS</span>
                 </div>
 
                 {/* Secondary Image */}

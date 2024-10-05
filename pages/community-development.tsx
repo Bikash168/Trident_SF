@@ -1,4 +1,3 @@
-// pages/community-development.js
 import Head from 'next/head';
 import Layout from './components/layout';
 import Link from 'next/link';
@@ -77,10 +76,8 @@ const CommunityDevelopment = () => {
               Together, we can create a more resilient and empowered society. Explore how you can get involved with our community development initiatives.
             </p>
             <div className="text-center">
-              <Link href="/contact" passHref>
-                <a className="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition">
-                  Contact Us
-                </a>
+              <Link href="/contact" className="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition">
+                Contact Us
               </Link>
             </div>
           </div>
