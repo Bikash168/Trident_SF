@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from './components/layout';
 import Image from 'next/image'; // Import Image from next/image
 import Link from 'next/link'; // Import Link for navigation
+import ImageCollage from './components/ImageCollage';
 
 const CommunityInvolvement = () => {
   return (
@@ -10,6 +11,7 @@ const CommunityInvolvement = () => {
         <title>Community Involvement | SACRED Foundation</title>
       </Head>
       <Layout>
+        <ImageCollage />
         {/* Community Involvement Section */}
         <section className="bg-white py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,12 +19,12 @@ const CommunityInvolvement = () => {
               Community <span className="text-blue-600">Involvement</span>
             </h1>
             <p className="text-lg text-gray-600 mb-6 text-center">
-              At SACRED Foundation, we believe that community involvement is crucial for sustainable development. Our programs engage local communities, empowering them to take charge of their own growth and development. As part of our initiatives, we actively promote volunteerism and encourage individuals to participate in our various projects. 
+              At SACRED Foundation, we believe that community involvement is crucial for sustainable development. Our programs engage local communities, empowering them to take charge of their own growth and development. As part of our initiatives, we actively promote volunteerism and encourage individuals to participate in our various projects.
             </p>
             <p className="text-lg text-gray-600 mb-6 text-center">
               We recognize that “together we can achieve more,” and we invite everyone to join hands with us to make a difference in the lives of those in need. By fostering a culture of collaboration, we can create lasting change in our communities.
             </p>
-            
+
             {/* Image Section */}
             <div className="flex justify-center mb-8">
               <Image

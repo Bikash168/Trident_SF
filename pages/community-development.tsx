@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from './components/layout';
 import Link from 'next/link';
 import Image from 'next/image';
+import ImageCollage from './components/ImageCollage';
 
 const CommunityDevelopment = () => {
   return (
@@ -10,6 +11,7 @@ const CommunityDevelopment = () => {
         <title>Community Development | SACRED Foundation</title>
       </Head>
       <Layout>
+      <ImageCollage />
         <section className="bg-white py-12 mb-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 transition-transform transform hover:scale-105">

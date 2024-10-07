@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from './components/layout';
 import { useState } from 'react';
+import ImageCollage from './components/ImageCollage';
 
 const InternshipForm = () => {
   const [formData, setFormData] = useState({
@@ -35,6 +36,7 @@ const InternshipForm = () => {
       <title>VOLUNTEERS | SACRED FOUNDATION</title>
     </Head>
     <Layout>
+    <ImageCollage />
       {/* Sacred Foundation Internship Program Description */}
       <section className="bg-white py-12 mb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

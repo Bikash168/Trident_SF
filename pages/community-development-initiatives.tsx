@@ -1,6 +1,7 @@
 // pages/blog/community-development-initiatives.js
 import Head from 'next/head';
 import Layout from '../pages/components/layout'; // Ensure correct path
+import ImageCollage from './components/ImageCollage';
 
 const BlogPost = () => {
   return (
@@ -13,7 +14,9 @@ const BlogPost = () => {
         />
       </Head>
       <Layout>
+      <ImageCollage />
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+       
           <h1 className="text-4xl font-bold mb-6">Community Development Initiatives</h1>
           <p className="text-lg mb-4">Published on June 5, 2023</p>
           <img

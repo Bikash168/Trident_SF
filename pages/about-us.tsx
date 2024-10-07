@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Layout from './components/layout';
 import { useEffect } from 'react';
 import Image from 'next/image'; // Import Image component
+import ImageCollage from './components/ImageCollage';
+import ImpactSection from './components/ImpactSection';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -21,6 +23,7 @@ const AboutUs = () => {
         <title>About Us | SACRED Foundation</title>
       </Head>
       <Layout>
+      <ImageCollage />
         <section className="bg-white py-12 mb-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
             {/* Text Section */}
@@ -107,7 +110,7 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
-
+        <ImpactSection />
         <style jsx>{`
         .fade-in {
           opacity: 0;

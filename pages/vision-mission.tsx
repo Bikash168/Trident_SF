@@ -7,6 +7,7 @@ import { AiFillEnvironment } from "react-icons/ai";
 import { FaPeopleArrows } from "react-icons/fa";
 import { FaLightbulb } from "react-icons/fa";
 import { FaHandRock } from "react-icons/fa";
+import ImageCollage from './components/ImageCollage';
 
 const VisionMission = () => {
   return (
@@ -15,6 +16,7 @@ const VisionMission = () => {
         <title>Vision/Mission | SACRED FOUNDATION</title>
       </Head>
       <Layout>
+      <ImageCollage />
         <section className="bg-white py-12 mb-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Add fade-in animation to the heading */}

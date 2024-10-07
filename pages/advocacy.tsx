@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from './components/layout';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import ImageCollage from './components/ImageCollage';
 
 const Advocacy = () => {
   const [mounted, setMounted] = useState(false);
@@ -21,6 +22,7 @@ const Advocacy = () => {
         <title>Advocacy | SACRED Foundation</title>
       </Head>
       <Layout>
+      <ImageCollage />
         <section className="bg-white py-12 mb-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 animate-fade-in">

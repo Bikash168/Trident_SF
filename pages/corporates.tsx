@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from './components/layout';
 import Image from 'next/image';
 import Link from 'next/link';
+import ImageCollage from './components/ImageCollage';
 
 const CorporatePartnership = () => {
   return (
@@ -9,7 +10,7 @@ const CorporatePartnership = () => {
       <Head>
         <title>Corporate Partnership | SACRED Foundation</title>
       </Head>
-
+      <ImageCollage />
       {/* Corporate Partnership Section */}
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

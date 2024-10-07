@@ -4,6 +4,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaInstagra
 import Head from 'next/head';
 import Map from '../pages/components/map';
 import { FaXTwitter } from 'react-icons/fa6';
+import ImageCollage from './components/ImageCollage';
 
 // Define an interface for the form data
 interface FormData {
@@ -75,6 +76,8 @@ const Contact: React.FC = () => {
         <title>Contact Us | SACRED Foundation</title>
       </Head>
       <Layout>
+      <ImageCollage />
+
         {/* Introduction Section */}
         <section className="py-16 bg-gray-50 text-gray-800">
           <div className="container mx-auto text-center">
