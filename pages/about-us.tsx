@@ -29,7 +29,7 @@ const AboutUs = () => {
             {/* Text Section */}
             <div className="lg:w-1/2 mb-10 lg:mb-0 fade-in">
               <h2 className="text-4xl font-bold text-black mb-4">
-                About <span className="text-pink-500">SACRED Foundation</span>
+                About <span className="text-orange-500">SACRED Foundation</span>
               </h2>
               <p className="text-gray-700 text-lg mb-4">
                 At the heart of SACRED Foundation is a commitment to fostering resilience through climate action and social development. We empower local communities by providing tools and resources to adapt and thrive in the face of environmental challenges.
@@ -80,7 +80,7 @@ const AboutUs = () => {
 
         <section className="bg-gray-100 py-12 mb-10 fade-in">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Registration & Accreditation</h2>
+            <h2 className="text-3xl font-bold text-center text-orange-500 mb-8">Our Registration & Accreditation</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Individual Registration Items */}
               <div className="bg-white p-6 rounded-lg shadow-lg text-center fade-in">

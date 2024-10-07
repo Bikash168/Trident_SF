@@ -37,7 +37,7 @@ const ImpactSection = () => {
         {/* Impact Stats Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {/* People Impacted */}
-          <div className="bg-pink-100 p-6 rounded-lg shadow-md">
+          <div className="bg-orange-100 p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-pink-600">People Impacted</h3>
             <p className="text-5xl font-bold text-gray-800 mt-4">
               {isVisible ? <CountUp start={0} end={10000} duration={2} /> : "0"}
@@ -47,7 +47,7 @@ const ImpactSection = () => {
           </div>
 
           {/* Projects Completed */}
-          <div className="bg-pink-100 p-6 rounded-lg shadow-md">
+          <div className="bg-orange-100 p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-pink-600">Projects Completed</h3>
             <p className="text-5xl font-bold text-gray-800 mt-4">
               {isVisible ? <CountUp start={0} end={150} duration={2} /> : "0"}
@@ -57,7 +57,7 @@ const ImpactSection = () => {
           </div>
 
           {/* Volunteers */}
-          <div className="bg-pink-100 p-6 rounded-lg shadow-md">
+          <div className="bg-orange-100 p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-pink-600">Volunteers</h3>
             <p className="text-5xl font-bold text-gray-800 mt-4">
               {isVisible ? <CountUp start={0} end={500} duration={2} /> : "0"}
@@ -67,7 +67,7 @@ const ImpactSection = () => {
           </div>
 
           {/* Partnerships */}
-          <div className="bg-pink-100 p-6 rounded-lg shadow-md">
+          <div className="bg-orange-100 p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-pink-600">Global Partnerships</h3>
             <p className="text-5xl font-bold text-gray-800 mt-4">
               {isVisible ? <CountUp start={0} end={20} duration={2} /> : "0"}

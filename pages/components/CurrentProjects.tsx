@@ -23,7 +23,7 @@ const CurrentProjects = () => {
     <section className="bg-gray-100 py-12 px-6">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-black">
-          CURRENT <span className="text-blue-600">Projects</span>
+          CURRENT <span className="text-green-500">Projects</span>
         </h2>
         <p className="text-gray-700 mt-2">
           Empowering through education, healthcare, and sustainability. 
