@@ -149,7 +149,7 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <div className="group relative">
-              <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
+              <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder padl">
                 Media <FaAngleDown className='mart' />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md popmenu">
@@ -164,7 +164,7 @@ export default function Layout({ children }: LayoutProps) {
                 </Link>
               </div>
             </div>
-            <Link href="/contact" className="px-6 py-2 text-gray-700 hover:bg-gray-100 flex leftmarcon">
+            <Link href="/contact" className="px-6 py-2 text-gray-700 hover:bg-gray-100 flex padl leftmarcon">
               Contact Us
             </Link>
           </nav>
@@ -269,7 +269,7 @@ export default function Layout({ children }: LayoutProps) {
         )}
       </header>
 
-      <main className="flex-grow rela">{children}</main>
+      <main className="flex-grow">{children}</main>
 
       {/* Footer */}
       <footer className="bg-[#CCFFCC] text-black p-8">
