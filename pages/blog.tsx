@@ -7,28 +7,28 @@ const blogPosts = [
     excerpt: 'Discover why climate resilience is crucial for sustainable development and community empowerment.',
     date: 'September 15, 2023',
     image: '/images/climate-resilience.jpg', // Replace with actual image URLs
-    link: '/blog/the-importance-of-climate-resilience',
+    link: '/the-importance-of-climate-resilience',
   },
   {
     title: 'Empowering Women Through Education',
     excerpt: 'Explore how education can transform the lives of women and uplift entire communities.',
     date: 'August 22, 2023',
     image: '/images/women-education.jpg',
-    link: '/blog/empowering-women-through-education',
+    link: '/empowering-women-through-education',
   },
   {
     title: 'Sustainable Practices for a Greener Future',
     excerpt: 'Learn about practical steps to adopt sustainability in your daily life.',
     date: 'July 10, 2023',
     image: '/images/sustainable-practices.jpg',
-    link: '/blog/sustainable-practices',
+    link: '/sustainable-practices',
   },
   {
     title: 'Community Development Initiatives',
     excerpt: 'A deep dive into various initiatives aimed at enhancing community development.',
     date: 'June 5, 2023',
     image: '/images/community-development.jpg',
-    link: '/blog/community-development',
+    link: '/community-development-initiatives',
   },
   // Add more blog posts as needed
 ];
