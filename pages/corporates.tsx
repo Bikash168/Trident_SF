@@ -53,7 +53,7 @@ const CorporatePartnership = () => {
               <Image
                 src="/images/image1.jpg" // Adjust the path according to your project structure
                 alt="SACRED Foundation Initiative"
-                width={500}
+                width={700}
                 height={300}
                 className="rounded-lg shadow-lg w-full md:w-1/2"
               />
@@ -78,7 +78,7 @@ const CorporatePartnership = () => {
           {/* Image Section */}
           <div className="flex justify-center mb-8">
             <Image
-              src="/images/image1.jpg" // Adjust the path according to your project structure
+              src="/images/image2 (2).jpg" // Adjust the path according to your project structure
               alt="SACRED Foundation Initiative"
               width={500}
               height={300}
@@ -89,7 +89,7 @@ const CorporatePartnership = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-orange-600 py-12">
+      <section className="bg-blue-900 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-white mb-6">
             Partner with Us for Greater Impact
