@@ -11,12 +11,12 @@ const CommunityDevelopment = () => {
         <title>Community Development | SACRED Foundation</title>
       </Head>
       <Layout>
-      <ImageCollage />
+        <ImageCollage />
         <section className="bg-white py-12 mb-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 transition-transform transform hover:scale-105">
-              Community Development Initiatives
-            </h2>
+            <h1 className="text-4xl font-extrabold text-center text-fuchsia-500 mb-8 transition-transform transform hover:scale-105">
+              Community Development <span className="text-black">Initiatives</span>
+            </h1>
             <p className="text-lg text-gray-700 mb-6 text-center animate-fadeIn">
               At SACRED Foundation, we believe that empowered communities are the backbone of sustainable development. Our initiatives focus on improving the quality of life for individuals and families, fostering resilience and self-sufficiency.
             </p>
@@ -70,15 +70,14 @@ const CommunityDevelopment = () => {
                 </div>
               ))}
             </div>
-
-            <h3 className="text-2xl font-semibold mb-4 text-center transition-transform transform hover:scale-105">
-              Join Us in Making a Difference
-            </h3>
+            <h1 className="text-4xl font-extrabold text-center text-fuchsia-500 mb-8 transition-transform transform hover:scale-105">
+              Join Us in <span className="text-black">Making a Difference</span>
+            </h1>
             <p className="text-gray-700 mb-6 text-center animate-fadeIn">
               Together, we can create a more resilient and empowered society. Explore how you can get involved with our community development initiatives.
             </p>
             <div className="text-center">
-              <Link href="/contact" className="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition">
+              <Link href="/contact" className="inline-block bg-fuchsia-500 text-white py-2 px-4 rounded hover:bg-fuchsia-600 transition">
                 Contact Us
               </Link>
             </div>
