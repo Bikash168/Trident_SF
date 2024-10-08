@@ -16,7 +16,7 @@ const CommunityInvolvement = () => {
         <section className="bg-white py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
-              Community <span className="text-blue-600">Involvement</span>
+              Community <span className="text-cyan-600">Involvement</span>
             </h1>
             <p className="text-lg text-gray-600 mb-6 text-center">
               At SACRED Foundation, we believe that community involvement is crucial for sustainable development. Our programs engage local communities, empowering them to take charge of their own growth and development. As part of our initiatives, we actively promote volunteerism and encourage individuals to participate in our various projects.
@@ -28,7 +28,7 @@ const CommunityInvolvement = () => {
             {/* Image Section */}
             <div className="flex justify-center mb-8">
               <Image
-                src="/images/image1.jpg" // Adjust the path according to your project structure
+                src="/images/Cimage1.jpg" // Adjust the path according to your project structure
                 alt="Community Involvement Initiative"
                 width={500} // Set appropriate width
                 height={300} // Set appropriate height
@@ -39,7 +39,7 @@ const CommunityInvolvement = () => {
         </section>
 
         {/* Call to Action Section */}
-        <section className="bg-orange-600 py-12">
+        <section className="bg-cyan-600 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center text-white mb-6">
               Get Involved!
@@ -49,7 +49,7 @@ const CommunityInvolvement = () => {
             </p>
             <div className="flex justify-center">
               <Link href="/contact"> {/* Use Link for internal navigation */}
-                <a className="bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                <a className="bg-white text-cyan-600 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
                   Contact Us
                 </a>
               </Link>
