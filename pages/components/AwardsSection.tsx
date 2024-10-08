@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AwardsSection() {
     return (
       <div className="container mx-auto py-12">
@@ -32,8 +34,10 @@ export default function AwardsSection() {
               organizing health checkup camps.
             </p>
             <button className="bg-green-600 text-white py-2 px-6 rounded-lg hover:bg-green-700">
-              View All Awards
-            </button>
+  <Link href="/awards">
+    View All Awards
+  </Link>
+</button>
           </div>
         </div>
       </div>
