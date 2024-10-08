@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
         <title>Contact Us | SACRED Foundation</title>
       </Head>
       <Layout>
-      <ImageCollage />
+        <ImageCollage />
 
         {/* Introduction Section */}
         <section className="py-16 bg-gray-50 text-gray-800">
@@ -193,17 +193,20 @@ const Contact: React.FC = () => {
             <h2 className="text-3xl font-bold text-pink-900 mb-4">Connect with Us</h2>
             <p className="mb-6">Follow us on our social media platforms for updates and news.</p>
             <div className="flex justify-center space-x-6">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/people/Sacred-Foundation/61565399609076/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="text-3xl text-blue-600 hover:text-blue-500" />
               </a>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/sacred-foundation/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-3xl text-blue-700 hover:text-blue-600" />
               </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/sacred.foundation/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="text-3xl text-pink-500 hover:text-pink-400" />
               </a>
-              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@sacredfoundation" target="_blank" rel="noopener noreferrer">
                 <FaYoutube className="text-3xl text-red-600 hover:text-red-500" />
+              </a>
+              <a href="https://x.com/sacred71444" target="_blank" rel="noopener noreferrer">
+                <FaXTwitter className="text-3xl text-black-600 hover:text-red-500" />
               </a>
             </div>
           </div>
