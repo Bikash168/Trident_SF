@@ -42,7 +42,7 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-white sticky top-[0px] z-40">
+      <header className="bg-white sticky top-[0px] z-40 borderline">
         {/* Top Bar Section */}
         <div className="bg-[#CCFFCC] text-black text-xs md:text-sm py-2 sticky top-0 z-50">
           <div className="container mx-auto flex flex-wrap justify-between items-center px-4">

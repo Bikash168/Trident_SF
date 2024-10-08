@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Layout>
         <div>
-          <section className="hero-section bg-gray-50">
+          <section className="hero-section">
             <div className="container mx-auto">
               <Carousel />
             </div>

@@ -43,7 +43,7 @@ const AboutUs = () => {
             </div>
 
             {/* Image Section */}
-            <div className="lg:w-1/2 relative fade-in">
+            <div className="lg:w-1/2 relative fade-in mx-5">
               <div className="relative w-full h-auto">
                 <Image
                   src="/images/aboutus.jpg"

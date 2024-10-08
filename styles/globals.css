@@ -70,7 +70,19 @@ body {
 .popmenu{left: 7px}
 .leftmarcon{border: 1px solid #ccc;padding: 5px 15px;border-radius: 5px;margin-left: 7px !important;}
 .padl{padding-left: 30px;padding-right: 30px;}
+.borderl{border: 1px solid #ccc;
+  padding: 20px;
+  margin-right: 25px;
+  margin-bottom: 3px;text-align: center;}
+  .hojver {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255);
+    background: green;
+    display: block;
+    width: 100%;
+    padding: 20px;
 
+  }
 @media (min-width:992px) and (max-width:1199px){
   .padleft{padding-left: 40px;}
   }

@@ -25,9 +25,9 @@ const Advocacy = () => {
       <ImageCollage />
         <section className="bg-white py-12 mb-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 animate-fade-in">
-              Advocacy at SACRED Foundation
-            </h2>
+                        <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8">
+            Advocacy  <span className="text-black">at SACRED Foundation</span>
+                </h1>
             <p className="text-lg text-gray-700 mb-6 animate-fade-in delay-200">
               At SACRED Foundation, we believe in the power of advocacy to bring about meaningful change in our communities and beyond. Our advocacy efforts focus on creating awareness, influencing policy, and empowering individuals to take action on critical social and environmental issues.
             </p>
@@ -41,7 +41,9 @@ const Advocacy = () => {
               <li>Support educational initiatives for community empowerment.</li>
             </ul>
 
-            <h3 className="text-2xl font-semibold mb-4 animate-fade-in delay-500">Current Campaigns</h3>
+                        <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8">
+            Current  <span className="text-black">Campaigns</span>
+                </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-600">
                 <h4 className="text-xl font-semibold mb-2">Climate Action Now</h4>
@@ -62,8 +64,10 @@ const Advocacy = () => {
                 </p>
               </div>
             </div>
+            <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8">
+            Get <span className="text-black">Involved</span>
+                </h1>
 
-            <h3 className="text-2xl font-semibold mb-4 animate-fade-in delay-900">Get Involved</h3>
             <p className="text-gray-700 mb-6 animate-fade-in delay-1000">
               Want to make a difference? Join our advocacy efforts by volunteering, participating in campaigns, or donating to support our initiatives. Together, we can drive change!
             </p>

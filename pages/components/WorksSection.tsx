@@ -41,12 +41,12 @@ export default function WorksSection() {
         <div className="md:w-1/3">
           <ul>
             {worksData.map((work) => (
-              <li key={work.id} className="mb-4">
+              <li key={work.id} className="mb-4 borderl">
                 <button
                   onClick={() => setActiveWork(work)}
                   className={`text-lg font-semibold ${
                     activeWork.id === work.id
-                      ? "text-green-500"
+                      ? "text-green-500 hojver"
                       : "text-gray-800"
                   } hover:text-green-500`}
                 >

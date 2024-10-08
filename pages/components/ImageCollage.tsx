@@ -4,7 +4,7 @@ import Image from 'next/image';
 const ImageCollage = () => {
   return (
     <div className="relative">
-      <div className="w-full max-w-7xl mx-auto">
+      <div className="w-full  mx-auto">
         <Image
           src="/images/img1.png" // Replace with your image path
           alt="Responsive Image Collage"
