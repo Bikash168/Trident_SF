@@ -64,7 +64,8 @@ const Advocacy = () => {
                 </p>
               </div>
             </div>
-            <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8">
+
+            <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8 my-5">
             Get <span className="text-black">Involved</span>
                 </h1>
 
