@@ -11,17 +11,18 @@ const Consultancy = () => {
         <title>Consultancy | SACRED Foundation</title>
       </Head>
       <Layout>
-      <ImageCollage />
+        <ImageCollage />
         <section className="bg-white py-12 mb-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 animate-fade-in">
-              Consultancy Services
-            </h2>
+            <h1 className="text-4xl font-extrabold text-center text-orange-500 mb-8 animate-fade-in ">
+              Consultancy <span className="text-black">Services</span>
+            </h1>
             <p className="text-lg text-gray-700 mb-6 animate-fade-in delay-200">
               At SACRED Foundation, we offer expert consultancy services aimed at driving sustainable development and social change. Our team of experienced professionals is dedicated to providing tailored solutions that address the unique challenges faced by communities and organizations.
             </p>
-
-            <h3 className="text-2xl font-semibold mb-4 animate-fade-in delay-300">Our Areas of Expertise</h3>
+            <h1 className="text-4xl font-extrabold text-center text-orange-500 mb-8 animate-fade-in delay-300">
+              Our Areas of <span className="text-black">Expertise</span>
+            </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-6">
               {[
                 {
@@ -58,18 +59,20 @@ const Consultancy = () => {
                 </div>
               ))}
             </div>
-
-            <h3 className="text-2xl font-semibold mb-4 animate-fade-in delay-1000">Why Choose Us?</h3>
+            <h1 className="text-4xl font-extrabold text-center text-orange-500 mb-8 animate-fade-in delay-1000">
+              Why <span className="text-black">Choose Us?</span>
+            </h1>
             <p className="text-gray-700 mb-6 animate-fade-in delay-1100">
               Our consultancy services are built on a foundation of integrity, collaboration, and a deep commitment to social impact. We partner with clients to create tailored solutions that drive positive change and foster resilience.
             </p>
-
-            <h3 className="text-2xl font-semibold mb-4 animate-fade-in delay-1200">Get in Touch</h3>
+            <h1 className="text-4xl font-extrabold text-center text-orange-500 mb-8 animate-fade-in delay-1200">
+              Get  <span className="text-black">in Touch</span>
+            </h1>
             <p className="text-gray-700 mb-6 animate-fade-in delay-1300">
               Interested in learning more about our consultancy services? Contact us today to discuss how we can support your initiatives.
             </p>
             <div className="text-center">
-              <Link href="/contact" className="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition transform hover:scale-105">
+              <Link href="/contact" className="inline-block bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition transform hover:scale-105">
                 Contact Us
               </Link>
             </div>
