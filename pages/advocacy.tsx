@@ -25,7 +25,7 @@ const Advocacy = () => {
       <ImageCollage />
         <section className="bg-white py-12 mb-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8">
+                        <h1 className="text-4xl font-extrabold text-center text-red-500 mb-8 animate-fade-in">
             Advocacy  <span className="text-black">at SACRED Foundation</span>
                 </h1>
             <p className="text-lg text-gray-700 mb-6 animate-fade-in delay-200">
@@ -41,7 +41,7 @@ const Advocacy = () => {
               <li>Support educational initiatives for community empowerment.</li>
             </ul>
 
-                        <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8">
+                        <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8 animate-fade-in delay-300">
             Current  <span className="text-black">Campaigns</span>
                 </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -65,7 +65,7 @@ const Advocacy = () => {
               </div>
             </div>
 
-            <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8 my-5">
+            <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8 my-5 animate-fade-in delay-1000">
             Get <span className="text-black">Involved</span>
                 </h1>
 
@@ -73,7 +73,7 @@ const Advocacy = () => {
               Want to make a difference? Join our advocacy efforts by volunteering, participating in campaigns, or donating to support our initiatives. Together, we can drive change!
             </p>
             <div className="text-center">
-              <Link href="/contact" className="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition transform hover:scale-105">
+              <Link href="/contact" className="inline-block bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition transform hover:scale-105">
                 Contact Us
               </Link>
             </div>
