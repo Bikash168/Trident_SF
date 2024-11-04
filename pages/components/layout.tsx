@@ -46,7 +46,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="bg-[#CCFFCC] text-black text-xs md:text-sm py-2 sticky top-0 z-50">
           <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
             <div className="flex items-center space-x-2 md:space-x-4">
-            <p className="text-sm">
+            <p className="text-sm font-medium">
                   Sustainable Action for Climate Resilient Enviro-social Development Foundation
                 </p>
             </div>
@@ -85,7 +85,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="flex justify-between items-center px-4 py-3">
         <Link href="/" className="flex items-center">
         <div className="space-x-3">
-              <img src="/Logo.png" alt="SACRED Logo" className="h-12 logosi" />
+              <img src="/Logo.png" alt="SACRED Logo" className="h-8 logosi" />
              
             </div>
           </Link>
