@@ -42,13 +42,16 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-white sticky top-[0px] z-40 borderline">
-        {/* Top Bar Section */}
+     <header className="bg-white sticky top-[0px] z-40 borderline">
         <div className="bg-[#CCFFCC] text-black text-xs md:text-sm py-2 sticky top-0 z-50">
           <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
-            {/* Left: Contact Information */}
             <div className="flex items-center space-x-2 md:space-x-4">
-              <span className="flex items-center space-x-1">
+            <p className="text-sm text-gray-600">
+                  Sustainable Action for Climate Resilient Enviro-social Development Foundation
+                </p>
+            </div>
+            <div className="flex items-center space-x-2 md:space-x-4 mt-2 md:mt-0">
+            <span className="flex items-center space-x-1">
                 <FaMapMarkerAlt />
                 <span>Bhubaneswar, India</span>
               </span>
@@ -60,9 +63,6 @@ export default function Layout({ children }: LayoutProps) {
                 <FaEnvelope />
                 <span>info@sacred.foundation</span>
               </span>
-            </div>
-            {/* Right: Social Media Links */}
-            <div className="flex items-center space-x-2 md:space-x-4 mt-2 md:mt-0">
               <a href="https://www.facebook.com/people/Sacred-Foundation/61565399609076/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="text-blue-400" />
               </a>
@@ -82,27 +82,18 @@ export default function Layout({ children }: LayoutProps) {
           </div>
         </div>
 
-        {/* Logo and Nav Menu */}
-        <div className="flex flex-wrap justify-between items-center px-4 paboth">
-          {/* Logo Section */}
-          <Link href="/" className="flex items-center w-full md:w-auto">
-            <div className="space-x-3">
+        <div className="flex justify-between items-center px-4 py-3">
+        <Link href="/" className="flex items-center">
+        <div className="space-x-3">
               <img src="/Logo.png" alt="SACRED Logo" className="h-12 logosi" />
-              <div>
-
-                <p className="text-sm text-gray-600">
-                  Sustainable Action for Climate Resilient Enviro-social Development Foundation
-                </p>
-                <p className="text-xs text-gray-500 italic">...building resilience, inspiring change</p>
-              </div>
+             
             </div>
           </Link>
 
-          {/* Navigation Links */}
-          <nav className="hidden md:flex space-x-0.5 border-gray-200 sticky top-[150px]">
+          <nav className="hidden md:flex space-x-0.5 border-gray-200">
             <div className="group relative">
               <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
-                Who We Are <FaAngleDown className='mart' />
+                Who We Are <FaAngleDown className="mart" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md popmenu">
                 <Link href="/about-us" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
@@ -117,8 +108,8 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <div className="group relative">
-              <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
-                What We Do <FaAngleDown className='mart' />
+              <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
+                What We Do <FaAngleDown className="mart" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md popmenu">
                 <Link href="/advocacy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
@@ -133,8 +124,8 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <div className="group relative">
-              <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder">
-                Get Involved <FaAngleDown className='mart' />
+              <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
+                Get Involved <FaAngleDown className="mart" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md popmenu">
                 <Link href="/volunteers" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
@@ -149,8 +140,8 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <div className="group relative">
-              <button className="px-4 py-2  text-gray-700 hover:bg-gray-100 flex menuborder padl">
-                Media <FaAngleDown className='mart' />
+              <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder padl">
+                Media <FaAngleDown className="mart" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md popmenu">
                 <Link href="/picture-gallery" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
@@ -169,7 +160,6 @@ export default function Layout({ children }: LayoutProps) {
             </Link>
           </nav>
 
-          {/* Hamburger Menu */}
           <div className="md:hidden">
             <button className="text-gray-700" onClick={() => setMenuOpen(!menuOpen)}>
               {menuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
@@ -177,14 +167,10 @@ export default function Layout({ children }: LayoutProps) {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <nav className="flex flex-col md:hidden px-4 py-4 bg-white">
             <div className="flex flex-col">
-              <button
-                onClick={() => toggleDropdown('whoWeAre')}
-                className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full"
-              >
+              <button onClick={() => toggleDropdown('whoWeAre')} className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full">
                 Who We Are <FaAngleDown />
               </button>
               {dropdownOpen.whoWeAre && (
@@ -200,11 +186,7 @@ export default function Layout({ children }: LayoutProps) {
                   </Link>
                 </div>
               )}
-
-              <button
-                onClick={() => toggleDropdown('whatWeDo')}
-                className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full"
-              >
+              <button onClick={() => toggleDropdown('whatWeDo')} className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full">
                 What We Do <FaAngleDown />
               </button>
               {dropdownOpen.whatWeDo && (
@@ -220,11 +202,7 @@ export default function Layout({ children }: LayoutProps) {
                   </Link>
                 </div>
               )}
-
-              <button
-                onClick={() => toggleDropdown('getInvolved')}
-                className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full"
-              >
+              <button onClick={() => toggleDropdown('getInvolved')} className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full">
                 Get Involved <FaAngleDown />
               </button>
               {dropdownOpen.getInvolved && (
@@ -240,11 +218,7 @@ export default function Layout({ children }: LayoutProps) {
                   </Link>
                 </div>
               )}
-
-              <button
-                onClick={() => toggleDropdown('media')}
-                className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full"
-              >
+              <button onClick={() => toggleDropdown('media')} className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full">
                 Media <FaAngleDown />
               </button>
               {dropdownOpen.media && (
@@ -260,8 +234,7 @@ export default function Layout({ children }: LayoutProps) {
                   </Link>
                 </div>
               )}
-
-              <Link href="/contact" className="py-2 text-gray-600 hover:bg-gray-100">
+              <Link href="/contact" className="py-2 text-gray-700 hover:bg-gray-100">
                 Contact Us
               </Link>
             </div>
