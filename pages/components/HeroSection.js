@@ -12,13 +12,12 @@ const HeroSection = () => {
           muted
           className="w-full h-full object-cover opacity-60"
         >
-          <source src="/your-fallback-image.mp4" type="video/mp4" />
+          <source src="/your-video.mp4" type="video/mp4" />
           {/* Fallback for browsers that don’t support video */}
-          
         </video>
       </div>
 
-     
+      
     </div>
   );
 };
