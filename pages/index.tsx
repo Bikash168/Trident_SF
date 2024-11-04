@@ -8,7 +8,7 @@ import AwardsSection from './components/AwardsSection';
 import PartnersSection from './components/PartnersSection';
 import FinancialSection from './components/FinancialSection';
 import CurrentProjects from './components/CurrentProjects';
-import UpcomingEvents from './components/UpcomingEvents';
+
 import Link from 'next/link'; // Import Link from next/link
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
               <Carousel />
             </div>
           </section>
-          <UpcomingEvents />
+       
           <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
 
