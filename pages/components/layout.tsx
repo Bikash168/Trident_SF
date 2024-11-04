@@ -46,7 +46,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="bg-[#CCFFCC] text-black text-xs md:text-sm py-2 sticky top-0 z-50">
           <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
             <div className="flex items-center space-x-2 md:space-x-4">
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-black-600">
                   Sustainable Action for Climate Resilient Enviro-social Development Foundation
                 </p>
             </div>
