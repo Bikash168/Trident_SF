@@ -7,9 +7,10 @@ import WorksSection from './components/WorksSection';
 import AwardsSection from './components/AwardsSection';
 import PartnersSection from './components/PartnersSection';
 import FinancialSection from './components/FinancialSection';
-import CurrentProjects from './components/CurrentProjects';
+import HeroSection from './components/HeroSection';
 
 import Link from 'next/link'; // Import Link from next/link
+import CurrentProjects from './components/CurrentProjects';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <div>
           <section className="hero-section">
             <div className="container mx-auto">
-              <Carousel />
+              <HeroSection />
             </div>
           </section>
        
