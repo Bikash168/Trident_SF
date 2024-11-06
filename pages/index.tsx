@@ -32,7 +32,7 @@ export default function Home() {
               {/* Left Section - Images */}
               <div className="relative">
                 {/* Main Image */}
-                <img src="/images/climate-change.jpg" alt="Community work" className="rounded-lg shadow-lg w-full h-auto" />
+                <img src="/images/climate-change.png" alt="Community work" className="rounded-lg shadow-lg w-full h-auto" />
 
                 {/* 10+ Years Badge */}
                 <div className="absolute top-6 left-6 bg-pink-500 text-white font-bold rounded-full px-4 py-2 text-center">
