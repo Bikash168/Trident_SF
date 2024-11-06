@@ -90,9 +90,9 @@ export default function Layout({ children }: LayoutProps) {
           </Link>
 
           {/* Desktop menu */}
-          <nav className="hidden md:flex space-x-4">
+          <nav className="hidden md:flex space-x-0.5 border-gray-200">
             <div className="group relative">
-              <button className="px-4 py-2 flex items-center text-gray-700 hover:bg-gray-100">
+              <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
                 Who We Are <FaAngleDown className="ml-1" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md">
@@ -108,7 +108,7 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <div className="group relative">
-              <button className="px-4 py-2 flex items-center text-gray-700 hover:bg-gray-100">
+              <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
                 What We Do <FaAngleDown className="ml-1" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md">
@@ -124,7 +124,7 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <div className="group relative">
-              <button className="px-4 py-2 flex items-center text-gray-700 hover:bg-gray-100">
+              <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
                 Get Involved <FaAngleDown className="ml-1" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md">
@@ -140,7 +140,7 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <div className="group relative">
-              <button className="px-4 py-2 flex items-center text-gray-700 hover:bg-gray-100">
+              <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder padl">
                 Media <FaAngleDown className="ml-1" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md">
@@ -155,7 +155,7 @@ export default function Layout({ children }: LayoutProps) {
                 </Link>
               </div>
             </div>
-            <Link href="/contact" className="px-6 py-2 text-gray-700 hover:bg-gray-100">
+            <Link href="/contact" className="px-6 py-2 text-gray-700 hover:bg-gray-100 flex padl leftmarcon">
               Contact Us
             </Link>
           </nav>
