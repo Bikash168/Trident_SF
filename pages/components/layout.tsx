@@ -171,26 +171,75 @@ export default function Layout({ children }: LayoutProps) {
         {/* Mobile menu */}
         {menuOpen && (
           <nav className="flex flex-col md:hidden px-4 py-4 bg-white">
-            <button onClick={() => toggleDropdown('whoWeAre')} className="py-2 flex justify-between text-gray-700 hover:bg-gray-100">
-              Who We Are <FaAngleDown />
-            </button>
-            {dropdownOpen.whoWeAre && (
-              <div className="pl-4 flex flex-col">
-                <Link href="/about-us" className="py-2 text-gray-600 hover:bg-gray-100">
-                  About Us
-                </Link>
-                <Link href="/vision-mission" className="py-2 text-gray-600 hover:bg-gray-100">
-                  Vision/Mission
-                </Link>
-                <Link href="/team" className="py-2 text-gray-600 hover:bg-gray-100">
-                  Our Team
-                </Link>
-              </div>
-            )}
-            {/* Similar structure for other sections */}
-            <Link href="/contact" className="py-2 text-gray-700 hover:bg-gray-100">
-              Contact Us
-            </Link>
+            <div className="flex flex-col">
+              <button onClick={() => toggleDropdown('whoWeAre')} className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full">
+                Who We Are <FaAngleDown />
+              </button>
+              {dropdownOpen.whoWeAre && (
+                <div className="pl-4 flex flex-col">
+                  <Link href="/about-us" className="py-2 text-gray-600 hover:bg-gray-100">
+                    About Us
+                  </Link>
+                  <Link href="/vision-mission" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Vision/Mission
+                  </Link>
+                  <Link href="/team" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Our Team
+                  </Link>
+                </div>
+              )}
+              <button onClick={() => toggleDropdown('whatWeDo')} className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full">
+                What We Do <FaAngleDown />
+              </button>
+              {dropdownOpen.whatWeDo && (
+                <div className="pl-4 flex flex-col">
+                  <Link href="/advocacy" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Advocacy
+                  </Link>
+                  <Link href="/consultancy" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Consultancy
+                  </Link>
+                  <Link href="/community-development" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Community Development
+                  </Link>
+                </div>
+              )}
+              <button onClick={() => toggleDropdown('getInvolved')} className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full">
+                Get Involved <FaAngleDown />
+              </button>
+              {dropdownOpen.getInvolved && (
+                <div className="pl-4 flex flex-col">
+                  <Link href="/volunteers" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Volunteers / Internship
+                  </Link>
+                  <Link href="/corporates" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Corporates
+                  </Link>
+                  <Link href="/community-involvement" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Community Involvement
+                  </Link>
+                </div>
+              )}
+              <button onClick={() => toggleDropdown('media')} className="py-2 text-gray-700 hover:bg-gray-100 flex justify-between w-full">
+                Media <FaAngleDown />
+              </button>
+              {dropdownOpen.media && (
+                <div className="pl-4 flex flex-col">
+                  <Link href="/picture-gallery" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Picture Gallery
+                  </Link>
+                  <Link href="/video-gallery" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Video Gallery
+                  </Link>
+                  <Link href="/blog" className="py-2 text-gray-600 hover:bg-gray-100">
+                    Blog
+                  </Link>
+                </div>
+              )}
+              <Link href="/contact" className="py-2 text-gray-700 hover:bg-gray-100">
+                Contact Us
+              </Link>
+            </div>
           </nav>
         )}
       </header>
