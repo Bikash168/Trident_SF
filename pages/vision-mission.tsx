@@ -28,7 +28,7 @@ const VisionMission = () => {
             <div className="mb-10 animate-slideUp">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
-                Our vision is to create a world where every individual, regardless of their background, has the opportunity to thrive and contribute to a more just, compassionate, and sustainable global society. A society where the underprivileged are empowered, and where access to healthcare and education are universal rights, not privileges. And along the way, encourage empathy, understanding, and a desire in individuals to uplift those in need.
+              Our vision is to build a future where sustainable practices are woven into the fabric of daily life, ensuring that communities thrive in harmony with the environment. SACRED Foundation strives to create a world where environmental stewardship, social progress, and climate resilience are not just ideals, but tangible realities that empower current and future generations to live responsibly and sustainably.
               </p>
             </div>
 
@@ -36,7 +36,7 @@ const VisionMission = () => {
             <div className="mb-10 animate-slideUp delay-200">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
-                Our mission is to create a holistic and sustainable impact on society by addressing the problems persisting at the grassroots level. Every individual deserves the opportunity to reach their full potential and live their life with dignity. Through targeted educational programs, relief camps, and a nurturing environment, we are dedicated to making this a reality.
+              Our mission at SACRED Foundation is to address pressing environmental challenges by implementing practical and sustainable solutions in areas such as renewable energy, waste management, water conservation, and climate resilience. We collaborate with educational institutions, industries, and local communities to develop research-based, impactful projects. Through hands-on initiatives and innovative strategies, we aim to empower individuals and organizations to adopt sustainable practices, contributing to long-term environmental protection and social progress in alignment with the United Nations Sustainable Development Goals (UN SDGs).
               </p>
             </div>
 
