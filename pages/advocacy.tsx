@@ -29,39 +29,49 @@ const Advocacy = () => {
             Advocacy  <span className="text-black">at SACRED Foundation</span>
                 </h1>
             <p className="text-lg text-gray-700 mb-6 animate-fade-in delay-200">
-              At SACRED Foundation, we believe in the power of advocacy to bring about meaningful change in our communities and beyond. Our advocacy efforts focus on creating awareness, influencing policy, and empowering individuals to take action on critical social and environmental issues.
+            SACRED Foundation utilizes advocacy as a key strategy for driving long-lasting change. Through raising awareness, shaping policies, and empowering individuals, we address critical social and environmental challenges. Our advocacy efforts are guided by clear goals aimed at making a meaningful impact in the areas of climate resilience and sustainable development.
             </p>
 
-            <h3 className="text-2xl font-semibold mb-4 animate-fade-in delay-300">Our Advocacy Goals</h3>
-            <ul className="list-disc list-inside text-gray-700 mb-6 animate-fade-in delay-400">
-              <li>Promote sustainable environmental practices.</li>
-              <li>Champion the rights of marginalized communities.</li>
-              <li>Raise awareness about climate change and its impacts.</li>
-              <li>Encourage policy reforms for social justice and equity.</li>
-              <li>Support educational initiatives for community empowerment.</li>
-            </ul>
 
                         <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8 animate-fade-in delay-300">
-            Current  <span className="text-black">Campaigns</span>
+                        Key Advocacy <span className="text-black">Initiatives</span>
                 </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-600">
-                <h4 className="text-xl font-semibold mb-2">Climate Action Now</h4>
+                <h4 className="text-xl font-semibold mb-2">1.	Sustainable Agriculture Initiatives</h4>
                 <p className="text-gray-700 mb-4">
-                  Join us in advocating for urgent action against climate change. Our campaign focuses on reducing carbon footprints and promoting renewable energy solutions.
+                In partnership with local Farmer Producer Organizations (FPOs), SACRED Foundation promotes climate-resilient farming practices, organic agriculture, and sustainable waste management. These initiatives are especially focused on supporting small and marginal farmers in Odisha’s coastal regions like Puri and Khurda, helping them cope with the challenges of erratic rainfall and soil degradation due to climate change.
                 </p>
               </div>
               <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-700">
-                <h4 className="text-xl font-semibold mb-2">Empower Women, Empower Communities</h4>
+                <h4 className="text-xl font-semibold mb-2">2.	Circular Economy Models for Waste Management</h4>
                 <p className="text-gray-700 mb-4">
-                  This campaign aims to elevate women&#39;s voices in decision-making processes and provide resources for women&#39;s empowerment in underserved areas.
+                With urbanization driving increasing waste generation, SACRED Foundation has developed innovative solutions in waste valorization. Our floral waste management projects, particularly in temples and religious places, convert organic waste into compost and biofuel. This approach supports a circular economy that minimizes environmental impact while creating economic opportunities for marginalized communities.
                 </p>
               </div>
               <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-800">
-                <h4 className="text-xl font-semibold mb-2">Right to Education</h4>
+                <h4 className="text-xl font-semibold mb-2">3.	Youth-Led Climate Action</h4>
                 <p className="text-gray-700 mb-4">
-                  We advocate for equal access to education for all children, regardless of their socio-economic status, to ensure a brighter future for the next generation.
+                SACRED Foundation empowers youth through its student-run clubs like Prakruti and Prerna, providing training and leadership opportunities in sustainability. These platforms encourage young people to lead environmental initiatives such as tree plantation drives and waste segregation campaigns, creating a grassroots movement for climate action across Odisha.
                 </p>
+              </div>
+              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-800">
+                <h4 className="text-xl font-semibold mb-2">4.	Water Resource Management and Conservation</h4>
+                <p className="text-gray-700 mb-4">
+                To address water scarcity and quality issues in Odisha, SACRED Foundation has implemented programs focused on rainwater harvesting, water recycling, and groundwater conservation. In collaboration with local municipalities, we are also working on sewage treatment and sludge management, significantly improving the health of the region’s water ecosystem.
+                </p>
+              </div>
+              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-800">
+                <h4 className="text-xl font-semibold mb-2">5.	Collaborations for Climate Resilience</h4>
+                <p className="text-gray-700 mb-4">
+                SACRED Foundation works closely with government bodies, NGOs, and corporate partners to scale climate solutions. Our projects with Mission Shakti and other state-level initiatives focus on building climate resilience for vulnerable groups, including women, rural communities, and daily wage earners. Through these partnerships, we advocate for inclusive, community-driven climate action and contribute to the formulation of policies for environmental sustainability in Odisha.
+                </p>
+              </div>
+              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-fade-in delay-800">
+                <h4 className="text-xl font-semibold mb-2">6.	Educational Programs and Research in ESG</h4>
+                <p className="text-gray-700 mb-4">
+                SACRED Foundation leads research initiatives in Environmental, Social, and Governance (ESG) models, influencing both policy decisions and business strategies. Our verified ESG curriculum at F.M. University exemplifies our commitment to integrating sustainability into higher education, helping to shape future leaders who are equipped to address the environmental challenges of tomorrow.
+              </p>
               </div>
             </div>
 

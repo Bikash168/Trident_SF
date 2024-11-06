@@ -18,7 +18,10 @@ const Consultancy = () => {
               Consultancy <span className="text-black">Services</span>
             </h1>
             <p className="text-lg text-gray-700 mb-6 animate-fade-in delay-200">
-              At SACRED Foundation, we offer expert consultancy services aimed at driving sustainable development and social change. Our team of experienced professionals is dedicated to providing tailored solutions that address the unique challenges faced by communities and organizations.
+              CARED Foundation offers consultancy services aimed at advancing sustainable development and creating measurable social impact. We collaborate with communities, governments, NGOs, and corporations to design tailored strategies that address specific challenges. Our services focus on achieving carbon neutrality, enhancing social equity, and promoting sustainable growth.
+            </p>
+            <p className="text-lg text-gray-700 mb-6 animate-fade-in delay-200">
+            We specialize in providing expert guidance on renewable energy adoption, waste management, climate resilience, and water conservation. Our consultants work closely with clients to implement impactful, scalable solutions that minimize environmental harm while promoting sustainable practices across sectors. Whether assisting a government entity with climate policy or advising a corporate client on their sustainability goals, SACRED Foundation offers comprehensive, actionable strategies for positive environmental and social change.
             </p>
             <h1 className="text-4xl font-extrabold text-center text-orange-500 mb-8 animate-fade-in delay-300">
               Our Areas of <span className="text-black">Expertise</span>
@@ -63,7 +66,10 @@ const Consultancy = () => {
               Why <span className="text-black">Choose Us?</span>
             </h1>
             <p className="text-gray-700 mb-6 animate-fade-in delay-1100">
-              Our consultancy services are built on a foundation of integrity, collaboration, and a deep commitment to social impact. We partner with clients to create tailored solutions that drive positive change and foster resilience.
+            Our approach is rooted in delivering impactful, sustainable solutions that address the unique challenges faced by communities, governments, NGOs, and businesses. By leveraging a combination of practical expertise and research-driven strategies, we focus on creating lasting environmental and social change. From advancing sustainable agriculture and waste management to driving climate resilience and water conservation, our initiatives are designed to make a measurable difference.
+            </p>
+            <p className="text-gray-700 mb-6 animate-fade-in delay-1100">
+            What distinguishes us is our collaborative and inclusive methodology. We work closely with local communities to ensure that the solutions we implement are not only effective but also empowering, allowing stakeholders to take ownership of their sustainable development journey. Our strong partnerships with educational institutions and industries further enhance the innovation and real-world applicability of our projects. We are dedicated to transforming communities, promoting environmental stewardship, and building a sustainable, climate-resilient future.
             </p>
             <h1 className="text-4xl font-extrabold text-center text-orange-500 mb-8 animate-fade-in delay-1200">
               Get  <span className="text-black">in Touch</span>
