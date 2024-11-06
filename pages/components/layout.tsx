@@ -93,7 +93,7 @@ export default function Layout({ children }: LayoutProps) {
           <nav className="hidden md:flex space-x-0.5 border-gray-200">
             <div className="group relative">
               <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
-                Who We Are <FaAngleDown className="ml-1" />
+                Who We Are <FaAngleDown className="mart" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md">
                 <Link href="/about-us" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
@@ -109,7 +109,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
             <div className="group relative">
               <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
-                What We Do <FaAngleDown className="ml-1" />
+                What We Do <FaAngleDown className="mart" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md">
                 <Link href="/advocacy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
@@ -125,7 +125,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
             <div className="group relative">
               <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
-                Get Involved <FaAngleDown className="ml-1" />
+                Get Involved <FaAngleDown className="mart" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md">
                 <Link href="/volunteers" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
@@ -141,7 +141,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
             <div className="group relative">
               <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder padl">
-                Media <FaAngleDown className="ml-1" />
+                Media <FaAngleDown className="mart" />
               </button>
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md">
                 <Link href="/picture-gallery" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
