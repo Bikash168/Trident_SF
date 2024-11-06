@@ -32,31 +32,25 @@ export default function Home() {
               {/* Left Section - Images */}
               <div className="relative">
                 {/* Main Image */}
-                <img src="/images/climate-change.png" alt="Community work" className="rounded-lg shadow-lg w-full h-auto" />
+                <img src="/images/climate-change.jpg" alt="Community work" className="rounded-lg shadow-lg w-full h-auto" />
 
                 {/* 10+ Years Badge */}
                 <div className="absolute top-6 left-6 bg-pink-500 text-white font-bold rounded-full px-4 py-2 text-center">
                   <span>2+ <br /> YEARS</span>
                 </div>
 
-                {/* Secondary Image */}
-                <div className="absolute bottom-6 right-6 w-32 h-32">
-                  <img src="/images/social development.jpg" alt="Child smiling" className="rounded-lg shadow-md w-full h-full object-cover" />
-                </div>
-              </div>
+                              </div>
 
               {/* Right Section - Text Content */}
               <div className="mt-12 lg:mt-0 lg:ml-16">
-                <h2 className="text-3xl font-extrabold text-green-500 sm:text-4xl">
+                <h2 className="text-3xl font-extrabold text-orange-500 sm:text-4xl">
                   Who <span className="text-black">We Are</span>
                 </h2>
                 <p className="mt-4 text-lg text-gray-700">
-                  SACRED Foundation stands as a pillar of support, dedicated to uplifting communities and driving positive change globally.
-                  We are a registered non-profit organization focusing on key areas such as climate resilience, social development, and environmental conservation.
-                  Our commitment ensures inclusive growth and sustainable solutions for pressing global challenges.
+                The SACRED Foundation (Sustainability and Climate Research for Empowerment and Development Foundation) is a distinguished non-profit organization dedicated to advancing climate-resilient socio-environmental development in Odisha. As a registered Section 8 entity, SACRED Foundation addresses critical environmental challenges through practical and sustainable solutions that promote environmental stewardship and support social advancement. Committed to fostering climate-resilient communities while aligning with the United Nations Sustainable Development Goals (UN SDGs), we integrate education with hands-on experience to prepare future leaders in sustainability.
                 </p>
                 <p className="mt-4 text-md text-gray-500">
-                  Through compassion, collaboration, and integrity, our efforts aim to create lasting impact. Join us as we strive to empower communities and build a sustainable future where dignity and opportunity are accessible to all.
+                In collaboration with the Trident Group of Institutions, as well as various other educational institutions and industries, SACRED Foundation leads initiatives focused on renewable energy, waste management, and water conservation. Our initial projects include converting food waste into nutrient-rich compost, utilizing UV technology to treat wastewater for agricultural irrigation, and deploying carbon-enhanced solar panels.
                 </p>
 
                 {/* Read More Button */}

@@ -74,6 +74,28 @@ body {
   padding: 20px;
   margin-right: 25px;
   margin-bottom: 3px;text-align: center;}
+
+  @media (max-width: 640px) {
+    /* Ensuring the video covers the screen correctly on mobile */
+    .video-container {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  
+
+
+
   .hojver {
     --tw-text-opacity: 1;
     color: rgb(255 255 255);
