@@ -246,29 +246,63 @@ export default function Layout({ children }: LayoutProps) {
 
       <main className="flex-grow">{children}</main>
 
-      {/* Footer */}
-      <footer className="bg-[#CCFFCC] text-black p-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+     {/* Footer */}
+     <footer className="bg-[#CCFFCC] text-black p-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* About Section */}
           <div>
-            <h3 className="text-lg font-semibold">SACRED Foundation</h3>
-            <p>Building resilient communities through sustainable development.</p>
+            <h3 className="text-lg text-[#316b9e] font-bold mb-4">About Us</h3>
+            <p className='textalin'>An organization focused on sustainable actions for climate-resilient socio-environmental development implements strategies that promote environmental sustainability, foster social progress, and enhance resilience to the impacts of climate change.</p>
           </div>
-          <div>
-            <h3 className="text-lg font-semibold">Get In Touch</h3>
-            <p>Bhubaneswar, India</p>
-            <p>+91-9439173220</p>
-            <p>info@sacred.foundation</p>
+
+          {/* Quick Links */}
+          <div className='padleft'>
+            <h3 className="text-lg text-[#316b9e] font-bold mb-4">Quick Links</h3>
+            <ul>
+              <li><Link href="/index" className="text-black block hover:text-blue-400">Home</Link></li>
+              <li><Link href="/about-us" className="text-black block hover:text-blue-400">About Us</Link></li>
+              <li><Link href="/vision-mission" className="text-black block hover:text-blue-400">Vision/Mission</Link></li>
+              <li><Link href="/team" className="text-black block hover:text-blue-400">Our Team</Link></li>
+              <li><Link href="/contact" className="text-black block hover:text-blue-400">Contact</Link></li>
+            </ul>
           </div>
+
+                    {/* Address */}
           <div>
-            <h3 className="text-lg font-semibold">Follow Us</h3>
-            <div className="flex justify-center md:justify-start space-x-4">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+            <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
+            <p className='textalin'>Plot No. – F2, Chandaka Industrial Estate,
+              Chandrasekharpur, Bhubaneswar – 24, Odisha, India - 751024.</p>
+            <br />
+            <p>Email: info@sacred.foundation</p>
+            <p>Phone: +91-9439173220</p>
+          </div>
+
+          {/* Social Media Links */}
+          <div className='padleft'>
+            <h3 className="text-lg text-[#316b9e] font-bold mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a href="https://www.facebook.com/people/Sacred-Foundation/61565399609076/" className="hover:text-blue-400">
+                <FaFacebook size={24} />
+              </a>
+              <a href="https://x.com/sacred71444" className="hover:text-blue-400">
+                <FaXTwitter size={24} />
+              </a>
+              <a href="https://www.instagram.com/sacred.foundation/" className="hover:text-blue-400">
+                <FaInstagram size={24} />
+              </a>
+              <a href="https://www.linkedin.com/company/sacred-foundation/" className="hover:text-blue-400">
+                <FaLinkedin size={24} />
+              </a>
+              <a href="https://www.youtube.com/@sacredfoundation" className="hover:text-blue-400">
+                <FaYoutube size={24} />
+              </a>
             </div>
           </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="mt-8 text-[#316b9e] text-center">
+          <p>&copy; 2024 Sacred Foundation. All rights reserved.</p>
         </div>
       </footer>
     </div>
