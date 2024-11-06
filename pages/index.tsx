@@ -25,7 +25,7 @@ export default function Home() {
               <HeroSection />
             </div>
           </section>
-       
+
           <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
 
@@ -39,7 +39,7 @@ export default function Home() {
                   <span>2+ <br /> YEARS</span>
                 </div>
 
-                              </div>
+              </div>
 
               {/* Right Section - Text Content */}
               <div className="mt-12 lg:mt-0 lg:ml-16">
@@ -47,10 +47,10 @@ export default function Home() {
                   Who <span className="text-black">We Are</span>
                 </h2>
                 <p className="mt-4 text-lg text-gray-700">
-                The SACRED Foundation (Sustainability and Climate Research for Empowerment and Development Foundation) is a distinguished non-profit organization dedicated to advancing climate-resilient socio-environmental development in Odisha. As a registered Section 8 entity, SACRED Foundation addresses critical environmental challenges through practical and sustainable solutions that promote environmental stewardship and support social advancement. Committed to fostering climate-resilient communities while aligning with the United Nations Sustainable Development Goals (UN SDGs), we integrate education with hands-on experience to prepare future leaders in sustainability.
+                  The SACRED Foundation (Sustainability and Climate Research for Empowerment and Development Foundation) is a distinguished non-profit organization dedicated to advancing climate-resilient socio-environmental development in Odisha. As a registered Section 8 entity, SACRED Foundation addresses critical environmental challenges through practical and sustainable solutions that promote environmental stewardship and support social advancement. Committed to fostering climate-resilient communities while aligning with the United Nations Sustainable Development Goals (UN SDGs), we integrate education with hands-on experience to prepare future leaders in sustainability.
                 </p>
                 <p className="mt-4 text-md text-gray-500">
-                In collaboration with the Trident Group of Institutions, as well as various other educational institutions and industries, SACRED Foundation leads initiatives focused on renewable energy, waste management, and water conservation. Our initial projects include converting food waste into nutrient-rich compost, utilizing UV technology to treat wastewater for agricultural irrigation, and deploying carbon-enhanced solar panels.
+                  In collaboration with the Trident Group of Institutions, as well as various other educational institutions and industries, SACRED Foundation leads initiatives focused on renewable energy, waste management, and water conservation. Our initial projects include converting food waste into nutrient-rich compost, utilizing UV technology to treat wastewater for agricultural irrigation, and deploying carbon-enhanced solar panels.
                 </p>
 
                 {/* Read More Button */}
