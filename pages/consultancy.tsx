@@ -75,7 +75,7 @@ const Consultancy = () => {
               Get  <span className="text-black">in Touch</span>
             </h1>
             <p className="text-gray-700 mb-6 animate-fade-in delay-1300">
-              Interested in learning more about our consultancy services? Contact us today to discuss how we can support your initiatives.
+            Ready to explore the possibilities? Connect with us today to learn more about how our consultancy services can support your goals. We look forward to discussing how we can work together for a brighter future.
             </p>
             <div className="text-center">
               <Link href="/contact" className="inline-block bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition transform hover:scale-105">
