@@ -19,10 +19,10 @@ const CommunityInvolvement = () => {
               Community <span className="text-cyan-600">Involvement</span>
             </h1>
             <p className="text-lg text-gray-600 mb-6 text-center">
-              At SACRED Foundation, we believe that community involvement is crucial for sustainable development. Our programs engage local communities, empowering them to take charge of their own growth and development. As part of our initiatives, we actively promote volunteerism and encourage individuals to participate in our various projects.
+            Community involvement is central to SACRED Foundation’s mission of achieving sustainable development. We believe lasting change happens when communities actively participate as partners in crafting solutions that address their unique needs. Through a collaborative approach, we work alongside local stakeholders to design initiatives that tackle urgent environmental issues and empower communities to take ownership of their sustainable futures.
             </p>
             <p className="text-lg text-gray-600 mb-6 text-center">
-              We recognize that “together we can achieve more,” and we invite everyone to join hands with us to make a difference in the lives of those in need. By fostering a culture of collaboration, we can create lasting change in our communities.
+            Our programs invite local communities to engage directly in their own development, fostering a culture of volunteerism and active participation. We welcome individuals from diverse backgrounds to join us in making a meaningful impact on those who need it most, driven by our belief that “Together we can achieve more.”
             </p>
 
             {/* Image Section */}
@@ -45,7 +45,7 @@ const CommunityInvolvement = () => {
               Get Involved!
             </h2>
             <p className="text-lg text-center text-white mb-6">
-              We encourage you to join us in our efforts to uplift communities. Whether you want to volunteer, donate, or simply spread the word, every action counts. Let&apos;s come together to create a better future for all!
+            We welcome your participation in our mission to create a sustainable future. From donating resources to volunteering your skills and knowledge, every action counts. By partnering with us, you help create a better, more sustainable future. Together, we can support communities and foster environmental resilience across the region.
             </p>
             <div className="flex justify-center">
               <Link href="/contact"> {/* Use Link for internal navigation */}

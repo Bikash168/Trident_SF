@@ -74,8 +74,11 @@ const Consultancy = () => {
             <h1 className="text-4xl font-extrabold text-center text-orange-500 mb-8 animate-fade-in delay-1200">
               Get  <span className="text-black">in Touch</span>
             </h1>
-            <p className="text-gray-700 mb-6 animate-fade-in delay-1300">
-            Ready to explore the possibilities? Connect with us today to learn more about how our consultancy services can support your goals. We look forward to discussing how we can work together for a brighter future.
+            <h2 className="text-gray-700 mb-6 animate-fade-in text-center delay-1300">
+            Ready to explore the possibilities? 
+            </h2>
+            <p className="text-gray-700 mb-6 animate-fade-in text-center delay-1300">
+            Connect with us today to learn more about how our consultancy services can support your goals. We look forward to discussing how we can work together for a brighter future.
             </p>
             <div className="text-center">
               <Link href="/contact" className="inline-block bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition transform hover:scale-105">
