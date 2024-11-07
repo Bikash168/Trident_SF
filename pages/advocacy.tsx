@@ -76,11 +76,11 @@ const Advocacy = () => {
             </div>
 
             <h1 className="text-4xl font-extrabold text-center text-red-500  mb-8 my-5 animate-fade-in delay-1000">
-            Get <span className="text-black">Involved</span>
+            Be Part <span className="text-black">of Change</span>
                 </h1>
 
             <p className="text-gray-700 mb-6 animate-fade-in delay-1000">
-              Want to make a difference? Join our advocacy efforts by volunteering, participating in campaigns, or donating to support our initiatives. Together, we can drive change!
+            Get involved by participating in our advocacy campaigns, volunteering your time and skills, or donating to support our impactful initiatives. Your engagement will help us develop sustainable solutions for pressing environmental and social challenges. Together, we can drive meaningful change and contribute to a better, more sustainable future.
             </p>
             <div className="text-center">
               <Link href="/contact" className="inline-block bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition transform hover:scale-105">
