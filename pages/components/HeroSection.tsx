@@ -23,16 +23,16 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen bg-gray-900 text-white overflow-hidden">
+    <div className="relative w-full min-h-screen bg-gray-900 text-white overflow-hidden cusminscre">
       {/* Background Video */}
-      <div className="absolute top-0 left-0 w-full h-full">
+      <div className="absolute top-0 left-0 w-full h-full cuswidhts">
         <video
           id="hero-video"
           autoPlay
           loop
           muted
           playsInline
-          className="object-cover w-full"
+          className="object-cover w-full newbcss"
           style={{
             objectFit: "cover", 
             position: "absolute", 
