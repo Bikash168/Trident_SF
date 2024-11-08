@@ -36,7 +36,7 @@ const CommunityDevelopment = () => {
                 {
                   title: 'Water Conservation and Management',
                   description: 'We implement rainwater harvesting systems and conduct awareness campaigns on water conservation. Our efforts help communities in water-scarce regions improve their water availability and quality, supporting sustainable agricultural practices and clean drinking water.',
-                  imgSrc: '/images/women-empowerment.jpg',
+                  imgSrc: '/images/Water Conservation.jpg',
                 },
                 {
                   title: 'Skill Development and Training',
@@ -46,12 +46,12 @@ const CommunityDevelopment = () => {
                 {
                   title: 'Youth Engagement in Environmental Action',
                   description: 'We actively involve young people in environmental conservation through educational programs and climate action projects. By fostering youth leadership, we equip the next generation with the tools to drive positive environmental change.',
-                  imgSrc: '/images/healthcare-initiative.jpg',
+                  imgSrc: '/images/Youth Engagement.jpg',
                 },
                 {
                   title: 'Health and Hygiene Education',
                   description: 'We run community health and hygiene awareness programs, focusing on sanitation and waste management. These initiatives help improve living conditions and promote healthy lifestyles, particularly in underserved areas.',
-                  imgSrc: '/images/environmental-awareness.jpg',
+                  imgSrc: '/images/Health and Hygiene.jpg',
                 },
               ].map((item, index) => (
                 <div
