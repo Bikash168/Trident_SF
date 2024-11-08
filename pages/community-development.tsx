@@ -21,7 +21,7 @@ const CommunityDevelopment = () => {
             Community development is a core pillar of our work, focused on empowering local populations to drive their own progress and sustainability. We are committed to fostering a culture of collaboration where communities, institutions, and industries come together to create impactful, long-lasting change. Our approach ensures that development is inclusive, addressing both environmental and social needs, and is driven by the aspirations of the people we serve. Below are six key community initiatives that SACRED Foundation is committed to-
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-6 ">
               {[
                 {
                   title: 'Sustainable Agriculture Programs',
