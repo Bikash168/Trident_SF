@@ -81,9 +81,9 @@ const Contact: React.FC = () => {
         {/* Introduction Section */}
         <section className="py-16 bg-gray-50 text-gray-800">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold text-pink-900 mb-4">We are Here to Help!</h2>
+            <h2 className="text-3xl font-bold text-pink-900 mb-4">We're Here to Assist You!</h2>
             <p className="mb-8">
-              If you have any questions, concerns, or suggestions, feel free to reach out to us using the form below or through any of the contact details provided.
+            If you have any inquiries, feedback, or suggestions, we encourage you to reach out to us. Please use the form below to submit your message, or feel free to contact us directly using the details provided. Your thoughts and questions are important to us, and we look forward to connecting with you!
             </p>
           </div>
         </section>
