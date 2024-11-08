@@ -20,7 +20,7 @@ export default function LocationDateTimeTemperature() {
 
         // Fetch location name from OpenCage Geocoder (reverse geocoding)
         const geoResponse = await fetch(
-          `https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lon}&key=YOUR_OPENCAGE_API_KEY`
+          `https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lon}&key=/e5d856fa5de94ae0966a656931515640`
         );
         const geoData = await geoResponse.json();
         const location = geoData.results[0]?.formatted;
