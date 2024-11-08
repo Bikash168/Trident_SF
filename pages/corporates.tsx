@@ -18,7 +18,7 @@ const CorporatePartnership = () => {
             Individual & Corporate <span className="text-blue-600">Partnership</span>
           </h1>
           <p className="text-lg text-gray-600 mb-6 text-center">
-            Over the past decade, SACRED Foundation has worked relentlessly to provide the necessary resources for marginalized communities, empowering them to build brighter futures. As one of the most active NGOs in the country, SACRED Foundation focuses on initiatives ranging from education for underprivileged children to healthcare, women&apos;s empowerment, disaster relief, and sustainable livelihood programs.
+          SACRED Foundation is dedicated to providing essential resources to marginalized communities, helping them create brighter futures. Through the support of our individual and corporate partners, we drive impactful initiatives in areas such as education for underprivileged children, healthcare, women's empowerment, disaster relief, and sustainable livelihoods. 
           </p>
           <p className="text-lg text-gray-600 mb-6 text-center">
             Join us in making a lasting impact through our focused welfare projects designed to uplift communities and foster long-term development.
@@ -44,10 +44,10 @@ const CorporatePartnership = () => {
             Individual <span className="text-black">Partnership</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <p className="text-lg text-gray-600">
-              At SACRED Foundation, individual partnerships play a crucial role in the success of our projects. Your support provides vulnerable individuals with essential services such as education, healthcare, and skill development. By partnering with us, you become an advocate for social justice and a key player in transforming lives.
+            <p className="text-lg text-gray-600 textalin">
+            Individual partnerships are fundamental to the success of SACRED Foundation's initiatives. Your support directly helps provide essential services, such as education, healthcare, and skill development, to marginalized communities. By collaborating with us, you contribute to advancing social equity and positively impacting lives.
               <br /><br />
-              There are many ways to get involved: from volunteering your time and expertise to raising awareness among your network. Every act of contribution, big or small, makes a difference. Spread the word, engage your community, and take part in our efforts to build a more equitable world.
+            There are various ways to get involved, from offering your time and expertise to raising awareness within your community. Every contribution, regardless of size, has the potential to make a meaningful difference. Join us in spreading the message, engaging your network, and supporting our efforts to foster a more just and sustainable world.
             </p>
             <div className="rounded-lg shadow-lg">
               <Image
@@ -68,11 +68,11 @@ const CorporatePartnership = () => {
           <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
             Corporate <span className="text-blue-600">Partnership</span>
           </h1>
-          <p className="text-lg text-gray-600 mb-6 text-center">
-            At SACRED Foundation, we believe in the power of collaboration to create a sustainable impact. Our Corporate Social Responsibility (CSR) partnerships offer companies an opportunity to support transformative initiatives that address education, healthcare, gender equality, disaster relief, and sustainable development across vulnerable communities.
+          <p className="text-lg text-gray-600 mb-6 text-center textalin">
+          SACRED Foundation values the power of collaboration and invites corporate partners to engage in meaningful Corporate Social Responsibility (CSR) initiatives. By partnering with us, companies can support projects that address key challenges in areas like education, healthcare, gender equality, disaster relief, and sustainable development in underserved communities.
           </p>
-          <p className="text-lg text-gray-600 mb-6 text-center">
-            By partnering with us, corporations can align their social and environmental objectives with impactful projects, ensuring compliance with India&apos;s mandatory CSR regulations under the Companies Act 2013. Together, we can foster inclusive growth and long-term community development.
+          <p className="text-lg text-gray-600 mb-6 text-center textalin">
+          These collaborations provide an opportunity for companies to align their business objectives with impactful social and environmental outcomes, while also meeting India’s CSR obligations under the Companies Act 2013. Together, we can drive positive change and contribute to the long-term development of communities in need.
           </p>
 
           {/* Image Section */}
