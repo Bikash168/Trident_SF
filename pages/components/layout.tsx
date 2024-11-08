@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import LocationDateTimeTemperature from './LocationDateTimeTemperature';
 import {
   FaAngleDown,
   FaBars,
@@ -299,7 +300,8 @@ export default function Layout({ children }: LayoutProps) {
             </div>
           </div>
         </div>
-
+{/* Location, Date, Time, Temperature */}
+<LocationDateTimeTemperature />
         {/* Copyright Section */}
         <div className="mt-8 text-[#316b9e] text-center">
           <p>&copy; 2024 Sacred Foundation. All rights reserved.</p>
