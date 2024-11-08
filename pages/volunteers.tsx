@@ -44,19 +44,16 @@ const InternshipForm = () => {
               Internship Opportunities <span className="text-black">with Sacred Foundation</span>
             </h1>
             <p className="text-lg text-gray-600 mb-6">
-              Join Sacred Foundation as an intern and contribute to meaningful work that transforms communities. Our internships provide you with an opportunity to engage in humanitarian projects aimed at empowering underserved populations, promoting education, healthcare, and sustainable development.
+            SACRED Foundation deeply values the support of individual and corporate partners who are essential to advancing our mission. Through strategic partnerships, we collaborate to drive meaningful change by addressing critical environmental and social challenges. With their valuable contributions in resources, expertise, and financial support, our partners enhance the effectiveness of our initiatives, driving progress in community development and environmental sustainability.
             </p>
-            <p className="text-lg text-gray-600 mb-6">
-              As an intern at Sacred Foundation, you will be part of a team that is passionate about creating positive change. You will gain practical experience, build professional networks, and grow both personally and professionally while working on hands-on projects that matter.
-            </p>
-            <p className="text-lg text-gray-600 mb-6">
+                        <p className="text-lg text-gray-600 mb-6">
               Internship benefits include:
             </p>
             <ul className="list-disc list-inside mb-6 text-lg text-gray-600">
-              <li>Hands-on experience in social work and community development</li>
-              <li>A Letter of Recommendation upon completion</li>
+              <li>Involvement in social work and community development initiatives</li>
+              <li>A Letter of Recommendation upon successful completion</li>
               <li>Opportunities for networking and professional growth</li>
-              <li>Potential for full-time roles within Sacred Foundation</li>
+              <li>Potential for full-time employment with SACRED Foundation after the internship</li>
             </ul>
 
             {/* Image Section */}
