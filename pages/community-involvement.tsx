@@ -22,9 +22,11 @@ const CommunityInvolvement = () => {
             Community involvement is central to SACRED Foundation’s mission of achieving sustainable development. We believe lasting change happens when communities actively participate as partners in crafting solutions that address their unique needs. Through a collaborative approach, we work alongside local stakeholders to design initiatives that tackle urgent environmental issues and empower communities to take ownership of their sustainable futures.
             </p>
             <p className="text-lg text-gray-600 mb-6 text-center">
-            Our programs invite local communities to engage directly in their own development, fostering a culture of volunteerism and active participation. We welcome individuals from diverse backgrounds to join us in making a meaningful impact on those who need it most, driven by our belief that “Together we can achieve more.”
+            Our programs invite local communities to engage directly in their own development, fostering a culture of volunteerism and active participation. We welcome individuals from diverse backgrounds to join us in making a meaningful impact on those who need it most, driven by our belief that 
             </p>
-
+            <p className="text-lg text-gray-600 mb-6 text-center">
+             “Together we can achieve more.”
+            </p>
             {/* Image Section */}
             <div className="flex justify-center mb-8">
               <Image
