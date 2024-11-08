@@ -44,7 +44,7 @@ export default function WorksSection() {
               <li key={work.id} className="mb-4 borderl">
                 <button
                   onClick={() => setActiveWork(work)}
-                  className={`text-lg font-semibold ${
+                  className={`text-lg font-semibold bothpadding ${
                     activeWork.id === work.id
                       ? "text-green-500 hojver"
                       : "text-gray-800"

@@ -71,10 +71,11 @@ body {
 .leftmarcon{border: 1px solid #ccc;padding: 5px 15px;border-radius: 5px;margin-left: 7px !important;}
 .padl{padding-left: 30px;padding-right: 30px;}
 .borderl{border: 1px solid #ccc;
-  padding: 20px;
   margin-right: 25px;
   margin-bottom: 3px;text-align: center;}
-
+  .bothpadding{  padding: 20px; width: 100%;}
+.headerborder{border-bottom: 1px solid #a39f9e;}
+.leftmove{left:10px;}
   @media (max-width: 640px) {
     /* Ensuring the video covers the screen correctly on mobile */
     .video-container {
@@ -105,6 +106,11 @@ body {
     padding: 20px;
 
   }
+  .hover\:text-green-500:hover {
+  
+    color: #fff !important;
+    background: green !important;
+}
 @media (min-width:992px) and (max-width:1199px){
   .padleft{padding-left: 40px;}
   }
