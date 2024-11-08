@@ -17,40 +17,40 @@ const CommunityDevelopment = () => {
             <h1 className="text-4xl font-extrabold text-center text-fuchsia-500 mb-8 transition-transform transform hover:scale-105">
               Community Development <span className="text-black">Initiatives</span>
             </h1>
-            <p className="text-lg text-gray-700 mb-6 text-center animate-fadeIn">
-              At SACRED Foundation, we believe that empowered communities are the backbone of sustainable development. Our initiatives focus on improving the quality of life for individuals and families, fostering resilience and self-sufficiency.
+            <p className="text-lg text-gray-700 mb-6 text-center animate-fadeIn  textalin">
+            Community development is a core pillar of our work, focused on empowering local populations to drive their own progress and sustainability. We are committed to fostering a culture of collaboration where communities, institutions, and industries come together to create impactful, long-lasting change. Our approach ensures that development is inclusive, addressing both environmental and social needs, and is driven by the aspirations of the people we serve. Below are six key community initiatives that SACRED Foundation is committed to-
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-6">
               {[
                 {
-                  title: 'Community Engagement',
-                  description: 'We actively involve community members in decision-making processes, ensuring their voices are heard and valued.',
+                  title: 'Sustainable Agriculture Programs',
+                  description: 'We support local farmers by introducing eco-friendly farming practices, promoting organic farming, and providing training on climate-resilient crops. These initiatives help farmers adapt to changing weather patterns and improve their livelihoods.',
                   imgSrc: '/images/community-engagement.jpg',
                 },
                 {
-                  title: 'Education Programs',
-                  description: 'Our educational initiatives aim to provide quality education and vocational training to empower individuals for better opportunities.',
+                  title: 'Waste Management Solutions',
+                  description: 'Our community-based waste management programs encourage recycling and composting. We work with local groups to reduce waste and transform it into valuable resources like compost, biofuel, and fertilizers, contributing to a circular economy.',
                   imgSrc: '/images/education-program.jpg',
                 },
                 {
-                  title: 'Women Empowerment',
-                  description: 'We focus on empowering women through skill development, entrepreneurship, and access to resources to enhance their roles in society.',
+                  title: 'Water Conservation and Management',
+                  description: 'We implement rainwater harvesting systems and conduct awareness campaigns on water conservation. Our efforts help communities in water-scarce regions improve their water availability and quality, supporting sustainable agricultural practices and clean drinking water.',
                   imgSrc: '/images/women-empowerment.jpg',
                 },
                 {
-                  title: 'Sustainable Agriculture',
-                  description: 'Our programs promote sustainable farming practices to enhance food security and improve livelihoods in rural communities.',
+                  title: 'Skill Development and Training',
+                  description: 'We provide skill-building workshops that empower individuals with vocational skills and sustainability knowledge. These programs enhance employment opportunities and foster a culture of sustainability within local communities.',
                   imgSrc: '/images/sustainable-agriculture.jpg',
                 },
                 {
-                  title: 'Healthcare Initiatives',
-                  description: 'We provide access to healthcare services and awareness programs to improve the health and well-being of communities.',
+                  title: 'Youth Engagement in Environmental Action',
+                  description: 'We actively involve young people in environmental conservation through educational programs and climate action projects. By fostering youth leadership, we equip the next generation with the tools to drive positive environmental change.',
                   imgSrc: '/images/healthcare-initiative.jpg',
                 },
                 {
-                  title: 'Environmental Awareness',
-                  description: 'Our initiatives raise awareness about environmental issues and promote sustainable practices within communities.',
+                  title: 'Health and Hygiene Education',
+                  description: 'We run community health and hygiene awareness programs, focusing on sanitation and waste management. These initiatives help improve living conditions and promote healthy lifestyles, particularly in underserved areas.',
                   imgSrc: '/images/environmental-awareness.jpg',
                 },
               ].map((item, index) => (
@@ -71,10 +71,10 @@ const CommunityDevelopment = () => {
               ))}
             </div>
             <h1 className="text-4xl font-extrabold text-center text-fuchsia-500 mb-8 transition-transform transform hover:scale-105">
-              Join Us in <span className="text-black">Making a Difference</span>
+            Collaborate with Us <span className="text-black">for a Brighter Future</span>
             </h1>
             <p className="text-gray-700 mb-6 text-center animate-fadeIn">
-              Together, we can create a more resilient and empowered society. Explore how you can get involved with our community development initiatives.
+            Together, we can build stronger and more resilient communities. Join our community development programs and help us make a difference.
             </p>
             <div className="text-center">
               <Link href="/contact" className="inline-block bg-fuchsia-500 text-white py-2 px-4 rounded hover:bg-fuchsia-600 transition">
