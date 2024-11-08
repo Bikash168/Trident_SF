@@ -31,13 +31,13 @@ const AboutUs = () => {
             <h2 className="text-4xl font-bold text-black mb-4">
                 About <span className="text-orange-500">SACRED Foundation</span>
               </h2>
-            <p className="text-gray-700 text-lg mb-4">
+            <p className="text-gray-700 text-lg mb-4 textalin">
             The SACRED Foundation (Sustainability and Climate Research for Empowerment and Development) is a distinguished non-profit organization dedicated to advancing climate-resilient socio-environmental development in Odisha. As a registered Section 8 entity, SACRED Foundation addresses critical environmental challenges through practical and sustainable solutions that promote environmental stewardship and support social advancement. Committed to fostering climate-resilient communities while aligning with the United Nations Sustainable Development Goals (UN SDGs), we integrate education with hands-on experience to prepare future leaders in sustainability.
             </p>
-            <p className="text-gray-700 text-lg mb-4">
+            <p className="text-gray-700 text-lg mb-4 textalin">
             In collaboration with the Trident Group of Institutions, as well as various other educational institutions and industries, SACRED Foundation leads initiatives focused on renewable energy, waste management, and water conservation. Our initial projects include converting food waste into nutrient-rich compost, utilizing UV technology to treat wastewater for agricultural irrigation, and deploying carbon-enhanced solar panels. These initiatives not only benefit the environment but also establish a high standard for responsible environmental action in Odisha, serving as a model for sustainability best practices.
             </p>
-            <p className="text-gray-700 text-lg mb-4">
+            <p className="text-gray-700 text-lg mb-4 textalin">
             Our approach integrates practical applications by involving professionals from a range of institutions and industries in sustainability projects. By actively engaging diverse stakeholders in these impactful initiatives, we bridge the gap between academic knowledge and practical skills, equipping future leaders to address the complex environmental and social challenges of tomorrow. SACRED Foundation is committed to upholding the values of environmental responsibility, social progress, and climate resilience, with the goal of positioning Odisha as a leader in sustainable development—where the well-being of both people and the planet is prioritized. Many of these initiatives are being expanded to other institutions and industries, fostering a broader collaborative effort for a sustainable future across the region.
             </p>
           </div>
@@ -57,7 +57,7 @@ const AboutUs = () => {
           {/* Message Content */}
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-bold mb-4">A Message from Our Founder</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed textalin">
               &quot;At SACRED Foundation, our goal has always been to create a meaningful impact in the lives of those affected by environmental and social challenges. Our journey is rooted in the belief that through resilience, compassion, and innovation, we can empower communities to build a better future. Together, we are striving to create sustainable solutions that not only benefit our generation but future generations to come.&quot;
             </p>
             <p className="mt-4 font-semibold text-lg">- Dr. Biswabijoyee Panigrahi</p>
