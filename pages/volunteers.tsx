@@ -44,9 +44,9 @@ const InternshipForm = () => {
               Internship Opportunities <span className="text-black">with Sacred Foundation</span>
             </h1>
             <p className="text-lg text-gray-600 mb-6">
-            SACRED Foundation deeply values the support of individual and corporate partners who are essential to advancing our mission. Through strategic partnerships, we collaborate to drive meaningful change by addressing critical environmental and social challenges. With their valuable contributions in resources, expertise, and financial support, our partners enhance the effectiveness of our initiatives, driving progress in community development and environmental sustainability.
+              SACRED Foundation deeply values the support of individual and corporate partners who are essential to advancing our mission. Through strategic partnerships, we collaborate to drive meaningful change by addressing critical environmental and social challenges. With their valuable contributions in resources, expertise, and financial support, our partners enhance the effectiveness of our initiatives, driving progress in community development and environmental sustainability.
             </p>
-                        <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 mb-6">
               Internship benefits include:
             </p>
             <ul className="list-disc list-inside mb-6 text-lg text-gray-600">
