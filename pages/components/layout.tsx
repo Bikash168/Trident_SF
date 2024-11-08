@@ -76,7 +76,7 @@ export default function Layout({ children }: LayoutProps) {
             <a href="https://www.linkedin.com/company/sacred-foundation/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="text-blue-400" />
             </a>
-            <a href="https://www.youtube.com/channel/UCQqRznDd-fld_dI3QR4yLxQ" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@sacredfoundation" target="_blank" rel="noopener noreferrer">
               <FaYoutube className="text-red-400" />
             </a>
           </div>
