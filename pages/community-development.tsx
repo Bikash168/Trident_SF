@@ -31,7 +31,7 @@ const CommunityDevelopment = () => {
                 {
                   title: 'Waste Management Solutions',
                   description: 'Our community-based waste management programs encourage recycling and composting. We work with local groups to reduce waste and transform it into valuable resources like compost, biofuel, and fertilizers, contributing to a circular economy.',
-                  imgSrc: '/images/education-program.jpg',
+                  imgSrc: '/images/Waste Management.jpg',
                 },
                 {
                   title: 'Water Conservation and Management',
@@ -41,7 +41,7 @@ const CommunityDevelopment = () => {
                 {
                   title: 'Skill Development and Training',
                   description: 'We provide skill-building workshops that empower individuals with vocational skills and sustainability knowledge. These programs enhance employment opportunities and foster a culture of sustainability within local communities.',
-                  imgSrc: '/images/sustainable-agriculture.jpg',
+                  imgSrc: '/images/education-program.jpg',
                 },
                 {
                   title: 'Youth Engagement in Environmental Action',
