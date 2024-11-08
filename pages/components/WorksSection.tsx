@@ -68,10 +68,7 @@ export default function WorksSection() {
             <div className="p-6 bg-white">
               <h3 className="text-2xl font-bold mb-2">{activeWork.title}</h3>
               <p className="text-gray-700 mb-4">{activeWork.description}</p>
-              <button className="bg-green-500 hover:bg-blue-400 text-white py-2 px-4 rounded-md">
-                Read More
-              </button>
-            </div>
+                          </div>
           </div>
         </div>
       </div>
