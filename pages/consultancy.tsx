@@ -18,7 +18,7 @@ const Consultancy = () => {
               Consultancy <span className="text-black">Services</span>
             </h1>
             <p className="text-lg text-gray-700 mb-6 animate-fade-in delay-200 textalin">
-              CARED Foundation offers consultancy services aimed at advancing sustainable development and creating measurable social impact. We collaborate with communities, governments, NGOs, and corporations to design tailored strategies that address specific challenges. Our services focus on achieving carbon neutrality, enhancing social equity, and promoting sustainable growth.
+              SACRED Foundation offers consultancy services aimed at advancing sustainable development and creating measurable social impact. We collaborate with communities, governments, NGOs, and corporations to design tailored strategies that address specific challenges. Our services focus on achieving carbon neutrality, enhancing social equity, and promoting sustainable growth.
             </p>
             <p className="text-lg text-gray-700 mb-6 animate-fade-in delay-200 textalin">
             We specialize in providing expert guidance on renewable energy adoption, waste management, climate resilience, and water conservation. Our consultants work closely with clients to implement impactful, scalable solutions that minimize environmental harm while promoting sustainable practices across sectors. Whether assisting a government entity with climate policy or advising a corporate client on their sustainability goals, SACRED Foundation offers comprehensive, actionable strategies for positive environmental and social change.
