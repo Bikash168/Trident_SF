@@ -20,6 +20,24 @@ const worksData = [
     description: "Description for Disaster Relief.",
     imageUrl: "/images/disaster.jpg",
   },
+  {
+    id: 4,
+    title: "Waste Management Solutions",
+    description: "Waste Management Solutions.",
+    imageUrl: "/images/Waste.png",
+  },
+  {
+    id: 5,
+    title: "Water Conservation and Management",
+    description: "Water Conservation and Management.",
+    imageUrl: "/images/Water Conservation.jpg",
+  },
+  {
+    id: 6,
+    title: "Renewable energy",
+    description: "Description for Disaster Relief.",
+    imageUrl: "/images/Renewable.jpg",
+  },
   // Add other categories similarly...
 ];
 
@@ -44,11 +62,10 @@ export default function WorksSection() {
               <li key={work.id} className="mb-4 borderl">
                 <button
                   onClick={() => setActiveWork(work)}
-                  className={`text-lg font-semibold bothpadding ${
-                    activeWork.id === work.id
+                  className={`text-lg font-semibold bothpadding ${activeWork.id === work.id
                       ? "text-green-500 hojver"
                       : "text-gray-800"
-                  } hover:text-green-500`}
+                    } hover:text-green-500`}
                 >
                   {work.title}
                 </button>
@@ -68,7 +85,7 @@ export default function WorksSection() {
             <div className="p-6 bg-white">
               <h3 className="text-2xl font-bold mb-2">{activeWork.title}</h3>
               <p className="text-gray-700 mb-4">{activeWork.description}</p>
-                          </div>
+            </div>
           </div>
         </div>
       </div>
