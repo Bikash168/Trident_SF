@@ -5,37 +5,37 @@ const worksData = [
     id: 1,
     title: "Education",
     description:
-      "Shikshalaya, our free learning center, has been operational for four successful years. Almost 750 students have passed out from our centers and are doing exceptionally well.",
+      "SACRED Foundation’s education initiatives bring quality learning and skill-building opportunities to underserved communities. By providing academic support, vocational training, and essential life skills, we empower young people to overcome challenges and reach their full potential, fostering future leaders and changemakers within their communities.",
     imageUrl: "/images/education.png", // Update with your actual image path
   },
   {
     id: 2,
     title: "Healthcare and Sanitation",
-    description: "Description for Healthcare and Sanitation.",
+    description: "SACRED Foundation focuses on providing essential healthcare and sanitation services to underserved communities. We organize health camps, offer preventive care, and run hygiene awareness programs to improve public health and well-being. Our sanitation projects, including clean facility construction and community education, aim to create safer, healthier environments and empower people to live healthier lives.",
     imageUrl: "/images/healthcare.jpg",
   },
   {
     id: 3,
     title: "Disaster Relief",
-    description: "Description for Disaster Relief.",
+    description: "SACRED Foundation works to support communities affected by disasters. We provide immediate help, including food, water, medical care, and shelter. Our goal is to assist people in recovering and rebuilding their lives after natural disasters, ensuring they receive the support they need during difficult times.",
     imageUrl: "/images/disaster.jpg",
   },
   {
     id: 4,
     title: "Waste Management Solutions",
-    description: "Waste Management Solutions.",
+    description: "SACRED Foundation works to conserve water and promote responsible usage. We help communities by installing rainwater harvesting systems, improving irrigation methods, and educating people on how to use water wisely. Our goal is to ensure that communities have a steady supply of clean water, supporting both their daily needs and farming activities for the future.",
     imageUrl: "/images/Waste.png",
   },
   {
     id: 5,
     title: "Water Conservation and Management",
-    description: "Water Conservation and Management.",
+    description: "SACRED Foundation works to promote water conservation and smart management practices. We aim to raise awareness about the importance of saving water and using it wisely. Our projects include installing rainwater harvesting systems, improving irrigation methods, and teaching communities about sustainable water use. By managing water better, we help ensure that communities have reliable access to clean water for their everyday needs and farming.",
     imageUrl: "/images/Water Conservation.jpg",
   },
   {
     id: 6,
     title: "Renewable energy",
-    description: "Description for Disaster Relief.",
+    description: "SACRED Foundation is dedicated to advancing renewable energy solutions for sustainable development. We focus on promoting the use of clean energy sources, such as solar and wind, to replace traditional, harmful energy options. Our initiatives aim to reduce environmental impact, lower energy costs, and increase access to reliable power in underserved areas. By supporting renewable energy, we help communities build a cleaner, more sustainable future.",
     imageUrl: "/images/Renewable.jpg",
   },
   // Add other categories similarly...
