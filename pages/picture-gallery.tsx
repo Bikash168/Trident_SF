@@ -36,7 +36,7 @@ const PictureGallery = () => {
             Picture Gallery
           </h2>
           <p className="text-lg text-center mb-8 animate__animated animate__fadeInUp">
-            Explore our vibrant moments captured through our projects and community engagements. Each image tells a story of resilience, empowerment, and hope.
+          Browse through the powerful visuals from our ongoing projects, where each image highlights moments of empowerment and progress. These photographs illustrate the significant impact our initiatives have on local communities and the positive changes unfolding.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

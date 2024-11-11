@@ -44,7 +44,7 @@ const VideoGallery = () => {
             Video Gallery
           </h2>
           <p className="text-lg text-center mb-8 animate__animated animate__fadeInUp">
-            Dive into our impactful videos that showcase our efforts in community development, environmental sustainability, and social empowerment. Each video is a testament to our mission and vision.
+          Our video library offers a deeper understanding of our initiatives, showcasing the real-life impact of our programs. These videos illustrate the positive change we are driving in communities through empowerment, development, and sustainability.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
