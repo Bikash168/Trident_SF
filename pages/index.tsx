@@ -74,8 +74,7 @@ export default function Home() {
                 NATURAL RESOURCE MANAGEMENT & SUSTAINABLE LIVELIHOOD
               </h3>
               <p className="text-black-900 mb-12">
-                SACRED believes in the overall development of the community by promoting livelihood,
-                natural resource management, and access to clean cooking and income-generating activities.
+              SACRED Foundation works towards the overall growth of communities by focusing on improving livelihoods, managing natural resources, and providing access to clean cooking options. We help people create sustainable ways to earn a living, which supports their families and improves their financial stability. Our efforts also include better management of natural resources, ensuring that the environment is protected while benefiting the local population. Additionally, we promote clean cooking methods to reduce health risks and create safer, more eco-friendly alternatives for families. Through these initiatives, we aim to help communities lead healthier, more prosperous lives.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -124,9 +123,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <Link href="#" className="mt-8 inline-block px-6 py-3 text-lg bg-green-500 text-white rounded-full hover:bg-blue-400 transition duration-300">
-                Know More
-              </Link>
+          
             </div>
           </section>
           <CurrentProjects />
