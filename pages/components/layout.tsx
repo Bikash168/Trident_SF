@@ -85,9 +85,9 @@ export default function Layout({ children }: LayoutProps) {
       </div>
     </div>
         {/* Main navigation */}
-        <div className="flex justify-between items-center px-4 py-3 bg-white shadow-md">
+        <div className="flex justify-between items-center px-3 py-2 bg-white shadow-md">
           <Link href="/" className="flex items-center">
-            <img src="/Logo.png" alt="SACRED Logo" className="h-8 logosi" />
+            <img src="/Logo.png" alt="SACRED Logo" className="h-6 logosi" />
           </Link>
 
           {/* Desktop menu */}
