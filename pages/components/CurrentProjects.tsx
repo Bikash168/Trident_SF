@@ -12,10 +12,11 @@ const projects = [
     description: "Organic farming plays a critical role in achieving sustainable agricultural practices, promoting soil health, conserving water, reducing chemical inputs, and enhancing biodiversity.",
   },
   {
-    title: "Green Hydrogen",
-    imageUrl: "/images/khushiyon-ki-potli.jpg", // replace with your image path
-    description: "Green hydrogen is a form of hydrogen produced using renewable energy sources, such as wind, solar, or hydropower, to electrolyze water (H₂O) into hydrogen (H₂) and oxygen (O₂). This process emits no greenhouse gases, making green hydrogen a key solution for reducing carbon emissions in various sectors.",
-  },
+    title: "Solar Energy",
+    imageUrl: "/images/solar-energy.jpg", // replace with your image path
+    description: "Solar energy harnesses the power of the sun using photovoltaic cells or solar thermal systems to generate electricity or heat. It is a clean, renewable energy source that significantly reduces carbon emissions and dependence on fossil fuels. Solar energy is a vital component of the global shift toward sustainable and environmentally friendly energy solutions."
+  }
+  
 ];
 
 const CurrentProjects = () => {
