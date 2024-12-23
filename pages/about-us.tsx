@@ -26,7 +26,7 @@ const AboutUs = () => {
       <ImageCollage />
         
           
-      <section className="bg-white py-12 mb-10">
+      <section className="bg-white py-12 mb-10 px-4">
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold text-black mb-4">
                 About <span className="text-orange-500">SACRED Foundation</span>

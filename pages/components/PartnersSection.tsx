@@ -9,7 +9,7 @@ export default function PartnersSection() {
     ];
   
     return (
-      <div className="container mx-auto py-12">
+      <div className="container mx-auto py-12 px-4">
         {/* Title */}
         <h2 className="text-4xl font-bold text-center mb-8">
           SOME OF OUR <span className="text-green-500">Esteemed</span> PARTNERS

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AwardsSection() {
     return (
-      <div className="container mx-auto py-12">
+      <div className="container mx-auto py-12 px-4">
         {/* Section Title */}
         <h2 className="text-4xl font-bold text-center mb-8">
           <span className="text-green-600">Awards</span> & RECOGNITION

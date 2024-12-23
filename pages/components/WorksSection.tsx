@@ -45,7 +45,7 @@ export default function WorksSection() {
   const [activeWork, setActiveWork] = useState(worksData[0]);
 
   return (
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto py-12 px-4">
       <h2 className="text-4xl font-bold text-center mb-8">
         Our <span className="text-green-500">Works</span>
       </h2>
@@ -54,7 +54,7 @@ export default function WorksSection() {
         healthcare, and sustainable initiatives. Join us in creating
         meaningful change worldwide.
       </p>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row sm:pl-4">
         {/* Left Side: Menu */}
         <div className="md:w-1/3">
           <ul>
