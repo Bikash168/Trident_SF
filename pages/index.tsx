@@ -21,7 +21,7 @@ export default function Home() {
       <Layout>
         <div>
           <section className="hero-section">
-            <div className="container mx-auto">
+            <div className="mx-auto">
               <HeroSection />
             </div>
           </section>
