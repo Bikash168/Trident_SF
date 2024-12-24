@@ -21,7 +21,7 @@ const ManagementteamMembers = [
   },
   {
     name: 'Smitarani Panigrahi',
-    role: 'Project Manager',
+    role: 'Founder',
     image: '/images/Team.jpg',
     description: 'Michael conducts research on environmental policies and their impact on communities.',
     linkedin: 'https://www.linkedin.com/in/smitarani-panigrahi/',
