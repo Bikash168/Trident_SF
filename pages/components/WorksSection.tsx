@@ -11,7 +11,7 @@ const worksData = [
   {
     id: 2,
     title: "Healthcare and Sanitation",
-    description: "SACRED Foundation focuses on providing essential healthcare and sanitation services to underserved communities. We organize health camps, offer preventive care, and run hygiene awareness programs to improve public health and well-being. Our sanitation projects, including clean facility construction and community education, aim to create safer, healthier environments and empower people to live healthier lives.",
+    description: "SACRED Foundation focuses on providing essential healthcare and sanitation services to underserved communities. We organize health camps, offer preventive care, and run hygiene awareness programs to improve public health and well-being. Our sanitation projects, including clean facility construction and community education, aim to create safer, healthier environment and empower people to live healthier live.",
     imageUrl: "/images/healthcare.jpg",
   },
   {
@@ -35,7 +35,7 @@ const worksData = [
   {
     id: 6,
     title: "Renewable energy",
-    description: "SACRED Foundation is dedicated to advancing renewable energy solutions for sustainable development. We focus on promoting the use of clean energy sources, such as solar and wind, to replace traditional, harmful energy options. Our initiatives aim to reduce environmental impact, lower energy costs, and increase access to reliable power in underserved areas. By supporting renewable energy, we help communities build a cleaner, more sustainable future.",
+    description: "SACRED Foundation is dedicated to advancing renewable energy solutions for sustainable development. We focus on promoting the use of clean energy sources such as solar and wind to replace traditional harmful energy options. Our initiatives aim to reduce environmental impact, lower energy costs, and increase access to reliable power in underserved areas. By supporting renewable energy, we help communities build a cleaner and more sustainable future.",
     imageUrl: "/images/Renewable.jpg",
   },
   // Add other categories similarly...

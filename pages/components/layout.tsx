@@ -253,7 +253,7 @@ export default function Layout({ children }: LayoutProps) {
           {/* About Section */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">About Us</h3>
-            <p className='textalin'>An organization focused on sustainable actions for climate-resilient socio-environmental development implements strategies that promote environmental sustainability, foster social progress, and enhance resilience to the impacts of climate change.</p>
+            <p className='textalin'>An organization focused on sustainable actions for climate resilient socio-environmental development implements strategies that promote environmental sustainability, foster social progress, and enhance resilience to the impact of climate change.</p>
           </div>
 
           {/* Quick Links */}
