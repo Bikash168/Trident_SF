@@ -36,7 +36,7 @@ const VisionMission = () => {
             <div className="mb-10 animate-slideUp delay-200">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed textalin">
-              Our mission at SACRED Foundation is to address pressing environmental challenges by implementing practical and sustainable solutions.We collaborate with educational institutions, industries, and local communities to develop research-based, impactful projects. Through hands-on initiatives and innovative strategies, we aim to empower individuals and organizations to adopt sustainable practices, contributing to long-term environmental protection and social progress in alignment with the United Nations Sustainable Development Goals (UN SDGs).
+              Our mission at SACRED Foundation is to address pressing environmental challenges by implementing practical and sustainable solutions. We collaborate with educational institutions, industries, and local communities to develop research-based impactful projects. Through hands-on initiatives and innovative strategies, we aim to empower individuals and organizations to adopt sustainable practices, contributing to long-term environmental protection and social progress in alignment with the United Nations Sustainable Development Goals (UN SDGs).
               </p>
             </div>
 
