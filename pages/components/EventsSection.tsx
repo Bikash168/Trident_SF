@@ -37,7 +37,7 @@ const EventsSection: React.FC = () => {
             description:
                 "A session on renewable energy solutions and their impact on climate change.",
             date: "15th March 2025",
-            image: "/images/event4.jpg", // Update with actual image path
+            image: "/images/event4.png", // Update with actual image path
             type: "recent", // Recent event
         },
     ];
@@ -54,7 +54,7 @@ const EventsSection: React.FC = () => {
 
     return (
         <section className="bg-white py-16">
-            <div className="container mx-auto text-center">
+            <div className="container mx-14 text-center">
                 <h2 className="text-3xl font-bold text-green-500 mb-4">Our Events</h2>
                 <h3 className="text-2xl text-[#316b9e] mb-8">
                     Engaging Communities for a Sustainable Future
