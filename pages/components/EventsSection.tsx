@@ -87,7 +87,7 @@ const EventsSection: React.FC = () => {
                                     height={250}
                                     className="w-full h-48 object-cover"
                                 />
-                                <div className="p-4">
+                                <div className="p-4 space-y-4">
                                     <h4 className="font-semibold text-gray-700">{event.title}</h4>
                                     <p className="text-gray-600 mt-2">{event.description}</p>
                                     <p className="text-sm text-gray-500 mt-4">Date: {event.date}</p>
