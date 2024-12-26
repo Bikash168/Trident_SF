@@ -53,14 +53,14 @@ const EventsSection: React.FC = () => {
     };
 
     return (
-        <section className="bg-white py-16 px-4">
+        <section className="bg-white py-16">
             <div className="container mx-auto text-center">
                 <h2 className="text-3xl font-bold text-green-500 mb-4">Our Events</h2>
                 <h3 className="text-2xl text-[#316b9e] mb-8">
                     Engaging Communities for a Sustainable Future
                 </h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pl-22">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pl-28">
                     {events.map((event) => {
                         // Modify the animation assignment
                         const animation =
