@@ -8,6 +8,7 @@ import AwardsSection from './components/AwardsSection';
 import PartnersSection from './components/PartnersSection';
 import FinancialSection from './components/FinancialSection';
 import HeroSection from './components/HeroSection';
+import EventsSection from "./components/EventsSection";
 
 import Link from 'next/link'; // Import Link from next/link
 import CurrentProjects from './components/CurrentProjects';
@@ -65,7 +66,8 @@ export default function Home() {
             </div>
           </div>
           <WorksSection />
-
+          <EventsSection />
+          
           {/* Card Section */}
           <section className="bg-white py-16 px-4">
             <div className="container mx-auto text-center">
