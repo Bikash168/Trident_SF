@@ -37,30 +37,33 @@ const CorporatePartnership = () => {
         </div>
       </section>
 
-      {/* Individual Partnership Section */}
-      <section className="bg-gray-50 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-blue-600 mb-8">
-            Individual <span className="text-black">Partnership</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <p className="text-lg text-gray-600 textalin">
-            Individual partnerships are fundamental to the success of SACRED Foundation's initiatives. Your support directly helps provide essential services, such as education, healthcare, and skill development, to marginalized communities. By collaborating with us, you contribute to advancing social equity and positively impacting lives.
-              <br /><br />
-            There are various ways to get involved, from offering your time and expertise to raising awareness within your community. Every contribution, regardless of size, has the potential to make a meaningful difference. Join us in spreading the message, engaging your network, and supporting our efforts to foster a more just and sustainable world.
-            </p>
-            <div className="rounded-lg shadow-lg">
-              <Image
-                src="/images/image1.jpg" // Adjust the path according to your project structure
-                alt="SACRED Foundation Initiative"
-                width={700}
-                height={300}
-                className="rounded-lg shadow-lg w-full md:w-1/2"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Individual Partnership Section */}
+<section className="bg-gray-50 py-12">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-center text-blue-600 mb-8">
+      Individual <span className="text-black">Partnership</span>
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <div>
+        <p className="text-lg text-gray-600">
+          Individual partnerships are fundamental to the success of SACRED Foundation's initiatives. Your support directly helps provide essential services, such as education, healthcare, and skill development, to marginalized communities. By collaborating with us, you contribute to advancing social equity and positively impacting lives.
+          <br /><br />
+          There are various ways to get involved, from offering your time and expertise to raising awareness within your community. Every contribution, regardless of size, has the potential to make a meaningful difference. Join us in spreading the message, engaging your network, and supporting our efforts to foster a more just and sustainable world.
+        </p>
+      </div>
+      <div className="flex justify-center">
+        <Image
+          src="/images/image12.jpg" // Adjust the path according to your project structure
+          alt="SACRED Foundation Initiative"
+          width={500}
+          height={300}
+          className="rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Corporate Partnership Section */}
       <section className="bg-white py-12">
