@@ -6,22 +6,23 @@ const EventsSection: React.FC = () => {
     const events = [
         {
             id: 1,
-            title: "Women Empowerment Drive",
+            title: "India CSR & ESG Summit 2024",
             description:
-                "A health checkup program in collaboration with Trident College and ASHWINE group of hospitals.",
+                "A prestigious summit bringing together thought leaders and industry experts to discuss the future of Corporate Social Responsibility (CSR) and Environmental, Social, and Governance (ESG) practices.",
             date: "12th December 2024",
-            image: "/images/event1.jpg", // Update with actual image path
+            image: "/images/event2.jpeg", // Update with actual image path
             type: "past", // Past event
         },
         {
             id: 2,
-            title: "Plastic-Free Campus Initiative",
+            title: "Human Rights Day Celebration",
             description:
-                "Promoting microplastics awareness through community participation.",
-            date: "5th January 2025",
-            image: "/images/event2.jpeg", // Update with actual image path
+                "An event dedicated to celebrating and advocating for human rights across the globe, promoting awareness and action to ensure justice and equality for all.",
+            date: "10th December 2024",
+            image: "/images/event1.jpg", // Update with actual image path
             type: "recent", // Recent event
         },
+
         {
             id: 3,
             title: "Carbon Accounting Workshop",
