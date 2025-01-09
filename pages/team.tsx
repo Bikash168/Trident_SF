@@ -37,7 +37,7 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team4.jpg',
     description:
-      'Emily works closely with communities to empower them through education and resources.',
+      'Mr. Bimal Prasad Mohapatra is a seasoned professional in rural development and financial management. He is committed to empowering communities through innovative strategies and sustainable solutions.',
     linkedin: 'https://www.linkedin.com/in/bimal-prasad-mohapatra-b5672b1b0/',
   },
   {
@@ -45,7 +45,7 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team6.jpg',
     description:
-      'Emily works closely with communities to empower them through education and resources.',
+      'Dr. Dipti Mayee Sahoo is a dedicated researcher specializing in environmental science and social science. She is passionate about sustainable development and community empowerment through innovative solutions',
     linkedin: 'https://www.linkedin.com/in/dipti-mayee-sahoo-478735155/',
   },
   {
