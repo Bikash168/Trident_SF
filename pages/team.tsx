@@ -90,32 +90,47 @@ const OurTeam = () => {
       <Layout>
         <ImageCollage />
         <section className="bg-white py-12 mb-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-extrabold text-center text-blue-500 mb-8">
-              Meet Our <span className="text-black">Leaders</span>
-            </h1>
-            <div className="flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-                {ManagementteamMembers.map((member, index) => (
-                  <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="rounded-full w-32 h-32 mx-auto mb-4 object-cover"
-                    />
-                    <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                    <p className="text-gray-600 mb-4">{member.role}</p>
-                    <p className="text-gray-700">{member.description}</p>
-                    {member.linkedin && (
-                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-500 flex items-center justify-center mt-4">
-                        <FaLinkedin className="mr-2" /> Connect on LinkedIn
-                      </a>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <h1 className="text-4xl font-extrabold text-center text-blue-500 mb-8">
+    Meet Our <span className="text-black">Leaders</span>
+  </h1>
+  <div className="flex justify-center">
+    <div
+      className={`grid ${
+        ManagementteamMembers.length === 2
+          ? "grid-cols-1 md:grid-cols-2"
+          : "grid-cols-1 md:grid-cols-3"
+      } gap-8 justify-items-center`}
+    >
+      {ManagementteamMembers.map((member, index) => (
+        <div
+          key={index}
+          className="bg-gray-100 p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105"
+        >
+          <img
+            src={member.image}
+            alt={member.name}
+            className="rounded-full w-32 h-32 mx-auto mb-4 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+          <p className="text-gray-600 mb-4">{member.role}</p>
+          <p className="text-gray-700">{member.description}</p>
+          {member.linkedin && (
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 flex items-center justify-center mt-4"
+            >
+              <FaLinkedin className="mr-2" /> Connect on LinkedIn
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <h1 className="text-4xl font-extrabold text-center text-blue-500 mb-8">
