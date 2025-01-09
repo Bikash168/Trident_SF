@@ -53,7 +53,7 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team5.jpg',
     description:
-      'Emily works closely with communities to empower them through education and resources.',
+      'Dr. Somanatha Jena is an experienced academic and researcher with expertise in environmental science, biotechnology and climate change. He is committed to fostering sustainable practices and empowering communities through education and innovation.',
     linkedin: 'https://www.linkedin.com/in/somanatha-jena-11884361/',
   },
   {
