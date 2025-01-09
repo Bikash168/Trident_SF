@@ -29,7 +29,7 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team3.jpg',
     description:
-      'Michael conducts research on environmental policies and their impact on communities.',
+      'Dr. Manas Ranjan Senapati is an accomplished academician and researcher with expertise in environmental science and sustainability. He is dedicated to addressing global environmental challenges through impactful research and education.',
     linkedin: 'https://www.linkedin.com/in/dr-manas-ranjan-senapati-b8679324/',
   },
   {
