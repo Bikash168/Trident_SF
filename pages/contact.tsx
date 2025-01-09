@@ -96,7 +96,7 @@ const Contact: React.FC = () => {
               <div className={`p-6 bg-gray-50 rounded-lg shadow-lg transition-transform duration-500 hover:scale-105 transform ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <FaPhone className="text-4xl mb-4 text-green-600" />
                 <h3 className="text-xl font-semibold text-pink-900 mb-2">Call Us</h3>
-                <p>+91-9439173220</p>
+                <p>+91-9438331744</p>
               </div>
               <div className={`p-6 bg-gray-50 rounded-lg shadow-lg transition-transform duration-500 hover:scale-105 transform ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <FaEnvelope className="text-4xl mb-4 text-blue-600" />
