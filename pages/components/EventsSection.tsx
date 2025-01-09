@@ -55,31 +55,23 @@ const EventsSection: React.FC = () => {
 
     return (
         <section className="bg-white py-16">
-            <div className="container mx-14 text-center">
+            <div className="container mx-auto px-4 sm:px-6 md:px-14 text-center">
                 <h2 className="text-3xl font-bold text-green-500 mb-4">Our Events</h2>
                 <h3 className="text-2xl text-[#316b9e] mb-8">
                     Engaging Communities for a Sustainable Future
                 </h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pl-28">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {events.map((event) => {
-                        // Modify the animation assignment
-                        const animation =
-                            event.type === "past"
-                                ? "past"
-                                : event.type === "recent"
-                                    ? "scale"
-                                    : "future";
+                        // Check for mobile screen size and adjust animation
+                        const isMobile = window.innerWidth < 768; // Modify based on your screen size criteria
+                        const animation = isMobile ? "" : event.type === "past" ? "past" : event.type === "recent" ? "scale" : "future";
 
                         return (
-                            <motion.div
+                            <div
                                 key={event.id}
-                                initial="hidden"
-                                whileInView={animation}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.8 }}
-                                variants={variants}
                                 className="bg-white shadow-md rounded-lg overflow-hidden"
+                                style={{ transition: "transform 0.3s ease-in-out" }}
                             >
                                 <Image
                                     src={event.image}
@@ -93,12 +85,13 @@ const EventsSection: React.FC = () => {
                                     <p className="text-gray-600 mt-2">{event.description}</p>
                                     <p className="text-sm text-gray-500 mt-4">Date: {event.date}</p>
                                 </div>
-                            </motion.div>
+                            </div>
                         );
                     })}
                 </div>
             </div>
         </section>
+
     );
 };
 
