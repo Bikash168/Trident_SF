@@ -69,8 +69,8 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team8.jpg',
     description:
-      'Emily works closely with communities to empower them through education and resources.',
-    linkedin: 'https://www.linkedin.com/in/mr-satya-sundar-mishra/',
+      'Mr. Satya Sundar Mishra is a renowned expert in environmental policy research and renewable energy, dedicated to fostering community development and sustainability. His work seeks to deliver transformative solutions that address pressing socio-environmental challenges.',
+    linkedin: 'https://www.linkedin.com/in/satya-mishra-309258183/',
   },
   {
     name: 'Mr. Mohammed Nadeem Iqbal',
