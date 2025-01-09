@@ -77,7 +77,7 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team9.jpg',
     description:
-      'Nadeem Iqbal is an expert in strategic business development, renewable energy research, and environmental sustainability. He specializes in creating innovative solutions that promote environmental resilience and sustainable growth.',
+      'Mr. Mohammed Nadeem Iqbal is an expert in strategic business development, renewable energy research, and environmental sustainability. He specializes in creating innovative solutions that promote environmental resilience and sustainable growth.',
     linkedin: 'https://www.linkedin.com/in/nadeem-iqbal-94967a14/',
   },
   {
@@ -85,7 +85,7 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team10.jpg',
     description:
-      'Bikash Jethy specializes in project management and environmental sustainability, focusing on software-based solutions for climate action. He strives to develop innovative solutions that drive sustainable growth and enhance community resilience.',
+      'Mr. Bikash Jethy specializes in project management and environmental sustainability, focusing on software-based solutions for climate action. He strives to develop innovative solutions that drive sustainable growth and enhance community resilience.',
     linkedin: 'https://www.linkedin.com/in/bikash-jethy-88bb3158/',
   },
 ];
