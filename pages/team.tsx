@@ -61,8 +61,8 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team7.jpg',
     description:
-      'Emily works closely with communities to empower them through education and resources.',
-    linkedin: 'https://www.linkedin.com/in/mr-deepak-mohapatra/',
+      'Mr. Deepak Mohapatra researches environmental policies, focusing on their effects on communities. He aims to drive actionable insights for sustainable development.',
+    linkedin: 'https://www.linkedin.com/in/deepak-kumar-mohapatra-319317b7/',
   },
   {
     name: 'Mr. Satya Sundar Mishra',
