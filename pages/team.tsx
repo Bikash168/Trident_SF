@@ -9,7 +9,7 @@ const ManagementteamMembers = [
     name: 'Dr. Biswabijoyee Panigrahi',
     role: 'Founder',
     image: '/images/Team1.jpg',
-    description: 'John is passionate about sustainable development and has over 15 years of experience in the field.',
+    description: 'Dr. Biswabijoyee Panigrahi, a seasoned Indian Direct Tax Consultant, Edupreneur, Angel Investor, and Sustainability Advisor, brings over 45 years of expertise in Renewable Energy, Fintech, and AI-driven platforms. Passionate about fostering impactful startups, he supports brilliant founders at bootstrap and pre-seeding/seeding stages to scale innovations that create positive change and align with Sustainable Development Goals (SDGs). Dr. Panigrahi’s dedication to real-world problem-solving and his extensive experience make him a visionary leader in sustainable development.',
     linkedin: 'https://www.linkedin.com/in/biswabijoyee-panigrahi-294409ba/',
   },
   
