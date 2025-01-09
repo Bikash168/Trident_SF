@@ -85,7 +85,7 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team10.jpg',
     description:
-      'Emily works closely with communities to empower them through education and resources.',
+      'Bikash Jethy specializes in project management and environmental sustainability, focusing on software-based solutions for climate action. He strives to develop innovative solutions that drive sustainable growth and enhance community resilience.',
     linkedin: 'https://www.linkedin.com/in/bikash-jethy-88bb3158/',
   },
 ];
