@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const EventsSection: React.FC = () => {
+    const [isMobile, setIsMobile] = useState<boolean>(false);
+
+    // Define the events
     const events = [
         {
             id: 1,
@@ -22,7 +25,6 @@ const EventsSection: React.FC = () => {
             image: "/images/event1.jpg", // Update with actual image path
             type: "recent", // Recent event
         },
-
         {
             id: 3,
             title: "Carbon Accounting Workshop",
@@ -53,6 +55,20 @@ const EventsSection: React.FC = () => {
         past: { opacity: 0.5, filter: "grayscale(100%)" }, // Add subtle opacity and grayscale for past events
     };
 
+    // Use effect to check screen size after component mounts
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        handleResize(); // Check screen size initially
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <section className="bg-white py-16">
             <div className="container mx-auto px-4 sm:px-6 md:px-14 text-center">
@@ -63,13 +79,24 @@ const EventsSection: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {events.map((event) => {
-                        // Check for mobile screen size and adjust animation
-                        const isMobile = window.innerWidth < 768; // Modify based on your screen size criteria
-                        const animation = isMobile ? "" : event.type === "past" ? "past" : event.type === "recent" ? "scale" : "future";
+                        // Adjust animation based on screen size and event type
+                        const animation = isMobile
+                            ? ""
+                            : event.type === "past"
+                            ? "past"
+                            : event.type === "recent"
+                            ? "scale"
+                            : "future";
 
                         return (
-                            <div
+                            <motion.div
                                 key={event.id}
+                                initial="hidden"
+                                animate="visible"
+                                whileInView={animation}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8 }}
+                                variants={variants}
                                 className="bg-white shadow-md rounded-lg overflow-hidden"
                                 style={{ transition: "transform 0.3s ease-in-out" }}
                             >
@@ -85,13 +112,12 @@ const EventsSection: React.FC = () => {
                                     <p className="text-gray-600 mt-2">{event.description}</p>
                                     <p className="text-sm text-gray-500 mt-4">Date: {event.date}</p>
                                 </div>
-                            </div>
+                            </motion.div>
                         );
                     })}
                 </div>
             </div>
         </section>
-
     );
 };
 
