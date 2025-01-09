@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
           id="hero-video"
           autoPlay
           loop
-          muted
+          muted={false}  // Ensure audio plays
           playsInline
           className="object-cover w-full newbcss"
           style={{
@@ -40,12 +40,11 @@ const HeroSection: React.FC = () => {
             left: 0,
           }}
         >
-          <source src="/your-video-file.mp4" type="video/mp4" />
+          <source src="/your-video-file2.mp4" type="video/mp4" />
           {/* Fallback for browsers that don’t support video */}
           Your browser does not support the video tag.
         </video>
       </div>
-
     </div>
   );
 };
