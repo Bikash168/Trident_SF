@@ -61,7 +61,7 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team7.jpg',
     description:
-      'Mr. Deepak Mohapatra researches environmental policies, focusing on their effects on communities. He aims to drive actionable insights for sustainable development.',
+      'Mr. Deepak Mohapatra conducts in-depth research on environmental policies, with a focus on their socio-economic impacts on communities. His work seeks to bridge the gap between policy and practice, driving actionable insights that foster sustainable development and improve community resilience in the face of environmental challenges.',
     linkedin: 'https://www.linkedin.com/in/deepak-kumar-mohapatra-319317b7/',
   },
   {
@@ -77,8 +77,8 @@ const ExicutieteamMembers = [
     role: 'Associate consultant',
     image: '/images/Team9.jpg',
     description:
-      'Emily works closely with communities to empower them through education and resources.',
-    linkedin: 'https://www.linkedin.com/in/mr-mohammed-nadeem-iqbal/',
+      'Nadeem Iqbal is an expert in strategic business development, renewable energy research, and environmental sustainability. He specializes in creating innovative solutions that promote environmental resilience and sustainable growth.',
+    linkedin: 'https://www.linkedin.com/in/nadeem-iqbal-94967a14/',
   },
   {
     name: 'Mr. Bikash Jethy',
