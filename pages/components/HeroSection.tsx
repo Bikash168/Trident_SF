@@ -1,20 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 const HeroSection: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
   useEffect(() => {
+    const videoElement = videoRef.current;
+
     // Dynamically set height for mobile devices
     const setVideoHeight = () => {
-      const videoElement = document.getElementById('hero-video') as HTMLVideoElement;
-      if (window.innerWidth <= 768) { // Mobile
-        videoElement.style.height = `${window.innerHeight}px`;
-      } else { // Desktop
-        videoElement.style.height = '100vh';
+      if (videoElement) {
+        if (window.innerWidth <= 768) { // Mobile
+          videoElement.style.height = `${window.innerHeight}px`;
+        } else { // Desktop
+          videoElement.style.height = '100vh';
+        }
       }
     };
 
     // Call the function on load and resize
     setVideoHeight();
     window.addEventListener("resize", setVideoHeight);
+
+    // Autoplay with muted and unmute on play
+    if (videoElement) {
+      videoElement.muted = true;  // Start muted
+      videoElement.play().catch((err) => console.error("Autoplay failed:", err));
+    }
 
     // Clean up listener on unmount
     return () => {
@@ -27,10 +38,10 @@ const HeroSection: React.FC = () => {
       {/* Background Video */}
       <div className="absolute top-0 left-0 w-full h-full cuswidhts">
         <video
-          id="hero-video"
+          ref={videoRef}
           autoPlay
           loop
-          muted={false}  // Ensure audio plays
+          muted={true}  // Start muted
           playsInline
           className="object-cover w-full newbcss"
           style={{
