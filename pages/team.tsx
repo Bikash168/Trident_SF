@@ -12,13 +12,7 @@ const ManagementteamMembers = [
     description: 'John is passionate about sustainable development and has over 15 years of experience in the field.',
     linkedin: 'https://www.linkedin.com/in/biswabijoyee-panigrahi-294409ba/',
   },
-  {
-    name: 'Mr. Jagatjayee Panigrahi',
-    role: 'Director',
-    image: '/images/Team2.jpg',
-    description: 'Jane oversees project implementation and ensures we meet our goals effectively.',
-    linkedin: 'https://www.linkedin.com/in/jagatjayee-panigrahi-22663193/',
-  },
+  
   {
     name: 'Smitarani Panigrahi',
     role: 'Founder',
