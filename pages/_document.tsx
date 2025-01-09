@@ -26,6 +26,7 @@ class MyDocument extends Document {
           <meta http-equiv="Expires" content="0" />
 
           {/* You can add more stylesheets or font links here */}
+          <meta name="p:domain_verify" content="5738d95c5714a031b53b87ec88dddf7a"/>
         </Head>
         <body>
           <Main />
