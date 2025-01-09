@@ -46,52 +46,52 @@ export default function Layout({ children }: LayoutProps) {
       <header className="bg-white sticky top-0 z-50 headerborder">
         {/* Contact info section */}
         <div className="bg-[#CCFFCC] text-black text-xs md:text-sm py-2">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-        <p className="text-sm font-semi-bold text-center md:text-left">
-          Sustainable Action for Climate Resilient Enviro-social Development Foundation
-        </p>
-        <div className="flex flex-wrap justify-center md:justify-end space-x-4 mt-2 md:mt-0">
-          <span className="flex items-center space-x-1">
-            <FaMapMarkerAlt />
-            <span>Bhubaneswar, India</span>
-          </span>
-          <span className="flex items-center space-x-1">
-            <FaPhoneAlt />
-            <span>+91-9438331744</span>
-          </span>
-          <span className="flex items-center space-x-1">
-            <FaEnvelope />
-            <span>info@sacred.foundation</span>
-          </span>
-          {/* Social media icons */}
-          <div className="flex space-x-2 mt-2 md:mt-0">
-            <a href="https://www.facebook.com/people/Sacred-Foundation/61565399609076/" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-blue-400" />
-            </a>
-            <a href="https://x.com/sacred71444" target="_blank" rel="noopener noreferrer">
-              <FaXTwitter />
-            </a>
-            <a href="https://www.instagram.com/sacred.foundation/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-pink-400" />
-            </a>
-            <a href="https://www.linkedin.com/company/sacred-foundation/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-blue-400" />
-            </a>
-            <a href="https://www.youtube.com/@sacredfoundation" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="text-red-400" />
-            </a>
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <p className="text-sm font-semi-bold text-center md:text-left">
+              Sustainable Action for Climate Resilient Enviro-social Development Foundation
+            </p>
+            <div className="flex flex-wrap justify-center md:justify-end space-x-4 mt-2 md:mt-0">
+              <span className="flex items-center space-x-1">
+                <FaMapMarkerAlt />
+                <span>Bhubaneswar, India</span>
+              </span>
+              <span className="flex items-center space-x-1">
+                <FaPhoneAlt />
+                <span>+91-9438331744</span>
+              </span>
+              <span className="flex items-center space-x-1">
+                <FaEnvelope />
+                <span>info@sacred.foundation</span>
+              </span>
+              {/* Social media icons */}
+              <div className="flex space-x-2 mt-2 md:mt-0">
+                <a href="https://www.facebook.com/people/Sacred-Foundation/61565399609076/" target="_blank" rel="noopener noreferrer">
+                  <FaFacebook className="text-blue-400" />
+                </a>
+                <a href="https://x.com/sacred71444" target="_blank" rel="noopener noreferrer">
+                  <FaXTwitter />
+                </a>
+                <a href="https://www.instagram.com/sacred.foundation/" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram className="text-pink-400" />
+                </a>
+                <a href="https://www.linkedin.com/company/sacred-foundation/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin className="text-blue-400" />
+                </a>
+                <a href="https://www.youtube.com/@sacredfoundation" target="_blank" rel="noopener noreferrer">
+                  <FaYoutube className="text-red-400" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
         {/* Main navigation */}
-        <div className="flex justify-between items-center px-3 py-2 bg-white shadow-md">
+        <div className="flex justify-between items-center py-2 bg-white shadow-md">
           <Link href="/" className="flex items-center">
-            <img src="/Logo.png" alt="SACRED Logo" className="h-6 logosi" />
+            <img src="/Logo.png" alt="SACRED Logo" className="h-6 ml-1 logosi" />
           </Link>
 
           {/* Desktop menu */}
-          <nav className="hidden md:flex space-x-0.5 border-gray-200">
+          <nav className="hidden md:flex space-x-0.5 border-gray-200 mr-10">
             <div className="group relative">
               <button className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex menuborder">
                 Who We Are <FaAngleDown className="mart" />
@@ -115,7 +115,7 @@ export default function Layout({ children }: LayoutProps) {
               <div className="absolute hidden group-hover:block bg-[#CCFFCC] shadow-md leftmove">
                 <Link href="/advocacy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
                   Advocacy
-                </Link> 
+                </Link>
                 <Link href="/consultancy" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">
                   Consultancy
                 </Link>
@@ -162,7 +162,7 @@ export default function Layout({ children }: LayoutProps) {
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden mr-4">
             <button className="text-gray-700" onClick={() => setMenuOpen(!menuOpen)}>
               {menuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
             </button>
@@ -247,8 +247,8 @@ export default function Layout({ children }: LayoutProps) {
 
       <main className="flex-grow">{children}</main>
 
-     {/* Footer */}
-     <footer className="bg-[#CCFFCC] text-black p-8">
+      {/* Footer */}
+      <footer className="bg-[#CCFFCC] text-black p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
@@ -268,7 +268,7 @@ export default function Layout({ children }: LayoutProps) {
             </ul>
           </div>
 
-                    {/* Address */}
+          {/* Address */}
           <div>
             <h3 className="text-lg text-[#316b9e] font-bold mb-4">Contact Us</h3>
             <p className='textalin'>Plot No. – F2, Chandaka Industrial Estate,
@@ -300,8 +300,8 @@ export default function Layout({ children }: LayoutProps) {
             </div>
           </div>
         </div>
-{/* Location, Date, Time, Temperature */}
-<LocationDateTimeTemperature />
+        {/* Location, Date, Time, Temperature */}
+        <LocationDateTimeTemperature />
         {/* Copyright Section */}
         <div className="mt-8 text-[#316b9e] text-center">
           <p>&copy; 2024 Sacred Foundation. All rights reserved.</p>
