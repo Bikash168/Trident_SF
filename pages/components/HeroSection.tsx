@@ -11,29 +11,26 @@ const HeroSection: React.FC = () => {
     // Dynamically set height for mobile devices
     const setVideoHeight = () => {
       if (videoElement) {
-        const isMobile = window.innerWidth <= 768;
-        videoElement.style.height = isMobile
-          ? `${window.innerHeight}px`
-          : "100vh";
+        if (window.innerWidth <= 768) { // Mobile
+          videoElement.style.height = `${window.innerHeight}px`;
+        } else { // Desktop
+          videoElement.style.height = '100vh';
+        }
       }
     };
 
     // Call the function on load and resize
     setVideoHeight();
     window.addEventListener("resize", setVideoHeight);
-    window.addEventListener("orientationchange", setVideoHeight);
 
-    // Ensure autoplay works when video is muted
+    // Ensure video autoplay works with mute on initial load
     if (videoElement && isPlaying) {
-      videoElement.play().catch((err) =>
-        console.error("Autoplay failed:", err)
-      );
+      videoElement.play().catch((err) => console.error("Autoplay failed:", err));
     }
 
-    // Clean up listeners on unmount
+    // Clean up listener on unmount
     return () => {
       window.removeEventListener("resize", setVideoHeight);
-      window.removeEventListener("orientationchange", setVideoHeight);
     };
   }, [isPlaying]);
 
@@ -49,20 +46,19 @@ const HeroSection: React.FC = () => {
 
   return (
     <div
-      className="relative w-full min-h-screen bg-gray-900 text-white overflow-hidden"
+      className="relative w-full min-h-screen bg-gray-900 text-white overflow-hidden cusminscre"
       onClick={handleUserInteraction} // Allow unmuting and playing on click
       onTouchStart={handleUserInteraction} // Allow unmuting and playing on touch
     >
       {/* Background Video */}
-      <div className="absolute top-0 left-0 w-full h-full">
+      <div className="absolute top-0 left-0 w-full h-full cuswidhts">
         <video
           ref={videoRef}
           autoPlay
           loop
-          muted={isMuted} // Controlled by state
+          muted={isMuted} // Ensure muted is controlled by state
           playsInline
-          preload="auto" // Optimize for slow connections
-          className="object-cover w-full h-full"
+          className="object-cover w-full newbcss"
           style={{
             objectFit: "cover",
             position: "absolute",
@@ -70,9 +66,6 @@ const HeroSection: React.FC = () => {
             left: 0,
           }}
         >
-          {/* Provide multiple video sources for better compatibility */}
-          <source src="/your-video-file-low.mp4" type="video/mp4" media="(max-width: 768px)" />
-          <source src="/your-video-file-high.mp4" type="video/mp4" media="(min-width: 769px)" />
           <source src="/your-video-file2.mp4" type="video/mp4" />
           {/* Fallback for browsers that don’t support video */}
           Your browser does not support the video tag.
