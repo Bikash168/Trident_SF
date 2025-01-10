@@ -27,6 +27,7 @@ class MyDocument extends Document {
 
           {/* You can add more stylesheets or font links here */}
           <meta name="p:domain_verify" content="5738d95c5714a031b53b87ec88dddf7a"/>
+          <meta name="google-site-verification" content="KqTEK616JhBYeZiOhfrTYJg33saYlSKiHjPJNrs0HMk" />
         </Head>
         <body>
           <Main />
