@@ -4,19 +4,19 @@ import { useState } from 'react';
 
 const videos = [
   {
-    src: 'https://www.youtube.com/embed/videoID1', // Replace with actual video URLs
-    title: 'Community Empowerment Project',
+    src: 'https://www.youtube.com/embed/DFnxw-W43Mg?si=BeyG3IzjC-ulgnrX', // Replace with actual video URLs
+    title: 'The hidden cost of single use plastic',
   },
   {
-    src: 'https://www.youtube.com/embed/videoID2',
+    src: 'https://www.youtube.com/embed/hORNlw6Ge6U?si=MHRxvyaYcHrrubAn',
     title: 'Sustainable Agriculture Initiative',
   },
   {
-    src: 'https://www.youtube.com/embed/videoID3',
+    src: 'https://www.youtube.com/embed/s67LARbCoUU?si=Lxml5bvy-AGdELwP',
     title: 'Women Empowerment Program',
   },
   {
-    src: 'https://www.youtube.com/embed/videoID4',
+    src: 'https://www.youtube.com/embed/rlhgeByiLmM?si=YKtNXYtkCmr6N1QZ',
     title: 'Climate Resilience Workshop',
   },
   // Add more videos as needed
@@ -57,12 +57,13 @@ const VideoGallery = () => {
                   onClick={() => handleVideoClick(video.src)}
                   allowFullScreen
                 ></iframe>
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-white text-xl font-semibold">{video.title}</h3>
-                </div>
+                
               </div>
+              
             ))}
+            
           </div>
+          
         </div>
 
         {selectedVideo && (
