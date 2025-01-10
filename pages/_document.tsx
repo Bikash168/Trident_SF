@@ -36,6 +36,12 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="en_US" />
 
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@SACREDFoundation" />
+          <meta name="twitter:title" content="SACRED Foundation - Sustainable Action for Climate Resilience" />
+          <meta name="twitter:description" content="Driving environmental and social sustainability for a resilient future." />
+          <meta name="twitter:image" content="https://www.sacred.foundation/og-image.jpg" />
+
         </Head>
         <body>
           <Main />
