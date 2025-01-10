@@ -16,8 +16,8 @@ const FinancialDetails = () => {
             <h2 className="text-xl font-semibold mb-4">Financial Details</h2>
             <div className="text-sm">
               <div className="grid grid-cols-2 gap-4">
-                <div className="font-bold">Registration No:</div>
-                <div>274409</div>
+                <div className="font-bold">Registration No(CIN):</div>
+                <div>U72100OD2023NPL044306</div>
                 <div className="font-bold">PAN No:</div>
                 <div>AAHCR1346N</div>
                 <div className="font-bold">License Number:</div>
