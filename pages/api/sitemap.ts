@@ -5,7 +5,17 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   res.status(200).send(`<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://example.com/</loc>
+        <loc>https://sacred.foundation/</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://sacred.foundation/about-us</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://sacred.foundation/contact</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <priority>1.0</priority>
     </url>
