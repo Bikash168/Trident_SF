@@ -1,8 +1,7 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+const fs = require('fs');
+const path = require('path');
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  res.setHeader('Content-Type', 'application/xml');
-  res.status(200).send(`<?xml version="1.0" encoding="UTF-8"?>
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://example.com/</loc>
@@ -10,5 +9,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         <priority>1.0</priority>
     </url>
     <!-- Add more URLs dynamically or statically -->
-</urlset>`);
-}
+</urlset>`;
+
+fs.writeFileSync(path.join(__dirname, '../public/sitemap.xml'), sitemap, 'utf8');
+console.log('Sitemap generated!');
