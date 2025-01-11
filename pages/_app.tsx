@@ -1,21 +1,19 @@
-// pages/_app.tsx
-import { AppProps } from 'next/app'; // Import AppProps
-import Head from 'next/head';
+import { AppProps } from 'next/app';
 import '../styles/globals.css';
+import Head from 'next/head';
 
-
-function MyApp({ Component, pageProps }: AppProps) { // Type the props
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
         <title>SACRED FOUNDATION</title>
+        <meta name="description" content="A description of your web app" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-            </Head>
+        
+      </Head>
       <Component {...pageProps} />
     </>
   );
 }
 
 export default MyApp;
-// pages/_app.js
