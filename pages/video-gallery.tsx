@@ -19,7 +19,7 @@ const videos = [
     src: 'https://www.youtube.com/embed/rlhgeByiLmM?si=YKtNXYtkCmr6N1QZ',
     title: 'Climate Resilience Workshop',
   },
-  // Add more videos as needed
+ 
 ];
 
 const VideoGallery = () => {
