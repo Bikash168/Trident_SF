@@ -21,13 +21,13 @@ const FinancialDetails = () => {
                 <div className="font-bold">CIN:</div>
                 <div>U72100OD2023NPL044306</div>
                 <div className="font-bold">PAN No:</div>
-                <div>104625</div>
+                <div>ABMCS1452Q</div>
                 <div className="font-bold">80G Registration Number:</div>
-                <div>DEL-RE28502-27042018/9939</div>
+                <div>ABMCS1452QF20231</div>
                 <div className="font-bold">12A Registration Number:</div>
-                <div>DEL-RR27075-27042018/8245</div>
-                <div className="font-bold">NITI Aayog Reg:</div>
-                <div>ID U85100DL2014NPL274409</div>
+                <div>ABMCS1452QF20231</div>
+                <div className="font-bold">DARPAN ID:</div>
+                <div>OR/2024/0398886</div>
               </div>
             </div>
           </div>
