@@ -57,7 +57,7 @@ export default function Layout({ children }: LayoutProps) {
               </span>
               <span className="flex items-center space-x-1">
                 <FaPhoneAlt />
-                <span>+91-9438331744</span>
+                <span>+91-9439173220</span>
               </span>
               <span className="flex items-center space-x-1">
                 <FaEnvelope />
@@ -275,7 +275,7 @@ export default function Layout({ children }: LayoutProps) {
               Chandrasekharpur, Bhubaneswar – 24, Odisha, India - 751024.</p>
             <br />
             <p>Email: info@sacred.foundation</p>
-            <p>Phone: +91-9438331744</p>
+            <p>Phone: +91-9439173220</p>
           </div>
 
           {/* Social Media Links */}
