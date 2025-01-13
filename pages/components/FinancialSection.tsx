@@ -26,7 +26,7 @@ const FinancialDetails = () => {
                 <div>ABMCS1452QF20231</div>
                 <div className="font-bold">12A Registration Number:</div>
                 <div>ABMCS1452QF20231</div>
-                <div className="font-bold">DARPAN ID:</div>
+                <div className="font-bold">NITI Aayog/NGO DARPAN ID:</div>
                 <div>OR/2024/0398886</div>
               </div>
             </div>
