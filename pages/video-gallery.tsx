@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 const videos = [
   {
-    src: 'https://www.youtube.com/embed/DFnxw-W43Mg?si=BeyG3IzjC-ulgnrX',
-    title: 'The hidden cost of single-use plastic',
+    src: 'https://www.youtube.com/embed/_To-u5OVx18?si=gesV58CaMzQjSkk7',
+    title: 'Environmental Sustainability: Building a Resilient Future',
   },
   {
     src: 'https://www.youtube.com/embed/hORNlw6Ge6U?si=MHRxvyaYcHrrubAn',
