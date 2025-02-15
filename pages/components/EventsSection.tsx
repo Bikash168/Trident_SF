@@ -27,22 +27,23 @@ const EventsSection: React.FC = () => {
         },
         {
             id: 3,
-            title: "Carbon Accounting Workshop",
+            title: "Conclave on CSR for Sustainability: Action to Impact",
             description:
-                "Learn about carbon footprint calculations and eco-friendly practices.",
-            date: "20th February 2025",
-            image: "/images/event3.jpg", // Update with actual image path
-            type: "future", // Future event
+                "The two-day summit on CSR for Sustainability aims to explore actionable strategies and real-world success stories that demonstrate the power of CSR in building a resilient and sustainable future.",
+            date: "8th & 9th February 2025",
+            image: "/images/event4.jpeg", // Update with actual image path
+            type: "recent", // Recent event
         },
         {
             id: 4,
-            title: "Sustainable Energy Talk",
+            title: "A National Conclave Energy, Semicon, Cybersecurity and AI (ESCA-2025)",
             description:
-                "A session on renewable energy solutions and their impact on climate change.",
-            date: "15th March 2025",
-            image: "/images/event4.png", // Update with actual image path
-            type: "recent", // Recent event
+                "This conclave will unite policymakers, industry experts, and academia to explore how these technologies drive economic growth, societal progress, and environmental sustainability.",
+            date: "14th & 15th February 2025",
+            image: "/images/event3.jpg", // Update with actual image path
+            type: "future", // Future event
         },
+       
     ];
 
     // Define animation variants
@@ -105,7 +106,7 @@ const EventsSection: React.FC = () => {
                                     alt={event.title}
                                     width={400}
                                     height={250}
-                                    className="w-full h-48 object-cover"
+                                    className="w-full h-50 object-cover"
                                 />
                                 <div className="p-4 space-y-4">
                                     <h4 className="font-semibold text-gray-700">{event.title}</h4>
