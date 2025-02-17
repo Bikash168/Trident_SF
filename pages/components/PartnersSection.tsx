@@ -1,6 +1,6 @@
 export default function PartnersSection() {
     const partners = [
-      { name: "NIPM Utkal Chapter", logo: "/images/nipm.jpg" },
+      { name: "Centre for Environment and Development", logo: "/images/CED-Logo.jpeg" },
       { name: "German Varsity", logo: "/images/german_varsity.jpeg" },
       { name: "French Diplomacy", logo: "/images/french_diplomacy.jpg" },
       { name: "India Meteorological Department", logo: "/images/India_Meteorological_Department.png" },
