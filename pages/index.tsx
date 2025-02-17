@@ -109,7 +109,7 @@ export default function Home() {
                     alt="Off Farm Based Livelihood Promotion"
                     className="w-full h-48 object-cover" />
                   <div className="p-4">
-                    <h4 className="font-semibold text-gray-700">Off Farm Based Livelihood Promotion</h4>
+                    <h4 className="font-semibold text-gray-700">Education for Sustainability</h4>
                   </div>
                 </div>
 
