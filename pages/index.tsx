@@ -76,7 +76,7 @@ export default function Home() {
                 NATURAL RESOURCE MANAGEMENT & SUSTAINABLE LIVELIHOOD
               </h3>
               <p className="text-black-900 mb-12">
-              SACRED Foundation works towards the overall growth of communities by focusing on improving livelihoods, managing natural resources, and providing access to clean cooking options. We help people create sustainable ways to earn a living, which supports their families and improves their financial stability. Our efforts also include better management of natural resources, ensuring that the environment is protected while benefiting the local population. Additionally, we promote clean cooking methods to reduce health risks and create safer, more eco-friendly alternatives for families. Through these initiatives, we aim to help communities lead healthier and more prosperous lives.
+              SACRED Foundation builds stronger communities by protecting the environment and improving education, health and livelihoods. It promotes resource management climate-friendly initiatives and eco-friendly practices. Education programs provide skills and awareness for better opportunities. Waste management, Safe water and sanitation improve health and reduce risks. Livelihood programs create stable incomes and financial security. These efforts ensure a healthier educated and economically secure society for a sustainable future.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
